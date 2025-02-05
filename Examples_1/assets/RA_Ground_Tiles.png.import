@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl8tarjpalyvf"
-path="res://.godot/imported/monster_raptor1.png-12b3f5671421146cb80dc3828b84d6b9.ctex"
+uid="uid://b2v8brl5e6nd2"
+path="res://.godot/imported/RA_Ground_Tiles.png-b8da682d503ffa12e542965d888e31b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TestScene/assets/monster_raptor1.png"
-dest_files=["res://.godot/imported/monster_raptor1.png-12b3f5671421146cb80dc3828b84d6b9.ctex"]
+source_file="res://Examples_1/assets/RA_Ground_Tiles.png"
+dest_files=["res://.godot/imported/RA_Ground_Tiles.png-b8da682d503ffa12e542965d888e31b0.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://detrtffyvjwss"
-path="res://.godot/imported/monster_raptor2.png-4f39a5e2bb322b62d86abd18d65c7c59.ctex"
+uid="uid://vpblb4quhqc4"
+path="res://.godot/imported/ship (4).png-c75ca035b4dabca46cc8c847b5032576.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TestScene/assets/monster_raptor2.png"
-dest_files=["res://.godot/imported/monster_raptor2.png-4f39a5e2bb322b62d86abd18d65c7c59.ctex"]
+source_file="res://Entities/Enemies/E_Sprites/ship (4).png"
+dest_files=["res://.godot/imported/ship (4).png-c75ca035b4dabca46cc8c847b5032576.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3sddadjlfr21"
-path="res://.godot/imported/RA_Atlantis.png-83633bfc9cee9ac6b4243e8bd8532ff5.ctex"
+uid="uid://b1vdgw0wtnydi"
+path="res://.godot/imported/walk - pitchfork.png-913d6bd9ff1c184eb85a794f4476d0c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TestScene/assets/RA_Atlantis.png"
-dest_files=["res://.godot/imported/RA_Atlantis.png-83633bfc9cee9ac6b4243e8bd8532ff5.ctex"]
+source_file="res://Entities/Enemies/E_Sprites/walk - pitchfork.png"
+dest_files=["res://.godot/imported/walk - pitchfork.png-913d6bd9ff1c184eb85a794f4476d0c6.ctex"]
 
 [params]
 

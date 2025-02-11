@@ -1,8 +1,9 @@
-[gd_scene load_steps=43 format=4 uid="uid://dw30gw7l202uk"]
+[gd_scene load_steps=45 format=4 uid="uid://dw30gw7l202uk"]
 
 [ext_resource type="Texture2D" uid="uid://b2v8brl5e6nd2" path="res://Examples_1/assets/RA_Ground_Tiles.png" id="1_2nhuo"]
 [ext_resource type="Texture2D" uid="uid://ltuoyqy2lonp" path="res://Examples_1/textures/buttonTexture.tres" id="1_bfjpa"]
 [ext_resource type="Texture2D" uid="uid://3sddadjlfr21" path="res://Examples_1/assets/RA_Atlantis.png" id="1_ln6nw"]
+[ext_resource type="Script" path="res://Examples_1/test.gd" id="1_q4jf5"]
 [ext_resource type="Texture2D" uid="uid://bsbu0kpry6iw8" path="res://Examples_1/textures/buttonTexture3.tres" id="1_tqfyk"]
 [ext_resource type="Texture2D" uid="uid://mrdr2l0p61gp" path="res://Examples_1/textures/buttonTexture2.tres" id="2_i0yjq"]
 [ext_resource type="Script" path="res://Examples_1/scripts/buttonPressTest.gd" id="2_vc7d3"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://c25byj3dsynob" path="res://Examples_1/textures/buttonTexture4.tres" id="5_jx8qi"]
 [ext_resource type="Texture2D" uid="uid://cgnc8uulr8fo8" path="res://Examples_1/textures/buttonTexture5.tres" id="6_stdkr"]
 [ext_resource type="Texture2D" uid="uid://cl8tarjpalyvf" path="res://Examples_1/assets/monster_raptor1.png" id="10_h721g"]
+[ext_resource type="PackedScene" uid="uid://bye0kl3ssmad3" path="res://MenusAndStage/pause_menu.tscn" id="13_l33qt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n2ohr"]
 texture = ExtResource("1_2nhuo")
@@ -1882,6 +1884,7 @@ animations = [{
 }]
 
 [node name="Test" type="Node2D"]
+script = ExtResource("1_q4jf5")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(1.12279, 1.25146)
@@ -2040,3 +2043,9 @@ autoplay = "down"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player2"]
 z_index = 1
 shape = SubResource("CircleShape2D_pc6ti")
+
+[node name="PauseMenu" parent="." instance=ExtResource("13_l33qt")]
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0

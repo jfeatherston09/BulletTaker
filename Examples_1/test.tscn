@@ -1928,7 +1928,7 @@ script = ExtResource("2_vc7d3")
 inputName = "p1_l1"
 
 [node name="p1_l2" type="Sprite2D" parent="p1_inputs"]
-position = Vector2(78.5953, -43.8011)
+position = Vector2(81.9387, -50.3412)
 texture = ExtResource("1_bfjpa")
 script = ExtResource("2_vc7d3")
 inputName = "p1_l2"
@@ -2045,7 +2045,12 @@ z_index = 1
 shape = SubResource("CircleShape2D_pc6ti")
 
 [node name="PauseMenu" parent="." instance=ExtResource("13_l33qt")]
-offset_left = 2.0
-offset_top = 2.0
-offset_right = 2.0
-offset_bottom = 2.0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -5.0
+offset_top = 1.0
+offset_right = -5.0
+offset_bottom = 1.0
+grow_horizontal = 1
+grow_vertical = 1

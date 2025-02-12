@@ -2044,13 +2044,13 @@ autoplay = "down"
 z_index = 1
 shape = SubResource("CircleShape2D_pc6ti")
 
-[node name="PauseMenu" parent="." instance=ExtResource("13_l33qt")]
+[node name="pause_menu" parent="." instance=ExtResource("13_l33qt")]
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = -5.0
+offset_left = 11.0
 offset_top = 1.0
-offset_right = -5.0
+offset_right = 11.0
 offset_bottom = 1.0
 grow_horizontal = 1
 grow_vertical = 1

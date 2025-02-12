@@ -1,6 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=4 format=3 uid="uid://c1a37fna0vit6"]
+
+[ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_edt42"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]
+texture = ExtResource("1_edt42")
+modulate_color = Color(0.953795, 0.393453, 0.15884, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfrpy"]
 bg_color = Color(0.618812, 0.409947, 0.00499039, 1)
@@ -54,4 +58,4 @@ size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_cfrpy")
-text = "start"
+text = "quit"

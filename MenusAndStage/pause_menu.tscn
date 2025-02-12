@@ -1,4 +1,9 @@
-[gd_scene format=3 uid="uid://bye0kl3ssmad3"]
+[gd_scene load_steps=3 format=3 uid="uid://bye0kl3ssmad3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3e3ng"]
+expand_margin_top = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_so8bx"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -11,7 +16,7 @@ grow_vertical = 2
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
 offset_top = -1.0
-offset_right = 138.0
+offset_right = 294.0
 offset_bottom = 152.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
@@ -19,8 +24,10 @@ layout_mode = 2
 
 [node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_3e3ng")
 text = "Resume"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_so8bx")
 text = "Quit"

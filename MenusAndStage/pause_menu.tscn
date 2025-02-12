@@ -1,9 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://bye0kl3ssmad3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3e3ng"]
-expand_margin_top = 1.0
+bg_color = Color(0.71848, 0.574621, 0.344424, 1)
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_so8bx"]
+bg_color = Color(0.717647, 0.576471, 0.345098, 1)
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -18,9 +27,12 @@ layout_mode = 0
 offset_top = -1.0
 offset_right = 294.0
 offset_bottom = 152.0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_bottom = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+theme_override_constants/separation = 60
 
 [node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

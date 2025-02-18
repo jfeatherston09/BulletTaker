@@ -2045,6 +2045,7 @@ z_index = 1
 shape = SubResource("CircleShape2D_pc6ti")
 
 [node name="pause_menu" parent="." instance=ExtResource("13_l33qt")]
+visible = false
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0

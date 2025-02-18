@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1clxpp1ex551"]
+
+[ext_resource type="Texture2D" uid="uid://s3crmn15gr2c" path="res://Entities/Power_Up/P_U_Sprites/Blue_Power.png" id="1_f3kjw"]
+[ext_resource type="Script" path="res://Entities/big_bullet.gd" id="1_teu76"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cwby0"]
+radius = 28.0
+
+[node name="BigBullet" type="CharacterBody2D"]
+script = ExtResource("1_teu76")
+
+[node name="BluePower" type="Sprite2D" parent="."]
+position = Vector2(219.05, 28.8762)
+scale = Vector2(-3.32667, 3.05788)
+texture = ExtResource("1_f3kjw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(218, 29)
+shape = SubResource("CircleShape2D_cwby0")

@@ -1899,6 +1899,18 @@ offset_bottom = 665.0
 scale = Vector2(0.998584, 0.490618)
 color = Color(0, 0, 0, 1)
 
+[node name="pause_menu" parent="Camera2D" instance=ExtResource("13_l33qt")]
+visible = false
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -128.252
+offset_top = 19.1776
+offset_right = -128.252
+offset_bottom = 19.1776
+grow_horizontal = 1
+grow_vertical = 1
+
 [node name="Ground" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD2//r/AQABAAQAAAD+//r/AQADAAQAAAD2/wUAAQABAAYAAAD+/wUAAQADAAYAAAD+//v/AQADAAUAAAD+//z/AQADAAUAAAD+//3/AQADAAUAAAD+//7/AQADAAUAAAD+////AQADAAUAAAD+/wAAAQADAAUAAAD+/wEAAQADAAUAAAD+/wIAAQADAAUAAAD+/wMAAQADAAUAAAD+/wQAAQADAAUAAAD3//r/AQACAAQAAAD4//r/AQACAAQAAAD5//r/AQACAAQAAAD6//r/AQACAAQAAAD7//r/AQACAAQAAAD8//r/AQACAAQAAAD9//r/AQACAAQAAAD2//v/AQABAAUAAAD2//z/AQABAAUAAAD2//3/AQABAAUAAAD2//7/AQABAAUAAAD2////AQABAAUAAAD2/wAAAQABAAUAAAD2/wEAAQABAAUAAAD2/wIAAQABAAUAAAD2/wMAAQABAAUAAAD2/wQAAQABAAUAAAD3/wUAAQACAAYAAAD4/wUAAQACAAYAAAD5/wUAAQACAAYAAAD6/wUAAQACAAYAAAD7/wUAAQACAAYAAAD8/wUAAQACAAYAAAD9/wUAAQACAAYAAAD3//v/AQACAAUAAAD3//z/AQACAAUAAAD3//3/AQACAAUAAAD3//7/AQACAAUAAAD3////AQACAAUAAAD3/wAAAQACAAUAAAD3/wEAAQACAAUAAAD3/wIAAQACAAUAAAD3/wMAAQACAAUAAAD3/wQAAQACAAUAAAD4/wQAAQACAAUAAAD5/wQAAQACAAUAAAD6/wQAAQACAAUAAAD7/wQAAQACAAUAAAD8/wQAAQACAAUAAAD9/wQAAQACAAUAAAD9/wMAAQACAAUAAAD9/wIAAQACAAUAAAD9/wEAAQACAAUAAAD9/wAAAQACAAUAAAD9////AQACAAUAAAD9//7/AQACAAUAAAD9//3/AQACAAUAAAD9//z/AQACAAUAAAD9//v/AQACAAUAAAD8//v/AQACAAUAAAD7//v/AQACAAUAAAD6//v/AQACAAUAAAD5//v/AQACAAUAAAD4//v/AQACAAUAAAD4//z/AQACAAUAAAD4//3/AQACAAUAAAD4//7/AQACAAUAAAD4////AQACAAUAAAD4/wAAAQACAAUAAAD4/wEAAQACAAUAAAD4/wIAAQACAAUAAAD4/wMAAQACAAUAAAD5/wMAAQACAAUAAAD6/wMAAQACAAUAAAD7/wMAAQACAAUAAAD8/wMAAQACAAUAAAD8/wIAAQACAAUAAAD8/wEAAQACAAUAAAD8/wAAAQACAAUAAAD8////AQACAAUAAAD8//7/AQACAAUAAAD8//3/AQACAAUAAAD8//z/AQACAAUAAAD7//z/AQACAAUAAAD6//z/AQACAAUAAAD5//z/AQACAAUAAAD5//3/AQACAAUAAAD5//7/AQACAAUAAAD5////AQACAAUAAAD5/wAAAQACAAUAAAD5/wEAAQACAAUAAAD5/wIAAQACAAUAAAD6/wIAAQACAAUAAAD7/wIAAQACAAUAAAD7/wEAAQACAAUAAAD7/wAAAQACAAUAAAD7////AQACAAUAAAD7//7/AQACAAUAAAD7//3/AQACAAUAAAD6//3/AQACAAUAAAD6//7/AQACAAUAAAD6////AQACAAUAAAD6/wAAAQACAAUAAAD6/wEAAQACAAUAAAA=")
 tile_set = SubResource("TileSet_ajg60")
@@ -1933,6 +1945,13 @@ texture = ExtResource("1_bfjpa")
 script = ExtResource("2_vc7d3")
 inputName = "p1_l2"
 
+[node name="p1_x" type="Sprite2D" parent="p1_inputs/p1_l2"]
+position = Vector2(165.075, -37.261)
+scale = Vector2(1, 1)
+texture = ExtResource("5_jx8qi")
+script = ExtResource("2_vc7d3")
+inputName = "p1_x"
+
 [node name="p1_r1" type="Sprite2D" parent="p1_inputs"]
 position = Vector2(168.419, -131.403)
 texture = ExtResource("1_bfjpa")
@@ -1944,12 +1963,6 @@ position = Vector2(168.419, -43.8011)
 texture = ExtResource("1_bfjpa")
 script = ExtResource("2_vc7d3")
 inputName = "p1_r2"
-
-[node name="p1_x" type="Sprite2D" parent="p1_inputs"]
-position = Vector2(247.014, -87.6022)
-texture = ExtResource("5_jx8qi")
-script = ExtResource("2_vc7d3")
-inputName = "p1_x"
 
 [node name="p1_start" type="Sprite2D" parent="p1_inputs"]
 position = Vector2(247.014, -175.204)
@@ -2043,15 +2056,3 @@ autoplay = "down"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player2"]
 z_index = 1
 shape = SubResource("CircleShape2D_pc6ti")
-
-[node name="pause_menu" parent="." instance=ExtResource("13_l33qt")]
-visible = false
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = -144.0
-offset_top = 24.0
-offset_right = -144.0
-offset_bottom = 24.0
-grow_horizontal = 1
-grow_vertical = 1

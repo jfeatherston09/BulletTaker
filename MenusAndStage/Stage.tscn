@@ -4,8 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://cxgvhfetrbbf1" path="res://Entities/Enemies/E_Scenes/enemy.tscn" id="2_lqwdj"]
 
 [node name="Stage" type="Node2D"]
+position = Vector2(-1, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(10, 10)
 
 [node name="Player" parent="." instance=ExtResource("1_a2e22")]
 
 [node name="Enemy" parent="." instance=ExtResource("2_lqwdj")]
-position = Vector2(0, -58)
+position = Vector2(1, -41)

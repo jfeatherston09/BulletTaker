@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=6 format=3 uid="uid://c1a37fna0vit6"]
 
+[ext_resource type="Script" path="res://Main_menu.gd" id="1_c71t5"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_edt42"]
 [ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://MenusAndStage/8-bitanco.ttf" id="2_1glo1"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]
 texture = ExtResource("1_edt42")
-modulate_color = Color(0.953795, 0.393453, 0.15884, 1)
+modulate_color = Color(0.631373, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfrpy"]
 bg_color = Color(0.618812, 0.409947, 0.00499039, 1)
@@ -20,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_c71t5")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -71,7 +73,11 @@ offset_top = 64.0
 offset_right = 281.0
 offset_bottom = 152.0
 grow_horizontal = 2
+theme_override_colors/font_color = Color(0.843137, 0.207843, 0.00784314, 1)
 theme_override_fonts/font = ExtResource("2_1glo1")
 theme_override_font_sizes/font_size = 60
 text = "Bullet taker"
 horizontal_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_quit_pressed"]

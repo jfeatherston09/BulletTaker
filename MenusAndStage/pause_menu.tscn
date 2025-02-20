@@ -1,18 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bye0kl3ssmad3"]
+[gd_scene load_steps=7 format=3 uid="uid://ilhiegbge3dl"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3e3ng"]
-bg_color = Color(0.71848, 0.574621, 0.344424, 1)
-expand_margin_left = 4.0
-expand_margin_top = 4.0
-expand_margin_right = 4.0
-expand_margin_bottom = 4.0
+[ext_resource type="Script" path="res://MenusAndStage/pause_menu.gd" id="1_62ecx"]
+[ext_resource type="Texture2D" uid="uid://clvrr5ipvuas3" path="res://Sprites/resumeBullet.png" id="2_ca2t6"]
+[ext_resource type="FontFile" uid="uid://unjush45jn26" path="res://doomed-regular.ttf" id="2_qcqs4"]
+[ext_resource type="Texture2D" uid="uid://df1xc86pt6hy" path="res://Sprites/quitBullet.png" id="4_nuldt"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_so8bx"]
-bg_color = Color(0.717647, 0.576471, 0.345098, 1)
-expand_margin_left = 4.0
-expand_margin_top = 4.0
-expand_margin_right = 4.0
-expand_margin_bottom = 4.0
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p783q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ung0u"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -21,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_62ecx")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -36,10 +32,17 @@ theme_override_constants/separation = 60
 
 [node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxFlat_3e3ng")
+theme_override_fonts/font = ExtResource("2_qcqs4")
+theme_override_styles/normal = SubResource("StyleBoxTexture_p783q")
 text = "Resume"
+icon = ExtResource("2_ca2t6")
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxFlat_so8bx")
+theme_override_fonts/font = ExtResource("2_qcqs4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ung0u")
 text = "Quit"
+icon = ExtResource("4_nuldt")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

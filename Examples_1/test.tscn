@@ -1904,10 +1904,10 @@ visible = false
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = -128.252
-offset_top = 19.1776
-offset_right = -128.252
-offset_bottom = 19.1776
+offset_left = 58.7821
+offset_top = -73.5141
+offset_right = 58.7821
+offset_bottom = -73.5141
 grow_horizontal = 1
 grow_vertical = 1
 
@@ -1947,7 +1947,6 @@ inputName = "p1_l2"
 
 [node name="p1_x" type="Sprite2D" parent="p1_inputs/p1_l2"]
 position = Vector2(165.075, -37.261)
-scale = Vector2(1, 1)
 texture = ExtResource("5_jx8qi")
 script = ExtResource("2_vc7d3")
 inputName = "p1_x"

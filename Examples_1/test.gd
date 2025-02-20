@@ -1,11 +1,11 @@
 extends Node2D
 
-@onready var pause_menu = $PauseMenu
+@onready var main = $"."
+@onready var pause_menu = $Camera2D/pause_menu
 var paused = false
 
 func _process(delta):
 	if Input.is_action_just_pressed("pause"):
-		print("")
 		pauseMenu()
 
 func pauseMenu():

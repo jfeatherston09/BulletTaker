@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://blr7wovwoqsas"]
+[gd_scene load_steps=3 format=3 uid="uid://blr7wovwoqsas"]
 
 [ext_resource type="Texture2D" uid="uid://cayyv2lbo7nh6" path="res://Entities/Enemies/E_Bullets/E_B_Sprites/M484BulletCollection1.png" id="1_ovbbo"]
+[ext_resource type="Script" path="res://Entities/Enemies/E_Bullets/E_B_Scripts/e_bullet.gd" id="1_tluk3"]
 
 [node name="E_Bullet" type="Node2D"]
+script = ExtResource("1_tluk3")
 
 [node name="M484BulletCollection1" type="Sprite2D" parent="."]
 scale = Vector2(0.1, 0.1)

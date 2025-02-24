@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=6 format=3 uid="uid://wirriqdjc1q7"]
 
 [ext_resource type="Script" path="res://Main_menu.gd" id="1_c71t5"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_edt42"]

@@ -8,11 +8,13 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	rotate(.05)
-
-	var b = bullet_scene.instance()
+	
+	var b = bullet_scene.instantiate()
+	add_child(b)
 	b.position = self.position
 	b.rotation = self.rotation
-	b.position.x += 100
-	add_child(b)
+
+	
+	get_parent().add_child(b)

@@ -8,4 +8,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	self.position += Vector2(1, 0).rotated(rotation)
 	self.position.x += 1
+#18:30

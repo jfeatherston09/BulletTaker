@@ -16,5 +16,5 @@ func _process(_delta):
 	b.position = self.position
 	b.rotation = self.rotation
 
-	
+	b.position.y += 35
 	get_parent().add_child(b)

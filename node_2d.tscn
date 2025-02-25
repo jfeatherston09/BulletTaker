@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=7 format=3 uid="uid://c1a37fna0vit6"]
 
 [ext_resource type="Script" path="res://Main_menu.gd" id="1_c71t5"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_edt42"]
@@ -10,6 +10,12 @@ modulate_color = Color(0.631373, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfrpy"]
 bg_color = Color(0.618812, 0.409947, 0.00499039, 1)
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+shadow_size = 11
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u0g8a"]
+bg_color = Color(0.619608, 0.411765, 0, 1)
 corner_radius_top_right = 100
 corner_radius_bottom_right = 100
 shadow_size = 11
@@ -55,6 +61,13 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_cfrpy")
 text = "start"
 
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_u0g8a")
+text = "controlles"
+
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -80,4 +93,5 @@ text = "Bullet taker"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_quit_pressed"]

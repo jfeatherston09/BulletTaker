@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cxgvhfetrbbf1"]
 
 [ext_resource type="Texture2D" uid="uid://bq5bjvi4h5tn0" path="res://Entities/Enemies/E_Sprites/Down Sprite.png" id="1_730yc"]
-[ext_resource type="Script" path="res://Entities/Enemies/E_Scenes/enemy.gd" id="1_jwq8b"]
+[ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy.gd" id="1_jwq8b"]
 
 [node name="Enemy" type="Node2D"]
 scale = Vector2(0.5, 0.5)

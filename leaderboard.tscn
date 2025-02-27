@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bfs6s3a60v0yb"]
+
+[node name="Leaderboard" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 285.0
+offset_bottom = 170.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 67.0
+offset_right = 230.0
+offset_bottom = 40.0
+text = "        High Score"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 36.0
+offset_right = 123.0
+offset_bottom = 54.0
+text = "Rank"
+tab_size = 3

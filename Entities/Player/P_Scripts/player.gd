@@ -3,7 +3,7 @@ extends CharacterBody2D
 const SPEED = 600.0
 @onready var sprite : AnimatedSprite2D = $AnimatedSprite2D
 @export var playerId : int = 0
-
+var type = "PLAYER"
 func _physics_process(_delta):
 
 	# Get the input direction and handle the movement/deceleration.

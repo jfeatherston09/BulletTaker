@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://c25byj3dsynob" path="res://Examples_1/textures/buttonTexture4.tres" id="5_jx8qi"]
 [ext_resource type="Texture2D" uid="uid://cgnc8uulr8fo8" path="res://Examples_1/textures/buttonTexture5.tres" id="6_stdkr"]
 [ext_resource type="Texture2D" uid="uid://cl8tarjpalyvf" path="res://Examples_1/assets/monster_raptor1.png" id="10_h721g"]
-[ext_resource type="PackedScene" uid="uid://ilhiegbge3dl" path="res://MenusAndStage/pause_menu.tscn" id="13_l33qt"]
+[ext_resource type="PackedScene" path="res://MenusAndStage/pause_menu.tscn" id="13_l33qt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n2ohr"]
 texture = ExtResource("1_2nhuo")

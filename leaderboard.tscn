@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://bueqp2nbqujb6"]
+
+[node name="Leaderboard" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 76.0
+offset_right = 781.0
+offset_bottom = 326.0
+theme_override_font_sizes/normal_font_size = 80
+text = "Rank"
+tab_size = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.001
+offset_left = 660.0
+offset_top = 23.0
+offset_right = 1367.0
+offset_bottom = 169.92
+theme_override_font_sizes/normal_font_size = 100
+text = "Highscore"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 369.0
+offset_top = 203.0
+offset_right = -1430.0
+offset_bottom = -788.0
+theme_override_font_sizes/normal_font_size = 45
+text = "1st"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 284.0
+offset_right = 519.0
+offset_bottom = 379.0
+theme_override_font_sizes/normal_font_size = 45
+text = "2nd"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 375.0
+offset_right = 555.0
+offset_bottom = 482.0
+theme_override_font_sizes/normal_font_size = 45
+text = "3rd"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 466.0
+offset_right = 498.0
+offset_bottom = 529.0
+theme_override_font_sizes/normal_font_size = 45
+text = "4th"
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.175
+offset_left = 366.0
+offset_top = 541.0
+offset_right = -1425.0
+offset_bottom = -661.0
+theme_override_font_sizes/normal_font_size = 45
+text = "5th"
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 367.0
+offset_top = 626.0
+offset_right = -1435.0
+offset_bottom = -381.0
+theme_override_font_sizes/normal_font_size = 45
+text = "6th"
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 363.0
+offset_top = 714.0
+offset_right = 460.0
+offset_bottom = 792.0
+theme_override_font_sizes/normal_font_size = 45
+text = "7th"
+
+[node name="RichTextLabel10" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 363.0
+offset_top = 802.0
+offset_right = -1416.0
+offset_bottom = -177.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 45
+text = "8th"
+
+[node name="RichTextLabel11" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 363.0
+offset_top = 888.0
+offset_right = -1368.0
+offset_bottom = -114.0
+theme_override_font_sizes/normal_font_size = 45
+text = "9th"
+
+[node name="RichTextLabel12" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 966.0
+offset_right = 491.0
+offset_bottom = 1040.0
+theme_override_font_sizes/normal_font_size = 45
+text = "10th"

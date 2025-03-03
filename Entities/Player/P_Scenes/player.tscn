@@ -20,6 +20,6 @@ texture = ExtResource("1_sxi68")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CapsuleShape2D_f4o83")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="Sprite2D2" type="Sprite2D" parent="CharacterBody2D"]
 modulate = Color(1, 0.347475, 0.495129, 1)
 texture = ExtResource("1_sxi68")

@@ -14,4 +14,4 @@ func _process(delta):
 	self.position += dir.rotated(rotation)
 	
 	if ($RayCast2D.collide_with_bodies):
-		print("Hit!")
+		pass

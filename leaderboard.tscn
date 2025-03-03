@@ -6,7 +6,7 @@
 offset_right = 1920.0
 offset_bottom = 1080.0
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="Panel"]
+[node name="Rank" type="RichTextLabel" parent="Panel"]
 layout_mode = 0
 offset_left = 317.0
 offset_top = 76.0
@@ -16,18 +16,18 @@ theme_override_font_sizes/normal_font_size = 80
 text = "Rank"
 tab_size = 3
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+[node name="Highscore" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_bottom = 0.001
-offset_left = 660.0
-offset_top = 23.0
-offset_right = 1367.0
-offset_bottom = 169.92
+offset_left = 646.0
+offset_top = -9.0
+offset_right = 1353.0
+offset_bottom = 137.92
 theme_override_font_sizes/normal_font_size = 100
 text = "Highscore"
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="Panel"]
+[node name="1st" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -39,7 +39,7 @@ offset_bottom = -788.0
 theme_override_font_sizes/normal_font_size = 45
 text = "1st"
 
-[node name="RichTextLabel4" type="RichTextLabel" parent="Panel"]
+[node name="2nd" type="RichTextLabel" parent="Panel"]
 layout_mode = 0
 offset_left = 369.0
 offset_top = 284.0
@@ -48,7 +48,7 @@ offset_bottom = 379.0
 theme_override_font_sizes/normal_font_size = 45
 text = "2nd"
 
-[node name="RichTextLabel5" type="RichTextLabel" parent="Panel"]
+[node name="3rd" type="RichTextLabel" parent="Panel"]
 layout_mode = 0
 offset_left = 369.0
 offset_top = 375.0
@@ -57,7 +57,7 @@ offset_bottom = 482.0
 theme_override_font_sizes/normal_font_size = 45
 text = "3rd"
 
-[node name="RichTextLabel6" type="RichTextLabel" parent="Panel"]
+[node name="4th" type="RichTextLabel" parent="Panel"]
 layout_mode = 0
 offset_left = 369.0
 offset_top = 466.0
@@ -66,7 +66,7 @@ offset_bottom = 529.0
 theme_override_font_sizes/normal_font_size = 45
 text = "4th"
 
-[node name="RichTextLabel7" type="RichTextLabel" parent="Panel"]
+[node name="5th" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -78,7 +78,7 @@ offset_bottom = -661.0
 theme_override_font_sizes/normal_font_size = 45
 text = "5th"
 
-[node name="RichTextLabel8" type="RichTextLabel" parent="Panel"]
+[node name="6th" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -90,7 +90,7 @@ offset_bottom = -381.0
 theme_override_font_sizes/normal_font_size = 45
 text = "6th"
 
-[node name="RichTextLabel9" type="RichTextLabel" parent="Panel"]
+[node name="7th" type="RichTextLabel" parent="Panel"]
 layout_mode = 0
 offset_left = 363.0
 offset_top = 714.0
@@ -99,7 +99,7 @@ offset_bottom = 792.0
 theme_override_font_sizes/normal_font_size = 45
 text = "7th"
 
-[node name="RichTextLabel10" type="RichTextLabel" parent="Panel"]
+[node name="8th" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -113,7 +113,7 @@ grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 45
 text = "8th"
 
-[node name="RichTextLabel11" type="RichTextLabel" parent="Panel"]
+[node name="9th" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -125,7 +125,7 @@ offset_bottom = -114.0
 theme_override_font_sizes/normal_font_size = 45
 text = "9th"
 
-[node name="RichTextLabel12" type="RichTextLabel" parent="Panel"]
+[node name="10th" type="RichTextLabel" parent="Panel"]
 layout_mode = 0
 offset_left = 356.0
 offset_top = 966.0
@@ -133,3 +133,31 @@ offset_right = 491.0
 offset_bottom = 1040.0
 theme_override_font_sizes/normal_font_size = 45
 text = "10th"
+
+[node name="Name" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 699.0
+offset_top = 153.0
+offset_right = -967.0
+offset_bottom = -817.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 65
+text = "Name"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1081.0
+offset_top = 156.0
+offset_right = -584.0
+offset_bottom = -817.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 65
+text = "Score"

@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cbct2a14ky47r"]
+[gd_scene load_steps=2 format=3 uid="uid://cbct2a14ky47r"]
+
+[ext_resource type="Script" path="res://underscore.gd" id="1_87yw6"]
 
 [node name="DeathScreen" type="Node2D"]
 
@@ -30,6 +32,7 @@ offset_right = -1024.0
 offset_bottom = -708.0
 theme_override_font_sizes/normal_font_size = 100
 text = "_"
+script = ExtResource("1_87yw6")
 
 [node name="Underscore2" type="RichTextLabel" parent="Panel"]
 layout_mode = 1

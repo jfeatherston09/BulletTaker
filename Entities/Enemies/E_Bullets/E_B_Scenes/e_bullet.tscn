@@ -1,15 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://blr7wovwoqsas"]
 
-[ext_resource type="Texture2D" uid="uid://cayyv2lbo7nh6" path="res://Entities/Enemies/E_Bullets/E_B_Sprites/M484BulletCollection1.png" id="1_ovbbo"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Bullets/E_B_Scripts/e_bullet.gd" id="1_tluk3"]
+[ext_resource type="Texture2D" uid="uid://dlbv7hif8gg7o" path="res://Entities/Enemies/E_Bullets/E_B_Sprites/Enemy_Bullet_Sprite.png" id="2_draup"]
 
 [node name="E_Bullet" type="Node2D"]
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.15, 0.15)
 script = ExtResource("1_tluk3")
 
-[node name="M484BulletCollection1" type="Sprite2D" parent="."]
-texture = ExtResource("1_ovbbo")
+[node name="EnemyBulletSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_draup")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(-10, -9.53674e-07)
-target_position = Vector2(20, 9.53674e-07)
+position = Vector2(-6.66667, -6.66667)
+target_position = Vector2(13.3333, 13.3333)

@@ -8,14 +8,15 @@
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)
-position = Vector2(-1.99999, 0.500002)
-scale = Vector2(0.450893, 0.135817)
+position = Vector2(0, 0.5)
+scale = Vector2(0.866, 0.266)
 texture = ExtResource("1_jo2ot")
 
 [node name="Player" parent="." instance=ExtResource("1_a2e22")]
+position = Vector2(9, 32)
 
 [node name="Enemy" parent="." instance=ExtResource("2_lqwdj")]
 position = Vector2(0, -36)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(10, 10)
+zoom = Vector2(5, 5)

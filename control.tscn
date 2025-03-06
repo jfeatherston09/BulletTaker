@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3la4eidx2172"]
+
+[ext_resource type="Script" path="res://control.gd" id="1_joye4"]
+[ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_utska"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bagds"]
+texture = ExtResource("1_utska")
+modulate_color = Color(0.313033, 0, 0.017739, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1yqd"]
+bg_color = Color(0.639404, 0.239171, 0.0917998, 1)
+corner_radius_top_left = 70
+corner_radius_bottom_left = 70
+corner_detail = 2
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_joye4")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_bagds")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.831481
+anchor_right = 0.325
+anchor_bottom = 0.865741
+offset_top = -8.0
+offset_right = 8.0
+grow_vertical = 0
+scale = Vector2(0.909764, 3.83946)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1yqd")
+text = "back"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1912.0
+offset_bottom = 878.0
+theme_override_font_sizes/font_size = 34
+text = "JOYSTICK DIRECTIONS - Move the player in the respective direction.
+
+B BUTTON - Shoots your gun. 
+Once if pressed. Continuously if held. Also used to select the options on the main menu
+
+A BUTTON - Uses the power up that the player has collected.
+
+X BUTTON - Pauses and unpauses the game.
+
+L2 BUTTON - Makes the player dash which gives temporary invincible frames.
+"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

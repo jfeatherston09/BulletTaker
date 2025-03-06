@@ -6,13 +6,14 @@ var bullet_scene = load("res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.ts
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Timer.set_wait_time(0.005)
+	$Timer.set_wait_time(0.6)
 	$Timer.start()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	rotate(0.15)
+	rotate(0.05)
+	position.x += 0.3
 	
 
 func spawn_bullets():

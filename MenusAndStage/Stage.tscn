@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
-[ext_resource type="PackedScene" uid="uid://cxgvhfetrbbf1" path="res://Entities/Enemies/E_Scenes/enemy.tscn" id="2_lqwdj"]
+[ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
 
 [node name="Stage" type="Node2D"]
 
@@ -15,8 +15,9 @@ texture = ExtResource("1_jo2ot")
 [node name="Player" parent="." instance=ExtResource("1_a2e22")]
 position = Vector2(8.99999, 32)
 
-[node name="Enemy" parent="." instance=ExtResource("2_lqwdj")]
-position = Vector2(0, -36)
-
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(5, 5)
+
+[node name="EnemySpawn" type="Node2D" parent="."]
+position = Vector2(-1, -108)
+script = ExtResource("3_glrh6")

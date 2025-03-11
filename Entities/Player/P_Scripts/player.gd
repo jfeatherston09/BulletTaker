@@ -1,14 +1,14 @@
 extends CharacterBody2D
 
-export (int) var speed = 200
-export (int) var start_hp : int = 3
-onready var hp := start_hp
+@export var speed = 200
+@export var start_hp : int = 3
+@onready var hp := start_hp
 var can_take_damage = true
-onready var animation_player := $AnimationPlayer
+@onready var animation_player := $AnimationPlayer
 
-export (bool) var clamp_to_window_borders = true
-onready var screen_borders = Vector2(
-	ProjectSettings.get_setting("display/window/size/height")
+@export var clamp_to_window_borders = true
+@onready var screen_borders = Vector2(
+	ProjectSettings.get_setting("display/window/size/height"),
 	ProjectSettings.get_setting("display/window/size/width")
 )
 
@@ -21,4 +21,18 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity * speed)
 
 	if clamp_to_window_borders:
-		position = Vector
+		global_position = Vector2(clamp(position.x, 0, screen_borders.x), clamp(position.y, 0, screen_borders.y))
+
+func take_damage():
+	if (can_take_damage):
+		can_take_damage = false
+		hp -= 1
+		animation_player.play("Hit")
+
+	else:
+		return
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	if anim_name == "Hit"
+		can_take_damage = true

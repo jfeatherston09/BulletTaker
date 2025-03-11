@@ -1,6 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://3x7yq7ov2ct5"]
+[gd_scene load_steps=8 format=3 uid="uid://3x7yq7ov2ct5"]
 
 [ext_resource type="Texture2D" uid="uid://bco5ejrcc5bj1" path="res://Entities/Player/P_Sprites/SleekBars.png" id="1_3ij3d"]
+[ext_resource type="Texture2D" uid="uid://dj6xg5cpke2am" path="res://Entities/Player/P_Sprites/text-fast-flip-ezgif.com-gif-to-sprite-converter.png" id="2_c42lg"]
+[ext_resource type="Texture2D" uid="uid://25s7gjb0k50w" path="res://Entities/Player/P_Sprites/bullets_amo.png" id="3_dldcn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3mnu2"]
+atlas = ExtResource("2_c42lg")
+region = Rect2(1174, 225, 587, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2v6fp"]
+atlas = ExtResource("2_c42lg")
+region = Rect2(1174, 0, 587, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55ffb"]
+atlas = ExtResource("2_c42lg")
+region = Rect2(1761, 0, 587, 75)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1mpka"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3mnu2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2v6fp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55ffb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
 
 [node name="game hud" type="Control"]
 layout_mode = 3
@@ -19,6 +50,17 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="SleekBars" type="Sprite2D" parent="."]
-position = Vector2(178, 589)
+position = Vector2(171, 1022)
 scale = Vector2(2.53125, 1)
 texture = ExtResource("1_3ij3d")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(124, 47)
+scale = Vector2(0.745315, 1.32667)
+sprite_frames = SubResource("SpriteFrames_1mpka")
+autoplay = "default"
+frame_progress = 0.0690282
+
+[node name="BulletsAmo" type="Sprite2D" parent="."]
+position = Vector2(1738, 1029)
+texture = ExtResource("3_dldcn")

@@ -7,6 +7,7 @@ var enemy_scene = load("res://Entities/Enemies/E_Scenes/enemy.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var enemy = enemy_scene.instantiate()
+	randomize()
 	enemy.position.x = randf_range(-190, 190)
 	enemy.position.y = -107
 	add_child(enemy)

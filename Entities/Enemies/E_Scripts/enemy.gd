@@ -2,16 +2,19 @@ extends Node2D
 
 class_name Enemy
 
-var bullet_scene = load("res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.tscn")
+@onready var bullet_scene = load("res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.tscn")
 
 @onready var player = get_parent().get_parent().get_node("Player")
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Timer.set_wait_time(0.6)
 	$Timer.start()
 
-
+	var target = Vector2(self.position.x, self.position.y + 100)
+	Tween.tween_property(self, "position", position, target, 3, Tween.TRANS_QUINT, Tween.EASE_OUT)
+	Tween.start()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	rotate(1 * delta)

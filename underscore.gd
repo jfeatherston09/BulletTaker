@@ -9,8 +9,4 @@ func _input(event:InputEvent):
     else: 
 
         var JOY_AXIS_TRIGGER_LEFT = 0 
-    if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")):
-
-     pass 
-            
-            
+    

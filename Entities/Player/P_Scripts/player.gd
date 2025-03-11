@@ -1,11 +1,24 @@
 extends CharacterBody2D
 
-@export var speed = 400
+export (int) var speed = 200
+export (int) var start_hp : int = 3
+onready var hp := start_hp
+var can_take_damage = true
+onready var animation_player := $AnimationPlayer
 
-func get_input():
-	var input_direction = Input.get_vector("p1_left", "p1_right", "p1_up", "p1_down")
-	velocity = input_direction * speed
+export (bool) var clamp_to_window_borders = true
+onready var screen_borders = Vector2(
+	ProjectSettings.get_setting("display/window/size/height")
+	ProjectSettings.get_setting("display/window/size/width")
+)
 
 func _physics_process(delta):
-	get_input()
-	move_and_slide()
+	var velocity := Vector2()
+	velocity.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+	velocity.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	velocity = velocity.normalized()
+
+	velocity = move_and_slide(velocity * speed)
+
+	if clamp_to_window_borders:
+		position = Vector

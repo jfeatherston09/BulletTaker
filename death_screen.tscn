@@ -26,13 +26,27 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 785.0
+offset_left = 783.0
 offset_top = 195.0
-offset_right = -1024.0
+offset_right = -1026.0
 offset_bottom = -708.0
 theme_override_font_sizes/normal_font_size = 100
 text = "_"
 script = ExtResource("1_87yw6")
+
+[node name="A" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1491.0
+offset_top = -124.0
+offset_right = 1381.0
+offset_bottom = -312.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 100
+text = "A"
 
 [node name="Underscore2" type="RichTextLabel" parent="Panel"]
 layout_mode = 1

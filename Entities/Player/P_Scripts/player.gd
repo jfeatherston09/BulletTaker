@@ -34,5 +34,5 @@ func take_damage():
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	if anim_name == "Hit"
+	if anim_name == "Hit":
 		can_take_damage = true

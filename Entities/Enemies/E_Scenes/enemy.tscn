@@ -9,3 +9,7 @@ script = ExtResource("1_jwq8b")
 
 [node name="DownSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_730yc")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

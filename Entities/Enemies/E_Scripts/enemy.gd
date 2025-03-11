@@ -2,9 +2,9 @@ extends Node2D
 
 class_name Enemy
 
-@onready var bullet_scene = load("res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.tscn")
+var bullet_scene = load("res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.tscn")
 
-@onready var player = get_parent().get_node("Player")
+@onready var player = get_parent().get_parent().get_node("Player")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,7 +15,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	rotate(1 * delta)
-	position.y += 4 * delta
+	position.y += 50 * delta
 
 func spawn_bullets():
 	var b1 = bullet_scene.instantiate()

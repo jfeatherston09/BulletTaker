@@ -19,5 +19,4 @@ position = Vector2(8.99999, 32)
 zoom = Vector2(5, 5)
 
 [node name="EnemySpawn" type="Node2D" parent="."]
-position = Vector2(-1, -108)
 script = ExtResource("3_glrh6")

@@ -13,8 +13,10 @@ func _ready():
 	$Timer.start()
 
 	var target = Vector2(self.position.x, self.position.y + 100)
-	Tween.tween_property(self, "position", position, target, 3, Tween.TRANS_QUINT, Tween.EASE_OUT)
+	Tween.tween_property(self, "position", Vector2(1, 1), 1)
 	Tween.start()
+##position, target, 3, Tween.TRANS_QUINT, Tween.EASE_OUT
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	rotate(1 * delta)

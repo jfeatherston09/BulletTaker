@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://unjush45jn26"
-path="res://.godot/imported/doomed-regular.ttf-5594a6b356df8d50b426e8e10c383e75.fontdata"
+path="res://.godot/imported/doomed-regular.ttf-4b687ad76461eea669b31e89cec0e0db.fontdata"
 
 [deps]
 
-source_file="res://doomed-regular.ttf"
-dest_files=["res://.godot/imported/doomed-regular.ttf-5594a6b356df8d50b426e8e10c383e75.fontdata"]
+source_file="res://Background/doomed-regular.ttf"
+dest_files=["res://.godot/imported/doomed-regular.ttf-4b687ad76461eea669b31e89cec0e0db.fontdata"]
 
 [params]
 

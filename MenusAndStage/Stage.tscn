@@ -1,22 +1,41 @@
-[gd_scene load_steps=4 format=3 uid="uid://do8nobh607dnm"]
+[gd_scene load_steps=5 format=3 uid="uid://do8nobh607dnm"]
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
-[ext_resource type="PackedScene" uid="uid://cxgvhfetrbbf1" path="res://Entities/Enemies/E_Scenes/enemy.tscn" id="2_lqwdj"]
+[ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
+[ext_resource type="PackedScene" uid="uid://3x7yq7ov2ct5" path="res://MenusAndStage/game_hud.tscn" id="4_0145b"]
 
 [node name="Stage" type="Node2D"]
+position = Vector2(3, -2)
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)
+<<<<<<< HEAD
 position = Vector2(0, 0.5)
 scale = Vector2(0.866, 0.266)
 texture = ExtResource("1_jo2ot")
 
 [node name="Player" parent="." instance=ExtResource("1_a2e22")]
 position = Vector2(9, 32)
+=======
+position = Vector2(-1.99999, 0.500002)
+scale = Vector2(0.450893, 0.135817)
+texture = ExtResource("1_jo2ot")
 
-[node name="Enemy" parent="." instance=ExtResource("2_lqwdj")]
-position = Vector2(0, -36)
+[node name="Player" parent="." instance=ExtResource("1_a2e22")]
+position = Vector2(-38, 69)
+>>>>>>> main
+
+[node name="EnemySpawn" type="Node2D" parent="."]
+script = ExtResource("3_glrh6")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 zoom = Vector2(5, 5)
+
+[node name="game hud" parent="." instance=ExtResource("4_0145b")]
+offset_left = -194.0
+offset_top = -110.0
+offset_right = -194.0
+offset_bottom = -110.0
+scale = Vector2(0.2, 0.2)

@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
-[ext_resource type="PackedScene" uid="uid://3x7yq7ov2ct5" path="res://MenusAndStage/game_hud.tscn" id="4_0145b"]
+[ext_resource type="PackedScene" path="res://MenusAndStage/game_hud.tscn" id="4_0145b"]
 
 [node name="Stage" type="Node2D"]
 

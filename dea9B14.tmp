@@ -1,0 +1,118 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbct2a14ky47r"]
+
+[ext_resource type="Script" path="res://underscore.gd" id="1_87yw6"]
+[ext_resource type="Script" path="res://a.gd" id="2_77y1d"]
+[ext_resource type="Script" path="res://b.gd" id="3_dw7qa"]
+[ext_resource type="Script" path="res://c.gd" id="4_lqse4"]
+[ext_resource type="Script" path="res://d.gd" id="5_7p6ka"]
+[ext_resource type="Script" path="res://e.gd" id="6_1io3d"]
+
+[node name="DeathScreen" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_top = -11.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="PEYN" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 427.0
+offset_top = 21.0
+offset_right = -297.0
+offset_bottom = -837.0
+theme_override_font_sizes/normal_font_size = 90
+text = "Please Enter Your Name"
+
+[node name="Underscore" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 783.0
+offset_top = 195.0
+offset_right = -1026.0
+offset_bottom = -708.0
+theme_override_font_sizes/normal_font_size = 100
+text = "_"
+script = ExtResource("1_87yw6")
+
+[node name="A" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.973
+anchor_top = -1.0
+anchor_right = 12.327
+anchor_bottom = 6.085
+offset_left = 2236.0
+offset_top = 375.0
+offset_right = 37.7029
+offset_bottom = -805.98
+theme_override_font_sizes/normal_font_size = 60
+text = "A"
+script = ExtResource("2_77y1d")
+
+[node name="B" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 0
+offset_left = 1201.0
+offset_top = -121.0
+offset_right = 1592.0
+offset_bottom = 195.0
+theme_override_font_sizes/normal_font_size = 60
+text = " B"
+script = ExtResource("3_dw7qa")
+
+[node name="C" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 0
+offset_left = -984.0
+offset_top = 42.0
+offset_right = -803.0
+offset_bottom = 209.0
+theme_override_font_sizes/normal_font_size = 60
+text = "C"
+script = ExtResource("4_lqse4")
+
+[node name="D" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 0
+offset_left = 929.0
+offset_top = -413.0
+offset_right = 1062.0
+offset_bottom = -292.0
+theme_override_font_sizes/normal_font_size = 60
+text = "D"
+script = ExtResource("5_7p6ka")
+
+[node name="E" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 0
+offset_left = 1493.0
+offset_right = 1633.0
+offset_bottom = 111.0
+theme_override_font_sizes/normal_font_size = 60
+text = "E"
+script = ExtResource("6_1io3d")
+
+[node name="Underscore2" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 862.0
+offset_top = 196.0
+offset_right = -947.0
+offset_bottom = -707.0
+theme_override_font_sizes/normal_font_size = 100
+text = "_"
+
+[node name="Underscore3" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 940.0
+offset_top = 196.0
+offset_right = -869.0
+offset_bottom = -707.0
+theme_override_font_sizes/normal_font_size = 100
+text = "_"

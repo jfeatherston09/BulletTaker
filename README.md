@@ -4,47 +4,49 @@
 # jfeatherston09:
 ## BIG PICTURE ITEMS:
 
-ImTheRealIndianGuy:
-BIG PICTURE ITEMS:
+# ImTheRealIndianGuy:
+## BIG PICTURE ITEMS:
 
-zoomtroopo:
-BIG PICTURE ITEMS:
+# zoomtroopo:
+## BIG PICTURE ITEMS:
 
-Description:
+# Description:
 
 
-Instructions (How to test each of the chosen features and where to find the related scenes and scripts for each feature):
-Combat:
+# Instructions (How to test each of the chosen features and where to find the related scenes and scripts for each feature):
+## Combat:
 
-Power-Ups:
+## Power-Ups:
 
-Enemies:
+## Enemies:
 
-Movement and Collision:
+## Movement and Collision:
 
-Tilemap:
+## Tilemap:
 
-UI & ARCADE FEATURES:
-Main Menu:
+## UI & ARCADE FEATURES:
+### Main Menu:
 
-Game HUD:
+### Game HUD:
 
-Pause Menu:
+### Pause Menu:
 
-Input Mapping:
+### Input Mapping:
 
-Player Interaction:
+### Player Interaction:
 
-Instructions (Where to find examples of each OOP concept and Godot feature)
-Inheritance:
+# Instructions (Where to find examples of each OOP concept and Godot feature)
+## Inheritance:
 
-Encapsulation:
+## Encapsulation:
 
-Polymorphism:
+## Polymorphism:
 
-Abstraction:
+## Abstraction:
 
-Godot Features:
-Node Types:
+# Godot Features:
+## Node Types:
 
-Scenes:
+## Signals:
+
+## Scenes:

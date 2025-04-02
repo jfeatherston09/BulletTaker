@@ -15,7 +15,7 @@ func _ready():
 	var target = Vector2(self.position.x, self.position.y + 100)
 	var tween = create_tween()
 	for sprite in get_children():
-		tween.tween_property(self, "position", Vector2(0, 0), 1)
+		tween.tween_property(self, "position", Vector2(5, 5), 5)
 
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.

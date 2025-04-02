@@ -7,7 +7,7 @@
 script = ExtResource("1_qnmmp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(269, 171)
+position = Vector2(269, 171.008)
 rotation = -3.14224
-scale = Vector2(0.826615, 0.818828)
+scale = Vector2(0.826615, 0.818892)
 texture = ExtResource("2_ggpk5")

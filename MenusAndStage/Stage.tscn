@@ -6,11 +6,12 @@
 [ext_resource type="PackedScene" path="res://MenusAndStage/game_hud.tscn" id="4_0145b"]
 
 [node name="Stage" type="Node2D"]
+position = Vector2(4, -3)
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)
-position = Vector2(2.02656e-06, 0.500001)
-scale = Vector2(0.866072, 0.265625)
+position = Vector2(-2, -6.50001)
+scale = Vector2(0.866071, 0.277644)
 texture = ExtResource("1_jo2ot")
 
 [node name="Player" parent="." instance=ExtResource("1_a2e22")]

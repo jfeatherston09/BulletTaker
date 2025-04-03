@@ -8,9 +8,8 @@ class_name Enemy
 
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	$Timer.set_wait_time(0.6)
-	$Timer.start()
+func _ready() -> void:
+	pass # Replace with function body.
 
 	var target = Vector2(self.position.x, self.position.y + 100)
 	var tween = create_tween()
@@ -24,17 +23,5 @@ func _process(delta):
 	rotate(1 * delta)
 	position.y += 50 * delta
 
-func spawn_bullets():
-	var b1 = bullet_scene.instantiate()
-	#add_child(b1)
-	b1.position = self.position
-	b1.dir = Vector2(player.position.x - self.position.x, player.position.y - self.position.y).normalized()
-	
-	#b1.position.y += 35
-	#b2.position.y += 35
-	get_parent().add_child(b1)
-
-
-###timeout():
-func _on_timer_timeout():
-	spawn_bullets()
+	b.position.y += 35
+	get_parent().add_child(b)

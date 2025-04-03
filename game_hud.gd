@@ -1,7 +1,5 @@
 extends Control
-var H = health bar
-var S = specil bar
-var SB = stamna bar
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

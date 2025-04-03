@@ -6,6 +6,9 @@ const SPEED = 100.0
 @onready var sprite : AnimatedSprite2D = $AnimatedSprite2D
 @export var playerId : int = 0
 
+@export var maxHealth = 200
+@onready var currentHealth: int = maxHealth
+
 func _physics_process(_delta):
 
 	# Get the input direction and handle the movement/deceleration.

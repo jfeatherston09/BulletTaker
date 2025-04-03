@@ -12,27 +12,27 @@ func _ready():
 	$Timer.set_wait_time(0.6)
 	$Timer.start()
 
-	var target = Vector2(self.position.x, self.position.y + 100)
+	var target = Vector2(self.position.x, self.position.y)
 	var tween = create_tween()
 	for sprite in get_children():
-		tween.tween_property(sprite, "position", target, 1)
-
+		tween.tween_property(sprite, "done", target, 1)
+		
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	
-	rotate(1 * delta)
+	#rotate(1 * delta)
 	position.y += 50 * delta
-
+	
 func spawn_bullets():
 	var b1 = bullet_scene.instantiate()
 	#add_child(b1)
 	b1.position = self.position
 	b1.dir = Vector2(player.position.x - self.position.x, player.position.y - self.position.y).normalized()
-	
 	#b1.position.y += 35
 	#b2.position.y += 35
 	get_parent().add_child(b1)
+	
 
 
 ###timeout():

@@ -12,12 +12,14 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 	var target = Vector2(self.position.x, self.position.y + 100)
-	#Tween.tween_property(self, "position", Vector2(1, 1), 1)
-	#Tween.start()
-##position, target, 3, Tween.TRANS_QUINT, Tween.EASE_OUT
+	var tween = create_tween()
+	for sprite in get_children():
+		tween.tween_property(sprite, "position", target, 1)
+
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	
 	rotate(1 * delta)
 	position.y += 50 * delta
 

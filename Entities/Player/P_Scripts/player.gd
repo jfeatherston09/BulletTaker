@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-class_name Player
+@export var speed = 50
 
 const SPEED = 100.0
 @onready var sprite : AnimatedSprite2D = $AnimatedSprite2D
@@ -28,5 +28,10 @@ func _physics_process(_delta):
 		velocity.y = vDirection * SPEED
 	else:
 		velocity.y = move_toward(velocity.y, 0, SPEED)
+func get_input():
+	var input_direction = Input.get_vector("p1_left", "p1_right", "p1_up", "p1_down")
+	velocity = input_direction * speed
 
+func _physics_process(delta):
+	get_input()
 	move_and_slide()

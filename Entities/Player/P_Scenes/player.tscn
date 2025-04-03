@@ -9,7 +9,6 @@ height = 50.0
 
 [node name="Player" type="Node2D"]
 position = Vector2(-1.19209e-07, 1.19209e-07)
-scale = Vector2(0.2, 0.2)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_rp0hv")
@@ -19,5 +18,4 @@ shape = SubResource("CapsuleShape2D_f4o83")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 modulate = Color(1, 0.347475, 0.495129, 1)
-scale = Vector2(1, 1)
 texture = ExtResource("1_sxi68")

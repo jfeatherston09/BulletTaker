@@ -6,27 +6,25 @@
 [ext_resource type="PackedScene" uid="uid://3x7yq7ov2ct5" path="res://MenusAndStage/game_hud.tscn" id="4_0145b"]
 
 [node name="Stage" type="Node2D"]
-position = Vector2(4, -3)
+position = Vector2(217, 119)
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)
-position = Vector2(-2, -6.50001)
-scale = Vector2(0.866071, 0.277644)
+position = Vector2(754.5, 427.5)
+scale = Vector2(4.33705, 1.32091)
 texture = ExtResource("1_jo2ot")
 
 [node name="Player" parent="." instance=ExtResource("1_a2e22")]
-position = Vector2(-38, 69)
+position = Vector2(720, 722)
 
 [node name="EnemySpawn" type="Node2D" parent="."]
+position = Vector2(683, -111)
 script = ExtResource("3_glrh6")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-visible = false
-zoom = Vector2(5, 5)
-
 [node name="game hud" parent="." instance=ExtResource("4_0145b")]
-offset_left = -194.0
-offset_top = -110.0
-offset_right = -194.0
-offset_bottom = -110.0
-scale = Vector2(0.2, 0.2)
+offset_left = -149.0
+offset_top = -44.0
+offset_right = -149.0
+offset_bottom = -44.0
+scale = Vector2(0.9, 0.9)
+metadata/_edit_use_anchors_ = true

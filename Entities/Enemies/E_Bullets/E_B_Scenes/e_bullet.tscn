@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dlbv7hif8gg7o" path="res://Entities/Enemies/E_Bullets/E_B_Sprites/Enemy_Bullet_Sprite.png" id="2_draup"]
 
 [node name="E_Bullet" type="Node2D"]
-scale = Vector2(0.15, 0.15)
+scale = Vector2(2, 2)
 script = ExtResource("1_tluk3")
 bullet_speed = 300
 

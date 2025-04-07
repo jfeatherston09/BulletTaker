@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3wmwc6nbys8c"]
+[gd_scene load_steps=7 format=3 uid="uid://c3wmwc6nbys8c"]
 
 [ext_resource type="Texture2D" uid="uid://bco5ejrcc5bj1" path="res://Entities/Player/P_Sprites/SleekBars.png" id="1_grrdy"]
+[ext_resource type="Script" path="res://gui_v_2.gd" id="1_l5p4l"]
 [ext_resource type="Texture2D" uid="uid://25s7gjb0k50w" path="res://Entities/Player/P_Sprites/bullets_amo.png" id="2_juqvl"]
+[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://MenusAndStage/8-bitanco.ttf" id="4_k7ia8"]
+[ext_resource type="Script" path="res://score_label.gd" id="5_bwta4"]
+
+[sub_resource type="Theme" id="Theme_hs3vv"]
+default_font = ExtResource("4_k7ia8")
 
 [node name="PanelContainer" type="PanelContainer"]
 anchors_preset = -1
@@ -16,6 +22,7 @@ offset_bottom = 519.608
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_stretch_ratio = 0.0
+script = ExtResource("1_l5p4l")
 
 [node name="SleekBars" type="Sprite2D" parent="."]
 position = Vector2(376, 1095)
@@ -25,3 +32,18 @@ texture = ExtResource("1_grrdy")
 [node name="BulletsAmo" type="Sprite2D" parent="."]
 position = Vector2(1932, 1129)
 texture = ExtResource("2_juqvl")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+theme = SubResource("Theme_hs3vv")
+
+[node name="ScoreLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 207.0
+offset_top = 162.0
+offset_right = 587.0
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(0.966052, 0.966052, 5.39064e-06, 1)
+theme_override_font_sizes/font_size = 40
+text = "Score: 0"
+script = ExtResource("5_bwta4")

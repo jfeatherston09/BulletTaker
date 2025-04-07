@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=9 format=3 uid="uid://c1a37fna0vit6"]
 
 [ext_resource type="Script" path="res://MenusAndStage/Main_menu_Script.gd" id="1_p52nf"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_c5sbd"]
 [ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://MenusAndStage/8-bitanco.ttf" id="3_ejysj"]
+[ext_resource type="Texture2D" uid="uid://rytrdn47e60a" path="res://Sprites/logoBullet.png" id="4_qesqn"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]
 texture = ExtResource("2_c5sbd")
@@ -19,6 +20,9 @@ bg_color = Color(0.619608, 0.411765, 0, 1)
 corner_radius_top_right = 100
 corner_radius_bottom_right = 100
 shadow_size = 11
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dfj6a"]
+texture = ExtResource("4_qesqn")
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -79,6 +83,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_cfrpy")
 text = "quit"
 
 [node name="Label" type="Label" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -93,7 +98,14 @@ theme_override_fonts/font = ExtResource("3_ejysj")
 theme_override_font_sizes/font_size = 110
 text = "Bullet taker"
 horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 9.59956e+06
+offset_top = 167.0
+offset_right = 9.60046e+06
+offset_bottom = 492.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_dfj6a")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

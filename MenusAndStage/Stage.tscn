@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bs6fv6troemyw" path="res://MenusAndStage/game_hud.tscn" id="4_0145b"]
 
 [node name="Stage" type="Node2D"]
-position = Vector2(4, -3)
+position = Vector2(4, -4)
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)

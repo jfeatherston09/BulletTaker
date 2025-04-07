@@ -1,0 +1,218 @@
+[gd_scene load_steps=14 format=3 uid="uid://cbct2a14ky47r"]
+
+[ext_resource type="Script" path="res://underscore.gd" id="1_87yw6"]
+[ext_resource type="Script" path="res://a.gd" id="2_77y1d"]
+[ext_resource type="Script" path="res://b.gd" id="3_dw7qa"]
+[ext_resource type="Script" path="res://c.gd" id="4_lqse4"]
+[ext_resource type="Script" path="res://d.gd" id="5_7p6ka"]
+[ext_resource type="Script" path="res://e.gd" id="6_1io3d"]
+[ext_resource type="Script" path="res://f.gd" id="7_hqncs"]
+[ext_resource type="Script" path="res://g.gd" id="8_1a3wu"]
+[ext_resource type="Script" path="res://h.gd" id="9_kj284"]
+[ext_resource type="Script" path="res://i.gd" id="10_w1dpk"]
+[ext_resource type="Script" path="res://j.gd" id="11_es2bx"]
+[ext_resource type="Script" path="res://k.gd" id="12_17xbi"]
+[ext_resource type="Script" path="res://l.gd" id="13_g6mhu"]
+
+[node name="DeathScreen" type="Node2D"]
+position = Vector2(0, 12)
+
+[node name="Panel" type="Panel" parent="."]
+offset_top = -11.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="PEYN" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 427.0
+offset_top = 21.0
+offset_right = -297.0
+offset_bottom = -837.0
+theme_override_font_sizes/normal_font_size = 90
+text = "Please Enter Your Name"
+
+[node name="Underscore" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 783.0
+offset_top = 195.0
+offset_right = -1026.0
+offset_bottom = -708.0
+theme_override_font_sizes/normal_font_size = 100
+text = "_"
+script = ExtResource("1_87yw6")
+
+[node name="A" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.973
+anchor_top = -1.0
+anchor_right = 12.327
+anchor_bottom = 6.085
+offset_left = 2236.0
+offset_top = 375.0
+offset_right = 37.7029
+offset_bottom = -805.98
+theme_override_font_sizes/normal_font_size = 60
+text = "A"
+script = ExtResource("2_77y1d")
+
+[node name="B" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 0
+offset_left = 1201.0
+offset_top = -121.0
+offset_right = 1592.0
+offset_bottom = 195.0
+theme_override_font_sizes/normal_font_size = 60
+text = " B"
+script = ExtResource("3_dw7qa")
+
+[node name="C" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 0
+offset_left = -984.0
+offset_top = 42.0
+offset_right = -803.0
+offset_bottom = 209.0
+theme_override_font_sizes/normal_font_size = 60
+text = "C"
+script = ExtResource("4_lqse4")
+
+[node name="D" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 0
+offset_left = 929.0
+offset_top = -413.0
+offset_right = 1062.0
+offset_bottom = -292.0
+theme_override_font_sizes/normal_font_size = 60
+text = "D"
+script = ExtResource("5_7p6ka")
+
+[node name="F" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 10.391
+anchor_bottom = 4.739
+offset_left = 1268.0
+offset_top = -46.0
+offset_right = 210.599
+offset_bottom = -756.932
+theme_override_font_sizes/normal_font_size = 60
+text = "F"
+script = ExtResource("7_hqncs")
+
+[node name="E" type="RichTextLabel" parent="Panel/Underscore/F"]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 46.0
+offset_right = 365.0
+offset_bottom = 157.0
+theme_override_font_sizes/normal_font_size = 60
+text = "E"
+script = ExtResource("6_1io3d")
+
+[node name="G" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 10.272
+anchor_bottom = 5.683
+offset_left = 1227.0
+offset_top = 453.0
+offset_right = 205.808
+offset_bottom = -462.404
+theme_override_font_sizes/normal_font_size = 60
+text = "G"
+script = ExtResource("8_1a3wu")
+
+[node name="H" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 12.459
+anchor_bottom = 6.679
+offset_left = 1441.0
+offset_top = 199.0
+offset_right = 212.051
+offset_bottom = -824.652
+theme_override_font_sizes/normal_font_size = 60
+text = "H"
+script = ExtResource("9_kj284")
+
+[node name="I" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 16.742
+anchor_bottom = 6.879
+offset_left = 1628.0
+offset_top = 66.0
+offset_right = -108.362
+offset_bottom = -1054.25
+theme_override_font_sizes/normal_font_size = 60
+text = "I"
+script = ExtResource("10_w1dpk")
+
+[node name="J" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 15.185
+anchor_bottom = 6.502
+offset_left = 1432.0
+offset_top = -88.0
+offset_right = -56.535
+offset_bottom = -1044.38
+theme_override_font_sizes/normal_font_size = 60
+text = "J"
+script = ExtResource("11_es2bx")
+
+[node name="K" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 19.189
+anchor_bottom = 7.734
+offset_left = 1394.0
+offset_top = -336.0
+offset_right = -575.979
+offset_bottom = -1511.99
+theme_override_font_sizes/normal_font_size = 60
+text = "K"
+script = ExtResource("12_17xbi")
+
+[node name="L" type="RichTextLabel" parent="Panel/Underscore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 22.288
+anchor_bottom = 6.968
+offset_left = 1340.0
+offset_top = -142.0
+offset_right = -969.968
+offset_bottom = -1165.98
+theme_override_font_sizes/normal_font_size = 60
+text = "L"
+script = ExtResource("13_g6mhu")
+
+[node name="Underscore2" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 862.0
+offset_top = 196.0
+offset_right = -947.0
+offset_bottom = -707.0
+theme_override_font_sizes/normal_font_size = 100
+text = "_"
+
+[node name="Underscore3" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 940.0
+offset_top = 196.0
+offset_right = -869.0
+offset_bottom = -707.0
+theme_override_font_sizes/normal_font_size = 100
+text = "_"

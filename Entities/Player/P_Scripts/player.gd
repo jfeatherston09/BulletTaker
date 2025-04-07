@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 class_name Player
-
+var type = "PLAYER"
 @export var speed = 200
 
 func get_input():

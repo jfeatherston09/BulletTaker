@@ -6,16 +6,18 @@ class_name Enemy
 
 @onready var player = get_parent().get_parent().get_node("Player")
 
+var type = "ENEMY"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Timer.set_wait_time(0.6)
+	$Timer.set_wait_time(2)
 	$Timer.start()
 
-	var target = Vector2(self.position.x, self.position.y)
+	var target = Vector2(self.position.x, 100)
 	var tween = create_tween()
 	for sprite in get_children():
-		tween.tween_property(sprite, "posiiton", target, 1)
+		tween.tween_property(sprite, "position", target, 1)
+		tween.start()
 		
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,11 +26,16 @@ func _process(delta):
 	#rotate(1 * delta)
 	position.y += 50 * delta
 	
+	if (position.y > get_viewport_rect().size.y + 20):
+		get_parent().remove_child(self)
+		queue_free()
+
 func spawn_bullets():
 	var b1 = bullet_scene.instantiate()
 	b1.position = self.position
 	b1.dir = Vector2(player.position.x - self.position.x, player.position.y - self.position.y).normalized()
 	get_parent().add_child(b1)
+	b1.bullet_speed = 800
 	
 
 

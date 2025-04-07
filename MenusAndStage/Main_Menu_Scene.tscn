@@ -25,6 +25,7 @@ shadow_size = 11
 texture = ExtResource("4_qesqn")
 
 [node name="main_menu" type="Control"]
+top_level = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -102,9 +103,9 @@ horizontal_alignment = 1
 [node name="Panel2" type="Panel" parent="."]
 layout_mode = 0
 offset_left = 9.59956e+06
-offset_top = 167.0
+offset_top = 65.0
 offset_right = 9.60046e+06
-offset_bottom = 492.0
+offset_bottom = 390.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_dfj6a")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]

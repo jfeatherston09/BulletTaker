@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3wmwc6nbys8c"]
+
+[ext_resource type="Texture2D" uid="uid://bco5ejrcc5bj1" path="res://Entities/Player/P_Sprites/SleekBars.png" id="1_grrdy"]
+[ext_resource type="Texture2D" uid="uid://25s7gjb0k50w" path="res://Entities/Player/P_Sprites/bullets_amo.png" id="2_juqvl"]
+
+[node name="PanelContainer" type="PanelContainer"]
+anchors_preset = -1
+anchor_left = 0.289
+anchor_top = 0.246
+anchor_right = 0.647
+anchor_bottom = 0.604
+offset_left = -753.928
+offset_top = -391.408
+offset_right = 1032.66
+offset_bottom = 519.608
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="SleekBars" type="Sprite2D" parent="."]
+position = Vector2(376, 1095)
+scale = Vector2(2.70508, 1.34896)
+texture = ExtResource("1_grrdy")
+
+[node name="BulletsAmo" type="Sprite2D" parent="."]
+position = Vector2(1932, 1129)
+texture = ExtResource("2_juqvl")

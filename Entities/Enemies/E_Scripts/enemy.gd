@@ -32,11 +32,11 @@ func _process(delta):
 
 func spawn_bullets():
 	var b1 = bullet_scene.instantiate()
+	
+	get_parent().add_child(b1)
+	b1.bullet_speed = 800	
 	b1.position = self.position
 	b1.dir = Vector2(player.position.x - self.position.x, player.position.y - self.position.y).normalized()
-	get_parent().add_child(b1)
-	b1.bullet_speed = 800
-	
 
 
 ###timeout():

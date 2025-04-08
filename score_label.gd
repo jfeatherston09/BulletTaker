@@ -1,3 +1,5 @@
 extends Label
 
-var score = 0
+var high_score = 0
+var current_score: int
+var previous_score: int

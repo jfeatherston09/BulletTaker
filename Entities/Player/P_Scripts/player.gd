@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
-@export var speed = 100
+class_name Player
+var type = "PLAYER"
+@export var speed = 200
 
 const SPEED = 100.0
 @onready var sprite : AnimatedSprite2D = $AnimatedSprite2D

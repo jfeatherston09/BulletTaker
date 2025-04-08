@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=9 format=3 uid="uid://c1a37fna0vit6"]
 
 [ext_resource type="Script" path="res://MenusAndStage/Main_menu_Script.gd" id="1_p52nf"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_c5sbd"]
 [ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://MenusAndStage/8-bitanco.ttf" id="3_ejysj"]
+[ext_resource type="Texture2D" uid="uid://c3dxmw7l447ki" path="res://Sprites/logoBullet.png" id="4_qesqn"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]
 texture = ExtResource("2_c5sbd")
@@ -19,6 +20,9 @@ bg_color = Color(0.619608, 0.411765, 0, 1)
 corner_radius_top_right = 100
 corner_radius_bottom_right = 100
 shadow_size = 11
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1qxu"]
+texture = ExtResource("4_qesqn")
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -82,21 +86,29 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_cfrpy")
 text = "quit"
 
-[node name="Label" type="Label" parent="."]
+[node name="Labiodental" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -262.0
-offset_top = 64.0
-offset_right = 281.0
-offset_bottom = 177.0
+offset_left = -282.0
+offset_top = 129.0
+offset_right = 442.0
+offset_bottom = 244.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.843137, 0.207843, 0.00784314, 1)
 theme_override_fonts/font = ExtResource("3_ejysj")
-theme_override_font_sizes/font_size = 110
+theme_override_font_sizes/font_size = 10
 text = "Bullet taker"
 horizontal_alignment = 1
+
+[node name="Label" type="Panel" parent="Labiodental"]
+layout_mode = 0
+offset_left = -112.0
+offset_top = -68.0
+offset_right = 716.0
+offset_bottom = 253.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_a1qxu")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

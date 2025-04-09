@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxgvhfetrbbf1"]
+[gd_scene load_steps=4 format=3 uid="uid://cxgvhfetrbbf1"]
 
 [ext_resource type="Texture2D" uid="uid://bq5bjvi4h5tn0" path="res://Entities/Enemies/E_Sprites/Down Sprite.png" id="1_730yc"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy.gd" id="1_jwq8b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vhvoc"]
+size = Vector2(60, 41)
 
 [node name="Enemy" type="Node2D"]
 scale = Vector2(2, 2)
@@ -11,5 +14,10 @@ script = ExtResource("1_jwq8b")
 texture = ExtResource("1_730yc")
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_vhvoc")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

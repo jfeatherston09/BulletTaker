@@ -10,14 +10,14 @@ var type = "ENEMY"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Timer.set_wait_time(2)
+	$Timer.set_wait_time(0.6)
 	$Timer.start()
 
 	var target = Vector2(self.position.x, 100)
 	var tween = create_tween()
 	for sprite in get_children():
 		tween.tween_property(sprite, "position", target, 1)
-		tween.start()
+		
 		
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -36,7 +36,7 @@ func spawn_bullets():
 	get_parent().add_child(b1)
 	b1.bullet_speed = 800	
 	b1.position = self.position
-	b1.dir = Vector2(player.position.x - self.position.x, player.position.y - self.position.y).normalized()
+	b1.dir = Vector2(player.global_position.x - self.global_position.x, player.global_position.y - self.global_position.y).normalized()
 
 
 ###timeout():

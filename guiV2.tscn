@@ -24,7 +24,7 @@ animations = [{
 "texture": ExtResource("4_3of20")
 }],
 "loop": true,
-"name": &"default",
+"name": &"SCORE",
 "speed": 5.0
 }]
 
@@ -59,8 +59,9 @@ texture = ExtResource("2_juqvl")
 position = Vector2(348, 167)
 scale = Vector2(0.902862, 1)
 sprite_frames = SubResource("SpriteFrames_4lh2j")
-autoplay = "default"
-frame_progress = 0.586111
+animation = &"SCORE"
+autoplay = "SCORE"
+script = ExtResource("6_oiny2")
 
 [node name="score" type="Label" parent="AnimatedSprite2D"]
 offset_left = 97.4678
@@ -70,7 +71,6 @@ offset_bottom = 32.0
 theme_override_colors/font_color = Color(1, 0.843137, 0, 0.996078)
 theme_override_font_sizes/font_size = 54
 text = "0"
-script = ExtResource("6_oiny2")
 
 [node name="Control" type="Control" parent="."]
 visible = false

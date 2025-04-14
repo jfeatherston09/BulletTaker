@@ -23,8 +23,15 @@ texture = ExtResource("1_jo2ot")
 [node name="Player" parent="." instance=ExtResource("1_a2e22")]
 position = Vector2(720, 722)
 
+[node name="game hud" parent="." instance=ExtResource("4_0145b")]
+offset_left = -149.0
+offset_top = -44.0
+offset_right = -149.0
+offset_bottom = -44.0
+scale = Vector2(0.9, 0.9)
+metadata/_edit_use_anchors_ = true
+
 [node name="EnemySpawn_2" type="Node2D" parent="."]
-position = Vector2(432, -109)
 script = ExtResource("5_sflfi")
 
 [node name="Timer" type="Timer" parent="EnemySpawn_2"]
@@ -34,14 +41,6 @@ position = Vector2(683, -111)
 script = ExtResource("3_glrh6")
 
 [node name="Timer" type="Timer" parent="EnemySpawn"]
-
-[node name="game hud" parent="." instance=ExtResource("4_0145b")]
-offset_left = -149.0
-offset_top = -44.0
-offset_right = -149.0
-offset_bottom = -44.0
-scale = Vector2(0.9, 0.9)
-metadata/_edit_use_anchors_ = true
 
 [connection signal="timeout" from="EnemySpawn_2/Timer" to="EnemySpawn_2" method="_on_timer_timeout"]
 [connection signal="timeout" from="EnemySpawn/Timer" to="EnemySpawn" method="_on_timer_timeout"]

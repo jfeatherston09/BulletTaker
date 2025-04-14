@@ -14,7 +14,11 @@ const SPEED = 100.0
 func _on_hit_enemy():
 	if score_label:
 		score_label.add_score(10)
-	sp
+	sprite.play("hit_enemy")
+	
+func _on_got_hit():
+	score_display.subtrct_score(5)
+	sprite.play("healthSequences")
 
 func _physics_process(_delta):
 

@@ -42,3 +42,6 @@ func spawn_bullets():
 ###timeout():
 func _on_timer_timeout():
 	spawn_bullets()
+
+func _split_in_two():
+	pass

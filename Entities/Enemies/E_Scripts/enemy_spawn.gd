@@ -19,3 +19,6 @@ func _on_timer_timeout():
 		enemy.position.x = randf_range(-190, 190)
 		enemy.position.y = -107
 		add_child(enemy)
+
+func _spawn_in_waves():
+	pass

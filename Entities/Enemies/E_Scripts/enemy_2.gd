@@ -1,5 +1,7 @@
-# FastEnemy.gd
+# slowEnemy.gd
 extends Enemy
+
+class_name Slow_Enemy
 
 func _process(delta):
 	# Override movement to go slower

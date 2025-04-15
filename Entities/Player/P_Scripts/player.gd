@@ -11,11 +11,10 @@ const SPEED = 100.0
 @export var maxHealth = 200
 @onready var currentHealth: int = maxHealth
 
-@onready var score_label = get_node("/root/Main/guiV2/panelContainer/score")
+@onready var score_display = get_node("/root/Main/guiV2/panelContainer/score")
 
 func _on_hit_enemy():
-	if score_label:
-		score_label.add_score(10)
+	score_display.add_score(10)
 	sprite.play("hit_enemy")
 	
 func _on_got_hit():

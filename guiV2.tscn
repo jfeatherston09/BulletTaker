@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://c3wmwc6nbys8c"]
+[gd_scene load_steps=8 format=3 uid="uid://da5s7bcscijvo"]
 
 [ext_resource type="Texture2D" uid="uid://bco5ejrcc5bj1" path="res://Entities/Player/P_Sprites/SleekBars.png" id="1_grrdy"]
-[ext_resource type="Script" path="res://MenusAndStage/gui_v_2.gd" id="1_l5p4l"]
+[ext_resource type="Script" path="res://gui_v_2.gd" id="1_l5p4l"]
 [ext_resource type="Texture2D" uid="uid://25s7gjb0k50w" path="res://Entities/Player/P_Sprites/bullets_amo.png" id="2_juqvl"]
 [ext_resource type="Texture2D" uid="uid://v4kknfm30s8a" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop.png" id="4_3of20"]
 [ext_resource type="Texture2D" uid="uid://c20kca6wb6qgp" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop (1).png" id="4_8f4t3"]

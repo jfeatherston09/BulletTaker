@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://3x7yq7ov2ct5"]
+[gd_scene load_steps=8 format=3 uid="uid://dpj4cdtttm13g"]
 
 [ext_resource type="Texture2D" uid="uid://bco5ejrcc5bj1" path="res://Entities/Player/P_Sprites/SleekBars.png" id="2_r21dw"]
 [ext_resource type="Texture2D" uid="uid://dj6xg5cpke2am" path="res://Entities/Player/P_Sprites/text-fast-flip-ezgif.com-gif-to-sprite-converter.png" id="3_orwyb"]

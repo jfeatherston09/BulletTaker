@@ -1,81 +1,48 @@
-
 extends RichTextLabel
-JOY_AXIS_TRIGGER_LEFT = KEY_UP
-JOY_AXIS_TRIGGER_RIGHT = KEY_DOWN
+
 var JOY_AXIS_TRIGGER_LEFT = 0
 var JOY_AXIS_TRIGGER_RIGHT = 0
-func _input(event:InputEvent):
-	if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")):
-		("2370,56")
-		var JOY_AXIS_TRIGGER_LEFT=+1
 
-	if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT =  1:
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("joy_left"):
+		JOY_AXIS_TRIGGER_LEFT += 1
+		$RichTextLabel.append_text("A")
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 1:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1
 
-			("2370,56")
-			var JOY_AXIS_TRIGGER_LEFT=+1
-	else:
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 2:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1
 
-		var JOY_AXIS_TRIGGER_LEFT = 1
-	if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT = 2:
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 3:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1
 
-		  ("2370,56")
-			  var JOY_AXIS_TRIGGER_LEFT=+1
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 4:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1
 
-	else:
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 5:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1
 
-		var JOY_AXIS_TRIGGER_LEFT = 2
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 6:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1
 
-	if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT = 3:
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 7:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1
 
-		   ("2370,56")
-			  var JOY_AXIS_TRIGGER_LEFT=+1
-	else:
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 8:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1
 
-		var JOY_AXIS_TRIGGER_LEFT = 3
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 9:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1
 
-	if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT = 4:
-		("2370,56")
-			  var JOY_AXIS_TRIGGER_LEFT=+1
-	else:
-
-		var JOY_AXIS_TRIGGER_LEFT = 4
-
-	if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT = 5:
-		("2370,56")
-			  var JOY_AXIS_TRIGGER_LEFT=+1
-	else:
-
-		var JOY_AXIS_TRIGGER_LEFT = 5
-
-
-	if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT = 6:
-		("2370,56")
-			  var JOY_AXIS_TRIGGER_LEFT=+1
-	else:
-
-		var JOY_AXIS_TRIGGER_LEFT = 6
-
-	 if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT = 7:
-		("2370,56")
-			  var JOY_AXIS_TRIGGER_LEFT=+1
-	else:
-
-		var JOY_AXIS_TRIGGER_LEFT = 7
-	 if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT = 8:
-		("2370,56")
-			  var JOY_AXIS_TRIGGER_LEFT=+1
-	else:
-
-		var JOY_AXIS_TRIGGER_LEFT = 8
-	 if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT = 9:
-		("2370,56")
-			  var JOY_AXIS_TRIGGER_LEFT=+1
-	else:
-
-		var JOY_AXIS_TRIGGER_LEFT = 9
-	 if(event.is_action_pressed("JOY_AXIS_TRIGGER_LEFT")) and var JOY_AXIS_TRIGGER_LEFT = 10:
-		("2370,56")
-			  var JOY_AXIS_TRIGGER_LEFT=+1
-	else:
-
-		var JOY_AXIS_TRIGGER_LEFT = 10
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 10:
+		position = Vector2(1587, -159)
+		JOY_AXIS_TRIGGER_LEFT += 1

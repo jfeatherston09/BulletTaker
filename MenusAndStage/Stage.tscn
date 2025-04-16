@@ -1,14 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://do8nobh607dnm"]
+[gd_scene load_steps=10 format=3 uid="uid://do8nobh607dnm"]
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
 [ext_resource type="Shader" path="res://MenusAndStage/Stage.gdshader" id="1_lrtkk"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
+[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Sprites/8-bitanco.ttf" id="6_egdoi"]
 [ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/guiV2.tscn" id="6_pkb34"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("1_lrtkk")
+
+[sub_resource type="Theme" id="Theme_jtj6c"]
+default_font = ExtResource("6_egdoi")
 
 [node name="Stage" type="Node2D"]
 position = Vector2(216, 120)
@@ -48,12 +52,13 @@ offset_bottom = 442.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(7, 7)
+theme = SubResource("Theme_jtj6c")
 text = "YOU'RE AT FULL HEALTH"
 
 [node name="PanelContainer" parent="." instance=ExtResource("6_pkb34")]
 offset_left = -413.0
-offset_top = -183.0
+offset_top = -184.0
 offset_right = 1373.59
-offset_bottom = 728.016
+offset_bottom = 727.016
 
 [connection signal="timeout" from="EnemySpawn/Timer" to="EnemySpawn" method="_on_timer_timeout"]

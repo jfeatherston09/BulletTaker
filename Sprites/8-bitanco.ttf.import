@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://52g8drl8mima"
-path="res://.godot/imported/8-bitanco.ttf-3c1cb62d7ff4a0d9381358ae036021e5.fontdata"
+path="res://.godot/imported/8-bitanco.ttf-f4fd254fea157962239c39edc9760a50.fontdata"
 
 [deps]
 
-source_file="res://MenusAndStage/8-bitanco.ttf"
-dest_files=["res://.godot/imported/8-bitanco.ttf-3c1cb62d7ff4a0d9381358ae036021e5.fontdata"]
+source_file="res://Sprites/8-bitanco.ttf"
+dest_files=["res://.godot/imported/8-bitanco.ttf-f4fd254fea157962239c39edc9760a50.fontdata"]
 
 [params]
 

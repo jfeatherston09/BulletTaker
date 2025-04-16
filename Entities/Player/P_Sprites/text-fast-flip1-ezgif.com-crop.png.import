@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl8tarjpalyvf"
-path="res://.godot/imported/monster_raptor1.png-5d3697f91943dfdf57107ec59460a9a1.ctex"
+uid="uid://v4kknfm30s8a"
+path="res://.godot/imported/text-fast-flip1-ezgif.com-crop.png-c2002707c5b3b304a3820f48957f26d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Examples_1/assets/monster_raptor1.png"
-dest_files=["res://.godot/imported/monster_raptor1.png-5d3697f91943dfdf57107ec59460a9a1.ctex"]
+source_file="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop.png"
+dest_files=["res://.godot/imported/text-fast-flip1-ezgif.com-crop.png-c2002707c5b3b304a3820f48957f26d7.ctex"]
 
 [params]
 

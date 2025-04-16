@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2v8brl5e6nd2"
-path="res://.godot/imported/RA_Ground_Tiles.png-b8da682d503ffa12e542965d888e31b0.ctex"
+uid="uid://c20kca6wb6qgp"
+path="res://.godot/imported/text-fast-flip1-ezgif.com-crop (1).png-b661e99506668cfc0847fd08d3766dcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Examples_1/assets/RA_Ground_Tiles.png"
-dest_files=["res://.godot/imported/RA_Ground_Tiles.png-b8da682d503ffa12e542965d888e31b0.ctex"]
+source_file="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop (1).png"
+dest_files=["res://.godot/imported/text-fast-flip1-ezgif.com-crop (1).png-b661e99506668cfc0847fd08d3766dcf.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3sddadjlfr21"
-path="res://.godot/imported/RA_Atlantis.png-3709c796852ac3d17ed05914ec17d6fb.ctex"
+uid="uid://c3dxmw7l447ki"
+path="res://.godot/imported/logoBullet.png-3912808226861ad442b57e591a68ac4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Examples_1/assets/RA_Atlantis.png"
-dest_files=["res://.godot/imported/RA_Atlantis.png-3709c796852ac3d17ed05914ec17d6fb.ctex"]
+source_file="res://Sprites/logoBullet.png"
+dest_files=["res://.godot/imported/logoBullet.png-3912808226861ad442b57e591a68ac4c.ctex"]
 
 [params]
 

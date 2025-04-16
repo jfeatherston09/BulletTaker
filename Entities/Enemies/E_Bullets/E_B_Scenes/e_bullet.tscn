@@ -1,20 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://blr7wovwoqsas"]
+[gd_scene load_steps=5 format=3 uid="uid://blr7wovwoqsas"]
 
 [ext_resource type="Script" path="res://Entities/Enemies/E_Bullets/E_B_Scripts/e_bullet.gd" id="1_tluk3"]
 [ext_resource type="Texture2D" uid="uid://dlbv7hif8gg7o" path="res://Entities/Enemies/E_Bullets/E_B_Sprites/Enemy_Bullet_Sprite.png" id="2_draup"]
+[ext_resource type="Shader" path="res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.gdshader" id="2_g4sfm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vtjae"]
+shader = ExtResource("2_g4sfm")
 
 [node name="E_Bullet" type="Node2D"]
-scale = Vector2(0.15, 0.15)
+scale = Vector2(2, 2)
 script = ExtResource("1_tluk3")
 bullet_speed = 300
 
 [node name="EnemyBulletSprite" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_vtjae")
 texture = ExtResource("2_draup")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(-6.66667, -6.66667)
-target_position = Vector2(13.3333, 13.3333)
+visible = false
+position = Vector2(-10, -10)
+target_position = Vector2(14, 14)
+collide_with_areas = true
+collide_with_bodies = false
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+visible = false
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

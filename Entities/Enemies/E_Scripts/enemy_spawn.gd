@@ -13,7 +13,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _on_timer_timeout():
-	for i in range(5):
+	for i in range(4):
 		var enemy = enemy_scene[0].instantiate()
 		randomize()
 		enemy.position.x = randf_range(-190, 190)

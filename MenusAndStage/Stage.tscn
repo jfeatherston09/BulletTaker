@@ -5,7 +5,7 @@
 [ext_resource type="Shader" path="res://MenusAndStage/Stage.gdshader" id="1_lrtkk"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
-[ext_resource type="PackedScene" uid="uid://c3wmwc6nbys8c" path="res://MenusAndStage/guiV2.tscn" id="6_l2bkx"]
+[ext_resource type="PackedScene" path="res://MenusAndStage/guiV2.tscn" id="6_l2bkx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("1_lrtkk")

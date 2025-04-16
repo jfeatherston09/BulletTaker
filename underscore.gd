@@ -6,43 +6,34 @@ var JOY_AXIS_TRIGGER_RIGHT = 0
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("joy_left"):
 		JOY_AXIS_TRIGGER_LEFT += 1
-		$RichTextLabel.append_text("A")
+		set_text("A")
 	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 1:
-		position = Vector2(1587, -159)
 		JOY_AXIS_TRIGGER_LEFT += 1
-
+		set_text("B")
 	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 2:
-		position = Vector2(1587, -159)
 		JOY_AXIS_TRIGGER_LEFT += 1
-
+		set_text("C")
 	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 3:
-		position = Vector2(1587, -159)
 		JOY_AXIS_TRIGGER_LEFT += 1
-
+		set_text("D")
 	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 4:
-		position = Vector2(1587, -159)
 		JOY_AXIS_TRIGGER_LEFT += 1
-
+		set_text("E")
 	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 5:
-		position = Vector2(1587, -159)
 		JOY_AXIS_TRIGGER_LEFT += 1
-
+		set_text("F")
 	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 6:
-		position = Vector2(1587, -159)
 		JOY_AXIS_TRIGGER_LEFT += 1
-
+		set_text("G")
 	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 7:
-		position = Vector2(1587, -159)
 		JOY_AXIS_TRIGGER_LEFT += 1
-
+		set_text("H")
 	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 8:
-		position = Vector2(1587, -159)
 		JOY_AXIS_TRIGGER_LEFT += 1
-
+		set_text("I")
 	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 9:
-		position = Vector2(1587, -159)
 		JOY_AXIS_TRIGGER_LEFT += 1
-
-	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 10:
-		position = Vector2(1587, -159)
+		set_text("J")
+	if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 10: 
 		JOY_AXIS_TRIGGER_LEFT += 1
+		set_text("K")

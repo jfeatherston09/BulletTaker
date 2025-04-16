@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://do8nobh607dnm"]
+[gd_scene load_steps=8 format=3 uid="uid://do8nobh607dnm"]
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
 [ext_resource type="Shader" path="res://MenusAndStage/Stage.gdshader" id="1_lrtkk"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
+[ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/guiV2.tscn" id="6_pkb34"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("1_lrtkk")
@@ -28,31 +29,31 @@ script = ExtResource("5_sflfi")
 
 [node name="Timer" type="Timer" parent="EnemySpawn_2"]
 
-[node name="game hud#VBoxContainer2" type="VBoxContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-
 [node name="EnemySpawn" type="Node2D" parent="."]
 position = Vector2(683, -111)
 script = ExtResource("3_glrh6")
 
 [node name="Timer" type="Timer" parent="EnemySpawn"]
 
-[node name="PanelContainer" parent="."]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-offset_left = -393.0
-offset_top = -237.0
-offset_right = 1393.59
-offset_bottom = 674.016
-script = null
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 48.0
+offset_top = 306.0
+offset_right = 448.0
+offset_bottom = 442.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(7, 7)
+text = "YOU'RE AT FULL HEALTH"
 
-[connection signal="timeout" from="EnemySpawn_2/Timer" to="EnemySpawn_2" method="_on_timer_timeout"]
+[node name="PanelContainer" parent="." instance=ExtResource("6_pkb34")]
+offset_left = -413.0
+offset_top = -183.0
+offset_right = 1373.59
+offset_bottom = 728.016
+
 [connection signal="timeout" from="EnemySpawn/Timer" to="EnemySpawn" method="_on_timer_timeout"]

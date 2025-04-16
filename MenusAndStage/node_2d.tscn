@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://csa4s8hnwp63n"]
+[gd_scene load_steps=5 format=3 uid="uid://csa4s8hnwp63n"]
 
-[ext_resource type="Script" path="res://Main_menu.gd" id="1_c71t5"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_edt42"]
-[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://MenusAndStage/8-bitanco.ttf" id="2_1glo1"]
+[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Sprites/8-bitanco.ttf" id="2_1glo1"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]
 texture = ExtResource("1_edt42")
@@ -21,7 +20,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_c71t5")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1

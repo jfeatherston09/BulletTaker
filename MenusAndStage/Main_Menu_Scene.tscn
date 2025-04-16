@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://MenusAndStage/Main_menu_Script.gd" id="1_p52nf"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_c5sbd"]
-[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://MenusAndStage/8-bitanco.ttf" id="3_ejysj"]
+[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Sprites/8-bitanco.ttf" id="3_ejysj"]
 [ext_resource type="Texture2D" uid="uid://c3dxmw7l447ki" path="res://Sprites/logoBullet.png" id="4_qesqn"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]

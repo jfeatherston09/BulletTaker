@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
 [ext_resource type="Shader" path="res://MenusAndStage/Stage.gdshader" id="1_lrtkk"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
+[ext_resource type="PackedScene" uid="uid://3x7yq7ov2ct5" path="res://MenusAndStage/game_hud.tscn" id="4_0145b"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
-[ext_resource type="PackedScene" uid="uid://c3wmwc6nbys8c" path="res://MenusAndStage/guiV2.tscn" id="6_l2bkx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("1_lrtkk")
@@ -23,28 +23,26 @@ texture = ExtResource("1_jo2ot")
 [node name="Player" parent="." instance=ExtResource("1_a2e22")]
 position = Vector2(720, 722)
 
+[node name="game hud" parent="." instance=ExtResource("4_0145b")]
+offset_left = -149.0
+offset_top = -44.0
+offset_right = -149.0
+offset_bottom = -44.0
+scale = Vector2(0.9, 0.9)
+metadata/_edit_use_anchors_ = true
+
 [node name="EnemySpawn_2" type="Node2D" parent="."]
-position = Vector2(432, -109)
+position = Vector2(638, -108)
+rotation = 2.84687
 script = ExtResource("5_sflfi")
 
 [node name="Timer" type="Timer" parent="EnemySpawn_2"]
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="game hud"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
 
 [node name="EnemySpawn" type="Node2D" parent="."]
 position = Vector2(683, -111)
 script = ExtResource("3_glrh6")
 
 [node name="Timer" type="Timer" parent="EnemySpawn"]
-
-[node name="PanelContainer" parent="." instance=ExtResource("6_l2bkx")]
-offset_left = -393.0
-offset_top = -237.0
-offset_right = 1393.59
-offset_bottom = 674.016
 
 [connection signal="timeout" from="EnemySpawn_2/Timer" to="EnemySpawn_2" method="_on_timer_timeout"]
 [connection signal="timeout" from="EnemySpawn/Timer" to="EnemySpawn" method="_on_timer_timeout"]

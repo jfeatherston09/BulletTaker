@@ -5,7 +5,7 @@ var type = "PLAYER"
 @export var speed = 200
 
 const SPEED = 100.0
-@onready var sprite : AnimatedSprite2D = $AnimatedSprite2D
+@onready var sprite : Sprite2D = $Sprite2D
 @export var playerId : int = 0
 
 @export var maxHealth = 200

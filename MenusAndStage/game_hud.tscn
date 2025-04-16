@@ -126,8 +126,6 @@ position = Vector2(-3.5, 40.5)
 scale = Vector2(1.24219, 1.09375)
 sprite_frames = SubResource("SpriteFrames_oa1eg")
 animation = &"healthSequence"
-frame = 3
-frame_progress = 0.134953
 
 [node name="powerupbar" type="AnimatedSprite2D" parent="VBoxContainer"]
 position = Vector2(-3.5, 75.5)

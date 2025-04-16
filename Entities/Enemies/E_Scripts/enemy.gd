@@ -8,6 +8,7 @@ class_name Enemy
 
 var type = "ENEMY"
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Timer.set_wait_time(2)

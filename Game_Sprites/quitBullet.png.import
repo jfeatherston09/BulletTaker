@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3dxmw7l447ki"
-path="res://.godot/imported/logoBullet.png-3912808226861ad442b57e591a68ac4c.ctex"
+uid="uid://df1xc86pt6hy"
+path="res://.godot/imported/quitBullet.png-579ceb08296ba35c676478f81dabe80c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/logoBullet.png"
-dest_files=["res://.godot/imported/logoBullet.png-3912808226861ad442b57e591a68ac4c.ctex"]
+source_file="res://Game_Sprites/quitBullet.png"
+dest_files=["res://.godot/imported/quitBullet.png-579ceb08296ba35c676478f81dabe80c.ctex"]
 
 [params]
 

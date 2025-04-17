@@ -46,7 +46,7 @@ func _physics_process(_delta):
 	move_and_slide()
 
 	if (Input.is_action_just_pressed("Shoot")):
-		var b = p_bullet.instance()
+		var b = p_bullet.instantiate()
 		add_child(b)
 
 func get_input():

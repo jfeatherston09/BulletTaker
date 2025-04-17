@@ -1,5 +1,5 @@
 extends RichTextLabel
-var is_active = true
+
 var JOY_AXIS_TRIGGER_LEFT = 0
 var JOY_AXIS_TRIGGER_RIGHT = 0
 
@@ -85,4 +85,3 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 26:
 		JOY_AXIS_TRIGGER_LEFT -= 26
 		set_text("A")
-

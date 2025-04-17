@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://46ekvc3fnbni"]
 
 [ext_resource type="Script" path="res://MenusAndStage/pause_menu.gd" id="1_62ecx"]
-[ext_resource type="Texture2D" uid="uid://clvrr5ipvuas3" path="res://Sprites/resumeBullet.png" id="2_ca2t6"]
+[ext_resource type="Texture2D" uid="uid://clvrr5ipvuas3" path="res://Game_Sprites/resumeBullet.png" id="2_ca2t6"]
 [ext_resource type="FontFile" uid="uid://unjush45jn26" path="res://Background/doomed-regular.ttf" id="2_qcqs4"]
-[ext_resource type="Texture2D" uid="uid://df1xc86pt6hy" path="res://Sprites/quitBullet.png" id="4_nuldt"]
+[ext_resource type="Texture2D" uid="uid://df1xc86pt6hy" path="res://Game_Sprites/quitBullet.png" id="4_nuldt"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p783q"]
 

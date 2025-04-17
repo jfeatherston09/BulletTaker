@@ -5,6 +5,7 @@
 [ext_resource type="Shader" path="res://MenusAndStage/Stage.gdshader" id="1_lrtkk"]
 [ext_resource type="Script" path="res://MenusAndStage/stage.gd" id="1_ruvb3"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
+[ext_resource type="Script" path="res://MenusAndStage/enemy_spawn_3.gd" id="4_pyrmi"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
 [ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Sprites/8-bitanco.ttf" id="6_egdoi"]
 [ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/guiV2.tscn" id="6_pkb34"]
@@ -28,6 +29,12 @@ texture = ExtResource("1_jo2ot")
 
 [node name="Player" parent="." instance=ExtResource("1_a2e22")]
 position = Vector2(720, 722)
+
+[node name="EnemySpawn_3" type="Node2D" parent="."]
+position = Vector2(1040, -112)
+script = ExtResource("4_pyrmi")
+
+[node name="Timer" type="Timer" parent="EnemySpawn_3"]
 
 [node name="EnemySpawn_2" type="Node2D" parent="."]
 position = Vector2(432, -109)

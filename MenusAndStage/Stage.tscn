@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://do8nobh607dnm"]
+[gd_scene load_steps=11 format=3 uid="uid://do8nobh607dnm"]
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
 [ext_resource type="Shader" path="res://MenusAndStage/Stage.gdshader" id="1_lrtkk"]
+[ext_resource type="Script" path="res://MenusAndStage/stage.gd" id="1_ruvb3"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
 [ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Sprites/8-bitanco.ttf" id="6_egdoi"]
@@ -15,7 +16,8 @@ shader = ExtResource("1_lrtkk")
 default_font = ExtResource("6_egdoi")
 
 [node name="Stage" type="Node2D"]
-position = Vector2(216, 120)
+position = Vector2(215, 120)
+script = ExtResource("1_ruvb3")
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)

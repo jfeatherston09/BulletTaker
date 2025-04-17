@@ -14,6 +14,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 848.0
+offset_bottom = -12.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_62ecx")
@@ -21,8 +23,8 @@ script = ExtResource("1_62ecx")
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
 offset_top = -1.0
-offset_right = 294.0
-offset_bottom = 152.0
+offset_right = 600.0
+offset_bottom = 317.0
 theme_override_constants/margin_top = 0
 theme_override_constants/margin_bottom = 0
 
@@ -33,6 +35,7 @@ theme_override_constants/separation = 60
 [node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_qcqs4")
+theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxTexture_p783q")
 text = "Resume"
 icon = ExtResource("2_ca2t6")
@@ -40,6 +43,7 @@ icon = ExtResource("2_ca2t6")
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_qcqs4")
+theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ung0u")
 text = "Quit"
 icon = ExtResource("4_nuldt")

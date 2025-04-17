@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://do8nobh607dnm"]
+[gd_scene load_steps=12 format=3 uid="uid://do8nobh607dnm"]
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
 [ext_resource type="Script" path="res://MenusAndStage/enemy_spawn_3.gd" id="4_pyrmi"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
-[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Sprites/8-bitanco.ttf" id="6_egdoi"]
+[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Game_Sprites/8-bitanco.ttf" id="6_egdoi"]
 [ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/guiV2.tscn" id="6_pkb34"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]

@@ -20,8 +20,9 @@ func _process(delta):
 		if (collid.type == "PLAYER"):
 			position += Vector2(2000, 2000)
 
-			collid.maxHealth -= 1
-			print(collid.maxHealth)
+			if (collid.maxHealth > 0):
+				collid.maxHealth -= 1
+			collid.advance_status()
 
 
 

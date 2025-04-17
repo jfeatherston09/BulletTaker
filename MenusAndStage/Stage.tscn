@@ -11,7 +11,7 @@
 shader = ExtResource("1_lrtkk")
 
 [node name="Stage" type="Node2D"]
-position = Vector2(216, 120)
+position = Vector2(219, 110)
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)

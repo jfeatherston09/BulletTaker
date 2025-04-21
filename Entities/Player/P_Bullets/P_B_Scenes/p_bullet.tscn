@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://d1fytawfecayb"]
 
-[ext_resource type="Script" path="res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.gd" id="1_s0fj8"]
+[ext_resource type="Script" path="res://Entities/Player/P_Bullets/P_B_Scripts/p_bullet.gd" id="1_vvip2"]
 [ext_resource type="Texture2D" uid="uid://7dlm8d13q624" path="res://Entities/Player/P_Bullets/P_B_Sprites/playerbullet.png" id="2_g6j7q"]
 
 [node name="P_Bullet" type="Node2D"]
 scale = Vector2(2, 2)
-script = ExtResource("1_s0fj8")
+script = ExtResource("1_vvip2")
 
 [node name="EnemyBulletSprite" type="Sprite2D" parent="."]
 rotation = -0.00937772

@@ -1,6 +1,6 @@
 extends Node2D
 
-class_name Bullet
+
 
 var dir = Vector2(0, 1)
 

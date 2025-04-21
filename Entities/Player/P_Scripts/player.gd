@@ -47,7 +47,8 @@ func _physics_process(_delta):
 
 	if (Input.is_action_just_pressed("Shoot")):
 		var b = p_bullet.instantiate()
-		add_child(b)
+		get_parent().add_child(b)
+		b.position = self.position
 
 func get_input():
 	var input_direction = Input.get_vector("p1_left", "p1_right", "p1_up", "p1_down")

@@ -83,7 +83,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="VBoxContainer"]
+[node name="health" type="AnimatedSprite2D" parent="VBoxContainer"]
 position = Vector2(376, 1065)
 scale = Vector2(2.67969, 2.09375)
 sprite_frames = SubResource("SpriteFrames_kxry3")

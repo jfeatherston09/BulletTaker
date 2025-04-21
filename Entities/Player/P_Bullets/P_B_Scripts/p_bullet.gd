@@ -4,7 +4,7 @@ extends Node2D
 
 var dir = Vector2(0, 1)
 
-@export var bullet_speed = 100
+@export var bullet_speed = 700
 @export var final_speed = 100
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

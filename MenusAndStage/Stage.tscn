@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=10 format=3 uid="uid://do8nobh607dnm"]
+=======
+[gd_scene load_steps=9 format=3 uid="uid://do8nobh607dnm"]
+>>>>>>> Stashed changes
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Script" path="res://MenusAndStage/stage.gd" id="1_eg7v0"]
@@ -7,7 +11,6 @@
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
 [ext_resource type="PackedScene" uid="uid://c3wmwc6nbys8c" path="res://MenusAndStage/guiV2.tscn" id="6_l2bkx"]
-[ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/pause_menu.tscn" id="8_344lr"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("1_lrtkk")
@@ -16,11 +19,14 @@ shader = ExtResource("1_lrtkk")
 position = Vector2(216, 120)
 script = ExtResource("1_eg7v0")
 
+<<<<<<< Updated upstream
 [node name="PauseMenu" parent="." instance=ExtResource("8_344lr")]
 offset = Vector2(750, 350)
 scale = Vector2(6, 6)
 transform = Transform2D(6, 0, 0, 6, 750, 350)
 
+=======
+>>>>>>> Stashed changes
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)
 material = SubResource("ShaderMaterial_jluj3")

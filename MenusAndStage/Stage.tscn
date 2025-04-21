@@ -65,9 +65,9 @@ theme = SubResource("Theme_jtj6c")
 text = "YOU'RE AT FULL HEALTH"
 
 [node name="PanelContainer" parent="." instance=ExtResource("6_pkb34")]
-offset_left = -413.0
-offset_top = -184.0
-offset_right = 1373.59
-offset_bottom = 727.016
+offset_left = -414.0
+offset_top = -185.0
+offset_right = 1372.59
+offset_bottom = 726.016
 
 [connection signal="timeout" from="EnemySpawn/Timer" to="EnemySpawn" method="_on_timer_timeout"]

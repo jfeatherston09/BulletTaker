@@ -1,11 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://do8nobh607dnm"]
+[gd_scene load_steps=10 format=3 uid="uid://do8nobh607dnm"]
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Script" path="res://MenusAndStage/stage.gd" id="1_eg7v0"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
 [ext_resource type="Shader" path="res://MenusAndStage/Stage.gdshader" id="1_lrtkk"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
-[ext_resource type="Script" path="res://MenusAndStage/enemy_spawn_3.gd" id="4_pyrmi"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
 [ext_resource type="PackedScene" uid="uid://c3wmwc6nbys8c" path="res://MenusAndStage/guiV2.tscn" id="6_l2bkx"]
 [ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/pause_menu.tscn" id="8_344lr"]
@@ -17,13 +16,10 @@ shader = ExtResource("1_lrtkk")
 position = Vector2(216, 120)
 script = ExtResource("1_eg7v0")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("8_344lr")]
-offset_left = 672.0
-offset_top = 412.0
-offset_right = 672.0
-offset_bottom = 412.0
+[node name="PauseMenu" parent="." instance=ExtResource("8_344lr")]
+offset = Vector2(750, 350)
+scale = Vector2(6, 6)
+transform = Transform2D(6, 0, 0, 6, 750, 350)
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)
@@ -37,7 +33,6 @@ position = Vector2(720, 722)
 
 [node name="EnemySpawn_3" type="Node2D" parent="."]
 position = Vector2(1040, -112)
-script = ExtResource("4_pyrmi")
 
 [node name="Timer" type="Timer" parent="EnemySpawn_3"]
 

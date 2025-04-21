@@ -10,7 +10,7 @@ void vertex() {
 
 void fragment() {
     vec2 uv = UV;
-    
+
     // Wavy distortion
     uv.y += sin(uv.x * 10.0 + TIME * 5.0) * 0.05;
 

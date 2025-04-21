@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clvrr5ipvuas3"
-path="res://.godot/imported/resumeBullet.png-011b67f3ad57efa367f2ad84e87c8299.ctex"
+uid="uid://c3dxmw7l447ki"
+path="res://.godot/imported/logoBullet.png-bf127ceb04bdcf37eeb6fdfe5ff8f4fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/resumeBullet.png"
-dest_files=["res://.godot/imported/resumeBullet.png-011b67f3ad57efa367f2ad84e87c8299.ctex"]
+source_file="res://Game_Sprites/logoBullet.png"
+dest_files=["res://.godot/imported/logoBullet.png-bf127ceb04bdcf37eeb6fdfe5ff8f4fe.ctex"]
 
 [params]
 

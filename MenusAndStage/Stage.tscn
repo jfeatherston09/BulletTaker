@@ -1,18 +1,24 @@
-[gd_scene load_steps=9 format=3 uid="uid://do8nobh607dnm"]
+[gd_scene load_steps=12 format=3 uid="uid://do8nobh607dnm"]
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
 [ext_resource type="Shader" path="res://MenusAndStage/Stage.gdshader" id="1_lrtkk"]
+[ext_resource type="Script" path="res://MenusAndStage/stage.gd" id="1_ruvb3"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
 [ext_resource type="Script" path="res://MenusAndStage/enemy_spawn_3.gd" id="4_pyrmi"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
-[ext_resource type="PackedScene" uid="uid://c3wmwc6nbys8c" path="res://MenusAndStage/guiV2.tscn" id="6_l2bkx"]
+[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Game_Sprites/8-bitanco.ttf" id="6_egdoi"]
+[ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/guiV2.tscn" id="6_pkb34"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("1_lrtkk")
 
+[sub_resource type="Theme" id="Theme_jtj6c"]
+default_font = ExtResource("6_egdoi")
+
 [node name="Stage" type="Node2D"]
-position = Vector2(216, 120)
+position = Vector2(215, 120)
+script = ExtResource("1_ruvb3")
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)
@@ -42,12 +48,26 @@ script = ExtResource("3_glrh6")
 
 [node name="Timer" type="Timer" parent="EnemySpawn"]
 
-[node name="PanelContainer" parent="." instance=ExtResource("6_l2bkx")]
-offset_left = -393.0
-offset_top = -237.0
-offset_right = 1393.59
-offset_bottom = 674.016
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 48.0
+offset_top = 306.0
+offset_right = 448.0
+offset_bottom = 442.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(7, 7)
+theme = SubResource("Theme_jtj6c")
+text = "YOU'RE AT FULL HEALTH"
 
-[connection signal="timeout" from="EnemySpawn_3/Timer" to="EnemySpawn_3" method="_on_timer_timeout"]
-[connection signal="timeout" from="EnemySpawn_2/Timer" to="EnemySpawn_2" method="_on_timer_timeout"]
+[node name="PanelContainer" parent="." instance=ExtResource("6_pkb34")]
+offset_left = -414.0
+offset_top = -185.0
+offset_right = 1372.59
+offset_bottom = 726.016
+
 [connection signal="timeout" from="EnemySpawn/Timer" to="EnemySpawn" method="_on_timer_timeout"]

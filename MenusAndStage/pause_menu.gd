@@ -1,10 +1,14 @@
-extends Control
+extends Node
 
-@onready var main = $"../../"
+@onready var resume_label: Label = $ResumeLabel
 
-func _on_resume_pressed() -> void:
-	main.pauseMenu()
+func _ready():
+	resume_label.visible = false
 
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("p1_start") or event.is_action_pressed("p2_start"):
+		toggle_pause()
 
-func _on_quit_pressed() -> void:
-	get_tree().quit()
+func toggle_pause():
+	get_tree().paused = not get_tree().paused
+	resume_label.visible = get_tree().paused

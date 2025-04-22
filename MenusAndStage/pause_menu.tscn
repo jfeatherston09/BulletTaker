@@ -1,48 +1,20 @@
-[gd_scene load_steps=7 format=3 uid="uid://46ekvc3fnbni"]
+[gd_scene load_steps=4 format=3 uid="uid://46ekvc3fnbni"]
 
 [ext_resource type="Script" path="res://MenusAndStage/pause_menu.gd" id="1_62ecx"]
-[ext_resource type="Texture2D" uid="uid://clvrr5ipvuas3" path="res://Game_Sprites/resumeBullet.png" id="2_ca2t6"]
 [ext_resource type="FontFile" uid="uid://unjush45jn26" path="res://Background/doomed-regular.ttf" id="2_qcqs4"]
-[ext_resource type="Texture2D" uid="uid://df1xc86pt6hy" path="res://Game_Sprites/quitBullet.png" id="4_nuldt"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p783q"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ung0u"]
-
-[node name="PauseMenu" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="PauseMenu" type="Node2D"]
+process_mode = 3
+scale = Vector2(10, 10)
 script = ExtResource("1_62ecx")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
+[node name="ResumeLabel" type="Label" parent="."]
 offset_top = -1.0
-offset_right = 294.0
-offset_bottom = 152.0
-theme_override_constants/margin_top = 0
-theme_override_constants/margin_bottom = 0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-theme_override_constants/separation = 60
-
-[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
+offset_right = 467.0
+offset_bottom = 191.0
 theme_override_fonts/font = ExtResource("2_qcqs4")
+theme_override_font_sizes/font_size = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_p783q")
 text = "Resume"
-icon = ExtResource("2_ca2t6")
-
-[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_qcqs4")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_ung0u")
-text = "Quit"
-icon = ExtResource("4_nuldt")
-
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

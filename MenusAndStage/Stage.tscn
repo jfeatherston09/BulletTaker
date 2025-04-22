@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://do8nobh607dnm"]
+[gd_scene load_steps=13 format=3 uid="uid://dqb2nb1i5cyix"]
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
@@ -8,7 +8,8 @@
 [ext_resource type="Script" path="res://MenusAndStage/enemy_spawn_3.gd" id="4_pyrmi"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
 [ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Game_Sprites/8-bitanco.ttf" id="6_egdoi"]
-[ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/guiV2.tscn" id="6_pkb34"]
+[ext_resource type="PackedScene" uid="uid://c3wmwc6nbys8c" path="res://MenusAndStage/guiV2.tscn" id="6_pkb34"]
+[ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/pause_menu.tscn" id="10_rx8e0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("1_lrtkk")
@@ -56,8 +57,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 48.0
 offset_top = 306.0
-offset_right = 448.0
-offset_bottom = 442.0
+offset_right = 221.0
+offset_bottom = 327.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(7, 7)
@@ -70,4 +71,9 @@ offset_top = -185.0
 offset_right = 1372.59
 offset_bottom = 726.016
 
+[node name="PauseMenu" parent="." instance=ExtResource("10_rx8e0")]
+position = Vector2(456, 481)
+
+[connection signal="timeout" from="EnemySpawn_3/Timer" to="EnemySpawn_3" method="_on_timer_timeout"]
+[connection signal="timeout" from="EnemySpawn_2/Timer" to="EnemySpawn_2" method="_on_timer_timeout"]
 [connection signal="timeout" from="EnemySpawn/Timer" to="EnemySpawn" method="_on_timer_timeout"]

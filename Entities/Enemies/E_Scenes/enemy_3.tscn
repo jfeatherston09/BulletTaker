@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bbr135pss082q"]
+[gd_scene load_steps=4 format=3 uid="uid://c6cpkcfgeitur"]
 
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_3.gd" id="1_neylc"]
 [ext_resource type="Texture2D" uid="uid://clmi1py8hn6gv" path="res://Entities/Enemies/E_Sprites/ship (16).png" id="2_npkln"]

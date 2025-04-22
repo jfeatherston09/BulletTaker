@@ -87,7 +87,6 @@ offset_bottom = 40.0
 position = Vector2(376, 1065)
 scale = Vector2(2.67969, 2.09375)
 sprite_frames = SubResource("SpriteFrames_kxry3")
-frame_progress = 0.414772
 
 [node name="BulletsAmo" type="Sprite2D" parent="."]
 position = Vector2(1932, 1129)

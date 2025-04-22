@@ -74,4 +74,6 @@ offset_bottom = 726.016
 [node name="PauseMenu" parent="." instance=ExtResource("10_rx8e0")]
 position = Vector2(456, 481)
 
+[connection signal="timeout" from="EnemySpawn_3/Timer" to="EnemySpawn_3" method="_on_timer_timeout"]
+[connection signal="timeout" from="EnemySpawn_2/Timer" to="EnemySpawn_2" method="_on_timer_timeout"]
 [connection signal="timeout" from="EnemySpawn/Timer" to="EnemySpawn" method="_on_timer_timeout"]

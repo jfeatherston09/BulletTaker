@@ -69,9 +69,9 @@ text = "_"
 script = ExtResource("3_4p6a6")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 333.0
-offset_top = 742.0
-offset_right = 1696.0
-offset_bottom = 1099.0
-theme_override_font_sizes/normal_font_size = 75
+offset_left = 599.0
+offset_top = 628.0
+offset_right = 1267.0
+offset_bottom = 985.0
+theme_override_font_sizes/normal_font_size = 0
 text = "Press Right to Lock in your Initial."

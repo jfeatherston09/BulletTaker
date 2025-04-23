@@ -3,8 +3,8 @@ extends Node2D
 class_name Bullet
 
 var dir = Vector2(1, 0)
-@onready var gui_scene = preload("res://MenusAndStage/guiV2.tscn").instantiate()
-@onready var healthBar = gui_scene.get_node("VBoxContainer/health")
+var gui_scene = preload("res://MenusAndStage/guiV2.tscn").init()
+var healthPhase = gui_scene.get_node("VBoxContainer/health").frame
 
 @export var bullet_speed = 100
 @export var final_speed = 100
@@ -24,7 +24,7 @@ func _process(delta):
 
 			if (collid.maxHealth > 0):
 				collid.maxHealth -= 1
-				healthBar.frame += 1
+				healthPhase += 1
 			collid.advance_status()
 
 

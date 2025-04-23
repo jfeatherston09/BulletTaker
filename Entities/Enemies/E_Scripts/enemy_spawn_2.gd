@@ -3,7 +3,7 @@ extends Spawner
 func _ready():
 	enemy_scene = [load("res://Entities/Enemies/E_Scenes/enemy_2.tscn")]
 	randomize()
-	$Timer.set_wait_time(2)
+	$Timer.set_wait_time(20)
 	$Timer.start()
 
 func _on_timer_timeout():

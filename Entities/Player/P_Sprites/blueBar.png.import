@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df1xc86pt6hy"
-path="res://.godot/imported/quitBullet.png-398d996e0c6728367810d24735be814a.ctex"
+uid="uid://dnyca8omdthct"
+path="res://.godot/imported/blueBar.png-ed23e40d50e0dffe56533c3b868543b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/quitBullet.png"
-dest_files=["res://.godot/imported/quitBullet.png-398d996e0c6728367810d24735be814a.ctex"]
+source_file="res://Entities/Player/P_Sprites/blueBar.png"
+dest_files=["res://.godot/imported/blueBar.png-ed23e40d50e0dffe56533c3b868543b2.ctex"]
 
 [params]
 

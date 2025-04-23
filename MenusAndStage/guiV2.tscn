@@ -1,11 +1,47 @@
-[gd_scene load_steps=8 format=3 uid="uid://c3wmwc6nbys8c"]
+[gd_scene load_steps=13 format=3 uid="uid://blbkfbjnuukpj"]
 
-[ext_resource type="Texture2D" uid="uid://bco5ejrcc5bj1" path="res://Entities/Player/P_Sprites/SleekBars.png" id="1_grrdy"]
 [ext_resource type="Script" path="res://MenusAndStage/gui_v_2.gd" id="1_l5p4l"]
+[ext_resource type="Texture2D" uid="uid://tpg3nwubi3yq" path="res://Entities/Player/P_Sprites/healthSequence.png" id="2_gpbop"]
 [ext_resource type="Texture2D" uid="uid://25s7gjb0k50w" path="res://Entities/Player/P_Sprites/bullets_amo.png" id="2_juqvl"]
 [ext_resource type="Texture2D" uid="uid://v4kknfm30s8a" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop.png" id="4_3of20"]
 [ext_resource type="Texture2D" uid="uid://c20kca6wb6qgp" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop (1).png" id="4_8f4t3"]
-[ext_resource type="Script" path="res://score.gd" id="6_oiny2"]
+[ext_resource type="Script" path="res://MenusAndStage/score.gd" id="6_oiny2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2o1jp"]
+atlas = ExtResource("2_gpbop")
+region = Rect2(0, 0, 128, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6cqg"]
+atlas = ExtResource("2_gpbop")
+region = Rect2(0, 32, 128, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f31co"]
+atlas = ExtResource("2_gpbop")
+region = Rect2(0, 64, 128, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vs6d"]
+atlas = ExtResource("2_gpbop")
+region = Rect2(0, 96, 128, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kxry3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2o1jp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6cqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f31co")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vs6d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4lh2j"]
 animations = [{
@@ -34,18 +70,24 @@ anchor_top = 0.246
 anchor_right = 0.647
 anchor_bottom = 0.604
 offset_left = -753.928
-offset_top = -391.408
+offset_top = -384.408
 offset_right = 1032.66
-offset_bottom = 519.608
+offset_bottom = 526.608
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_stretch_ratio = 0.0
 script = ExtResource("1_l5p4l")
 
-[node name="SleekBars" type="Sprite2D" parent="."]
-position = Vector2(376, 1095)
-scale = Vector2(2.70508, 1.34896)
-texture = ExtResource("1_grrdy")
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="VBoxContainer"]
+position = Vector2(376, 1065)
+scale = Vector2(2.67969, 2.09375)
+sprite_frames = SubResource("SpriteFrames_kxry3")
+frame_progress = 0.414772
 
 [node name="BulletsAmo" type="Sprite2D" parent="."]
 position = Vector2(1932, 1129)

@@ -18,7 +18,7 @@ shader = ExtResource("1_lrtkk")
 default_font = ExtResource("6_egdoi")
 
 [node name="Stage" type="Node2D"]
-position = Vector2(215, 120)
+position = Vector2(210, 120)
 script = ExtResource("1_ruvb3")
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]

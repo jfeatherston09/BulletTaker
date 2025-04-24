@@ -2,7 +2,7 @@ extends AnimatedSprite2D
 
 var score: int = 0
 @onready var label : Label = $score
-@onready var 
+
 func add_score(amount:int):
 	score += amount
 	update_label()

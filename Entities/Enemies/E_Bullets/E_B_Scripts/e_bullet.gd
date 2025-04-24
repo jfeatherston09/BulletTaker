@@ -21,7 +21,7 @@ func _process(delta):
 			position += Vector2(2000, 2000)
 
 			if (collid.maxHealth > 0):
-				collid.maxHealth -= 1
+				collid.take_damge(1)
 			collid.advance_status()
 
 

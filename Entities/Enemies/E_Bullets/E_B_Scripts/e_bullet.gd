@@ -3,7 +3,7 @@ extends Node2D
 class_name Bullet
 
 var dir = Vector2(1, 0)
-var gui_scene = preload("res://MenusAndStage/guiV2.tscn").init()
+var gui_scene = preload("res://MenusAndStage/guiV2.tscn").instantiate()
 var healthPhase = gui_scene.get_node("VBoxContainer/health").frame
 
 @export var bullet_speed = 100

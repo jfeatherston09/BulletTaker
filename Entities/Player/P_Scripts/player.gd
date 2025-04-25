@@ -8,7 +8,7 @@ const SPEED = 100.0
 @onready var sprite : Sprite2D = $Sprite2D
 @export var playerId : int = 0
 
-@onready var guiV2 = $guiV2
+signal health_changed(new_health)
 
 @export var maxHealth: int = 3
 @onready var currentHealth: int = maxHealth
@@ -19,7 +19,7 @@ func take_damge(_amount: int):
 	currentHealth -= _amount
 	currentHealth = clamp(currentHealth, 0, health_textures.size() - 1)
 	update_health_display()
-	guiV2.update_Healthlost
+	emit_signal("health_changed", currentHealth)
 
 func update_health_display():
 	if currentHealth >= 0 and currentHealth < health_textures.size():

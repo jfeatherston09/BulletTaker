@@ -68,7 +68,7 @@ text = "YOU'RE AT FULL HEALTH"
 [node name="PauseMenu" parent="." instance=ExtResource("10_rx8e0")]
 position = Vector2(456, 481)
 
-[node name="PanelContainer2" parent="." instance=ExtResource("10_ybne8")]
+[node name="guiV2" parent="." instance=ExtResource("10_ybne8")]
 offset_left = -406.0
 offset_top = -237.0
 offset_right = 1380.59

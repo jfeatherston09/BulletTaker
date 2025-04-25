@@ -63,7 +63,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="PanelContainer" type="Control"]
+[node name="guiV2" type="Control"]
 layout_mode = 3
 anchor_left = 0.289
 anchor_top = 0.246

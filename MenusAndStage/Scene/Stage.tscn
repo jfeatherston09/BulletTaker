@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dqb2nb1i5cyix"]
+[gd_scene load_steps=18 format=3 uid="uid://dqb2nb1i5cyix"]
 
 [ext_resource type="Script" path="res://MenusAndStage/Script/stage.gd" id="1_x3bmc"]
 [ext_resource type="Shader" path="res://MenusAndStage/Script/Stage.gdshader" id="2_7c8o3"]
@@ -10,12 +10,25 @@
 [ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Game_Sprites/8-bitanco.ttf" id="8_r0nu0"]
 [ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/Scene/guiV2.tscn" id="9_o1t6f"]
 [ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/Scene/pause_menu.tscn" id="10_dckll"]
+[ext_resource type="AudioStream" uid="uid://bthq3ug2ylrpb" path="res://Music/In-Game_Music/Cyberpunk Moonlight Sonata.mp3" id="11_gsfle"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("2_7c8o3")
 
 [sub_resource type="Theme" id="Theme_jtj6c"]
 default_font = ExtResource("8_r0nu0")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d14p8"]
+size = Vector2(2311, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghtes"]
+size = Vector2(2860, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g763l"]
+size = Vector2(290, 1451)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sbc3e"]
+size = Vector2(1719, 1224.5)
 
 [node name="Stage" type="Node2D"]
 position = Vector2(215, 120)
@@ -73,6 +86,30 @@ offset_bottom = 726.016
 
 [node name="PauseMenu" parent="." instance=ExtResource("10_dckll")]
 position = Vector2(456, 481)
+
+[node name="CyberpunkMoonlightSonata" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(179, 568)
+stream = ExtResource("11_gsfle")
+autoplay = true
+max_distance = 1e+12
+
+[node name="Border" type="StaticBody2D" parent="."]
+
+[node name="Wall1" type="CollisionShape2D" parent="Border"]
+position = Vector2(722, -132)
+shape = SubResource("RectangleShape2D_d14p8")
+
+[node name="Wall2" type="CollisionShape2D" parent="Border"]
+position = Vector2(837, 990)
+shape = SubResource("RectangleShape2D_ghtes")
+
+[node name="Wall3" type="CollisionShape2D" parent="Border"]
+position = Vector2(-361, 505)
+shape = SubResource("RectangleShape2D_g763l")
+
+[node name="Wall4" type="CollisionShape2D" parent="Border"]
+position = Vector2(2588, 446.25)
+shape = SubResource("RectangleShape2D_sbc3e")
 
 [connection signal="timeout" from="EnemySpawn_3/Timer" to="EnemySpawn_3" method="_on_timer_timeout"]
 [connection signal="timeout" from="EnemySpawn_2/Timer" to="EnemySpawn_2" method="_on_timer_timeout"]

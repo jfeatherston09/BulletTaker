@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dqb2nb1i5cyix"]
+[gd_scene load_steps=13 format=3 uid="uid://do8nobh607dnm"]
 
 [ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]

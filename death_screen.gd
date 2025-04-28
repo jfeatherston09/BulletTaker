@@ -1,5 +1,5 @@
 extends Node2D
-func _ready():
+on_ready get_child var is_active = $Underscore
+func _on_ready:
 	if is_active == 2:
-		var new_scene = load("res://Underscore2")
-		get_tree().change_scene_to_packed(new_scene)
+		new_scene = load("res://Underscore2")

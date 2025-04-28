@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://c1a37fna0vit6"]
 
-[ext_resource type="Script" path="res://MenusAndStage/Main_menu_Script.gd" id="1_p52nf"]
-[ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_c5sbd"]
+[ext_resource type="Script" path="res://MenusAndStage/Script/Main_menu_Script.gd" id="1_bmdbv"]
+[ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_15uxj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]
-texture = ExtResource("2_c5sbd")
+texture = ExtResource("2_15uxj")
 modulate_color = Color(0.631373, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfrpy"]
@@ -28,7 +28,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_p52nf")
+script = ExtResource("1_bmdbv")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1

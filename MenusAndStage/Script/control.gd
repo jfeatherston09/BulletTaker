@@ -8,4 +8,4 @@ func _process(delta: float) -> void:
 		_on_start_pressed()
 
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://MenusAndStage/Main_Menu_Scene.tscn")
+	get_tree().change_scene_to_file("res://MenusAndStage/Scene/Main_Menu_Scene.tscn")

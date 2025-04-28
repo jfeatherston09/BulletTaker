@@ -1,51 +1,51 @@
 [gd_scene load_steps=13 format=3 uid="uid://dqb2nb1i5cyix"]
 
-[ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="1_a2e22"]
-[ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_jo2ot"]
-[ext_resource type="Shader" path="res://MenusAndStage/Stage.gdshader" id="1_lrtkk"]
-[ext_resource type="Script" path="res://MenusAndStage/stage.gd" id="1_ruvb3"]
-[ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="3_glrh6"]
-[ext_resource type="Script" path="res://MenusAndStage/enemy_spawn_3.gd" id="4_pyrmi"]
-[ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="5_sflfi"]
-[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Game_Sprites/8-bitanco.ttf" id="6_egdoi"]
-[ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/guiV2.tscn" id="6_pkb34"]
-[ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/pause_menu.tscn" id="10_rx8e0"]
+[ext_resource type="Script" path="res://MenusAndStage/Script/stage.gd" id="1_x3bmc"]
+[ext_resource type="Shader" path="res://MenusAndStage/Script/Stage.gdshader" id="2_7c8o3"]
+[ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="3_4isb7"]
+[ext_resource type="PackedScene" uid="uid://b4asmo3rjhqvf" path="res://Entities/Player/P_Scenes/player.tscn" id="4_jaaoi"]
+[ext_resource type="Script" path="res://MenusAndStage/Script/enemy_spawn_3.gd" id="5_7rc3m"]
+[ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="6_qpynp"]
+[ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="7_ay085"]
+[ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Game_Sprites/8-bitanco.ttf" id="8_r0nu0"]
+[ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/Scene/guiV2.tscn" id="9_o1t6f"]
+[ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/Scene/pause_menu.tscn" id="10_dckll"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
-shader = ExtResource("1_lrtkk")
+shader = ExtResource("2_7c8o3")
 
 [sub_resource type="Theme" id="Theme_jtj6c"]
-default_font = ExtResource("6_egdoi")
+default_font = ExtResource("8_r0nu0")
 
 [node name="Stage" type="Node2D"]
 position = Vector2(215, 120)
-script = ExtResource("1_ruvb3")
+script = ExtResource("1_x3bmc")
 
 [node name="BackgroundJerom" type="Sprite2D" parent="."]
 modulate = Color(0.5357, 0, 0.105269, 1)
 material = SubResource("ShaderMaterial_jluj3")
 position = Vector2(757, 428)
 scale = Vector2(4.33705, 1.32091)
-texture = ExtResource("1_jo2ot")
+texture = ExtResource("3_4isb7")
 
-[node name="Player" parent="." instance=ExtResource("1_a2e22")]
+[node name="Player" parent="." instance=ExtResource("4_jaaoi")]
 position = Vector2(720, 722)
 
 [node name="EnemySpawn_3" type="Node2D" parent="."]
 position = Vector2(1040, -112)
-script = ExtResource("4_pyrmi")
+script = ExtResource("5_7rc3m")
 
 [node name="Timer" type="Timer" parent="EnemySpawn_3"]
 
 [node name="EnemySpawn_2" type="Node2D" parent="."]
 position = Vector2(432, -109)
-script = ExtResource("5_sflfi")
+script = ExtResource("6_qpynp")
 
 [node name="Timer" type="Timer" parent="EnemySpawn_2"]
 
 [node name="EnemySpawn" type="Node2D" parent="."]
 position = Vector2(683, -111)
-script = ExtResource("3_glrh6")
+script = ExtResource("7_ay085")
 
 [node name="Timer" type="Timer" parent="EnemySpawn"]
 
@@ -65,13 +65,13 @@ scale = Vector2(7, 7)
 theme = SubResource("Theme_jtj6c")
 text = "YOU'RE AT FULL HEALTH"
 
-[node name="PanelContainer" parent="." instance=ExtResource("6_pkb34")]
+[node name="PanelContainer" parent="." instance=ExtResource("9_o1t6f")]
 offset_left = -414.0
 offset_top = -185.0
 offset_right = 1372.59
 offset_bottom = 726.016
 
-[node name="PauseMenu" parent="." instance=ExtResource("10_rx8e0")]
+[node name="PauseMenu" parent="." instance=ExtResource("10_dckll")]
 position = Vector2(456, 481)
 
 [connection signal="timeout" from="EnemySpawn_3/Timer" to="EnemySpawn_3" method="_on_timer_timeout"]

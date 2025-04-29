@@ -10,7 +10,7 @@ const SPEED = 100.0
 
 signal health_changed(new_health)
 
-@export var maxHealth: int = 3
+@export var maxHealth: int = 3 - 1
 @onready var currentHealth: int = maxHealth
 @onready var Health_lost_sprite : Sprite2D = $Healthlost
 @export var health_textures: Array[Texture2D] = []

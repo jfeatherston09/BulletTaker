@@ -8,7 +8,7 @@
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="6_qpynp"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="7_ay085"]
 [ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Game_Sprites/8-bitanco.ttf" id="8_r0nu0"]
-[ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/Scene/guiV2.tscn" id="9_o1t6f"]
+[ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://guiV2.tscn" id="9_o1t6f"]
 [ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/Scene/pause_menu.tscn" id="10_dckll"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
@@ -55,9 +55,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 48.0
+offset_left = 49.0
 offset_top = 306.0
-offset_right = 221.0
+offset_right = 222.0
 offset_bottom = 327.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -65,11 +65,12 @@ scale = Vector2(7, 7)
 theme = SubResource("Theme_jtj6c")
 text = "YOU'RE AT FULL HEALTH"
 
-[node name="PanelContainer" parent="." instance=ExtResource("9_o1t6f")]
-offset_left = -414.0
-offset_top = -185.0
-offset_right = 1372.59
-offset_bottom = 726.016
+[node name="guiV2" parent="." instance=ExtResource("9_o1t6f")]
+offset_left = -407.0
+offset_top = -216.0
+offset_right = 1379.59
+offset_bottom = 695.016
+script = null
 
 [node name="PauseMenu" parent="." instance=ExtResource("10_dckll")]
 position = Vector2(456, 481)

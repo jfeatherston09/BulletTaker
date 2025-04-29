@@ -10,7 +10,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
+func update_Healthlost(new_health):
+	print("Health updated:", new_health)
 #if bullet hit enemey play animatedsprite2D
 #@onready var health bar:
 #	if player get his health bar moves down 
@@ -21,4 +22,3 @@ func _process(delta: float) -> void:
 #	if player shoots then stamna bar will move down:
 #		if stamna bar is low player movement speed -= 10:
 #	elif stamna bar is empty player movment speed = 0 
- 

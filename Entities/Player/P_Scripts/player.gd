@@ -8,8 +8,22 @@ const SPEED = 100.0
 @onready var sprite : Sprite2D = $Sprite2D
 @export var playerId : int = 0
 
-@export var maxHealth = 3
+signal health_changed(new_health)
+
+@export var maxHealth: int = 3
 @onready var currentHealth: int = maxHealth
+@onready var Health_lost_sprite : Sprite2D = $Healthlost
+@export var health_textures: Array[Texture2D] = []
+
+func take_damge(_amount: int):
+	currentHealth -= _amount
+	currentHealth = clamp(currentHealth, 0, health_textures.size() - 1)
+	update_health_display()
+	emit_signal("health_changed", currentHealth)
+
+func update_health_display():
+	if currentHealth >= 0 and currentHealth < health_textures.size():
+		Health_lost_sprite.texture = health_textures[currentHealth]
 
 var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 
@@ -17,11 +31,12 @@ var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 
 func _on_hit_enemy():
 	score_display.add_score(10)
+	
 	sprite.play("hit_enemy")
 
 func _on_got_hit():
-	score_display.subtrct_score(5)
-	sprite.play("healthSequences")
+	score_display.subtract_score(5)
+
 
 func _physics_process(_delta):
 

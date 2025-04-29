@@ -11,6 +11,7 @@ func add_score(amount:int):
 func subtract_score(amount:int):
 	score = max(0, score - amount)
 	update_label()
+	
 
 func update_label():
 	label.text = "score: %d" % score

@@ -22,3 +22,7 @@ func update_Healthlost(new_health):
 #	if player shoots then stamna bar will move down:
 #		if stamna bar is low player movement speed -= 10:
 #	elif stamna bar is empty player movment speed = 0 
+
+
+func _on_player_health_changed(new_health: Variant) -> void:
+	SpriteFrames = update_Healthlost()

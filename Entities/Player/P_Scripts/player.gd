@@ -12,7 +12,7 @@ signal health_changed(new_health)
 
 @export var maxHealth: int = 3 - 1
 @onready var currentHealth: int = maxHealth
-@onready var Health_lost_sprite : Sprite2D = $Healthlost
+@onready var Health_lost_sprite : Sprite2D = $Sprite2D
 @export var health_textures: Array[Texture2D] = []
 
 func take_damge(_amount: int):
@@ -23,7 +23,7 @@ func take_damge(_amount: int):
 
 func update_health_display():
 	if currentHealth >= 0 and currentHealth < health_textures.size():
-		Health_lost_sprite.texture = health_textures[currentHealth]
+		Health_lost_sprite.frame = 0
 
 var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 

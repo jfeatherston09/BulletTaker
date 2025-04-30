@@ -1,11 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://b1dpxtufxkb21"]
+[gd_scene load_steps=31 format=3 uid="uid://b1dpxtufxkb21"]
 
 [ext_resource type="Script" path="res://MenusAndStage/gui_v_2.gd" id="1_l5p4l"]
 [ext_resource type="Texture2D" uid="uid://tpg3nwubi3yq" path="res://Entities/Player/P_Sprites/healthSequence.png" id="2_gpbop"]
-[ext_resource type="Texture2D" uid="uid://25s7gjb0k50w" path="res://Entities/Player/P_Sprites/bullets_amo.png" id="2_juqvl"]
 [ext_resource type="Texture2D" uid="uid://v4kknfm30s8a" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop.png" id="4_3of20"]
 [ext_resource type="Texture2D" uid="uid://c20kca6wb6qgp" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop (1).png" id="4_8f4t3"]
 [ext_resource type="Script" path="res://MenusAndStage/score.gd" id="6_oiny2"]
+[ext_resource type="Texture2D" uid="uid://beuhxm2xiihbg" path="res://Entities/Player/P_Sprites/bullets_ammo.png" id="6_xws0i"]
+[ext_resource type="Script" path="res://MenusAndStage/bullets_ammo.gd" id="7_15tb8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2o1jp"]
 atlas = ExtResource("2_gpbop")
@@ -63,7 +64,125 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_fa1r4"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(0, 0, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hq0e6"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(0, 99, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4cx6"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(0, 198, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1c7v3"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(0, 297, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxblb"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(0, 396, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rt8e1"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(363, 0, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1m7hh"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(363, 99, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pywbj"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(363, 198, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocjpp"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(363, 297, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nx3ms"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(363, 396, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4shx"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(726, 0, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3v2qb"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(726, 99, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ka7s2"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(726, 198, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vc7uy"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(726, 297, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7ooh"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(726, 396, 363, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhjh1"]
+atlas = ExtResource("6_xws0i")
+region = Rect2(1089, 0, 363, 99)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_c4xu6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fa1r4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hq0e6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4cx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c7v3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxblb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rt8e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1m7hh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pywbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocjpp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nx3ms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4shx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3v2qb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ka7s2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vc7uy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7ooh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhjh1")
+}],
+"loop": true,
+"name": &"bulletChanges",
+"speed": 5.0
+}]
 
 [node name="PanelContainer" type="Control"]
 layout_mode = 3
@@ -91,10 +210,6 @@ scale = Vector2(2.67969, 2.09375)
 sprite_frames = SubResource("SpriteFrames_kxry3")
 animation = &"healthSequences"
 
-[node name="BulletsAmo" type="Sprite2D" parent="."]
-position = Vector2(1932, 1129)
-texture = ExtResource("2_juqvl")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(348, 167)
 scale = Vector2(0.902862, 1)
@@ -113,4 +228,7 @@ theme_override_font_sizes/font_size = 54
 text = "0"
 
 [node name="BulletsAmmo" type="AnimatedSprite2D" parent="."]
+position = Vector2(1923, 1114)
 sprite_frames = SubResource("SpriteFrames_c4xu6")
+animation = &"bulletChanges"
+script = ExtResource("7_15tb8")

@@ -1,9 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=7 format=3 uid="uid://c1a37fna0vit6"]
 
 [ext_resource type="Script" path="res://MenusAndStage/Main_menu_Script.gd" id="1_p52nf"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_c5sbd"]
-[ext_resource type="FontFile" path="res://Sprites/8-bitanco.ttf" id="3_ejysj"]
-[ext_resource type="Texture2D" path="res://Sprites/logoBullet.png" id="4_qesqn"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]
 texture = ExtResource("2_c5sbd")
@@ -22,7 +20,6 @@ corner_radius_bottom_right = 100
 shadow_size = 11
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1qxu"]
-texture = ExtResource("4_qesqn")
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -69,14 +66,14 @@ size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_cfrpy")
-text = "start"
+text = "Start [START]"
 
 [node name="Button3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_u0g8a")
-text = "controlles"
+text = "Controls [X]"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -84,7 +81,7 @@ size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_cfrpy")
-text = "quit"
+text = "Quit [B]"
 
 [node name="Labiodental" type="Label" parent="."]
 layout_mode = 1
@@ -97,7 +94,6 @@ offset_right = 442.0
 offset_bottom = 244.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.843137, 0.207843, 0.00784314, 1)
-theme_override_fonts/font = ExtResource("3_ejysj")
 theme_override_font_sizes/font_size = 10
 text = "Bullet taker"
 horizontal_alignment = 1

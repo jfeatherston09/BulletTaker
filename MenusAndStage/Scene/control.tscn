@@ -1,10 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3la4eidx2172"]
+[gd_scene load_steps=5 format=3 uid="uid://dmjjc1gqaw7jh"]
 
-[ext_resource type="Script" path="res://control.gd" id="1_joye4"]
-[ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="1_utska"]
+[ext_resource type="Script" path="res://MenusAndStage/Script/control.gd" id="1_orufs"]
+[ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_40g6f"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bagds"]
-texture = ExtResource("1_utska")
+texture = ExtResource("2_40g6f")
 modulate_color = Color(0.313033, 0, 0.017739, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1yqd"]
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_joye4")
+script = ExtResource("1_orufs")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -50,7 +50,7 @@ size_flags_vertical = 6
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_a1yqd")
-text = "back"
+text = "back [B]"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -60,13 +60,19 @@ theme_override_font_sizes/font_size = 34
 text = "JOYSTICK DIRECTIONS - Move the player in the respective direction.
 
 B BUTTON - Shoots your gun. 
-Once if pressed. Continuously if held. Also used to select the options on the main menu
+Once if pressed. Continuously if held. 
+Also to quit the game and go back to the main menu.
+
+X BUTTON - Used to select the options on the main menu
 
 A BUTTON - Uses the power up that the player has collected.
 
-X BUTTON - Pauses and unpauses the game.
+START BUTTON - Starts, pauses, and unpauses the game.
 
 L2 BUTTON - Makes the player dash which gives temporary invincible frames.
+
+R2 BUTTON - Manual reload.
+
 "
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

@@ -1,11 +1,25 @@
 [gd_scene load_steps=14 format=3 uid="uid://blbkfbjnuukpj"]
 
-[ext_resource type="Script" path="res://MenusAndStage/gui_v_2.gd" id="1_l5p4l"]
 [ext_resource type="Texture2D" uid="uid://tpg3nwubi3yq" path="res://Entities/Player/P_Sprites/healthSequence.png" id="2_gpbop"]
 [ext_resource type="Texture2D" uid="uid://25s7gjb0k50w" path="res://Entities/Player/P_Sprites/bullets_amo.png" id="2_juqvl"]
 [ext_resource type="Texture2D" uid="uid://v4kknfm30s8a" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop.png" id="4_3of20"]
 [ext_resource type="Texture2D" uid="uid://c20kca6wb6qgp" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop (1).png" id="4_8f4t3"]
-[ext_resource type="Script" path="res://MenusAndStage/score.gd" id="6_oiny2"]
+[ext_resource type="Script" path="res://MenusAndStage/Script/score.gd" id="6_oiny2"]
+
+[sub_resource type="GDScript" id="GDScript_sqifx"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+#
+"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2o1jp"]
 atlas = ExtResource("2_gpbop")
@@ -39,7 +53,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_5vs6d")
 }],
 "loop": true,
-"name": &"healthSequences",
+"name": &"Healthlost",
 "speed": 5.0
 }]
 
@@ -63,9 +77,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_c4xu6"]
-
-[node name="PanelContainer" type="Control"]
+[node name="guiV2" type="Control"]
 layout_mode = 3
 anchor_left = 0.289
 anchor_top = 0.246
@@ -78,18 +90,19 @@ offset_bottom = 526.608
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_stretch_ratio = 0.0
-script = ExtResource("1_l5p4l")
+script = SubResource("GDScript_sqifx")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="health" type="AnimatedSprite2D" parent="VBoxContainer"]
+[node name="Healthlost" type="AnimatedSprite2D" parent="VBoxContainer"]
 position = Vector2(376, 1065)
 scale = Vector2(2.67969, 2.09375)
 sprite_frames = SubResource("SpriteFrames_kxry3")
-animation = &"healthSequences"
+animation = &"Healthlost"
+frame_progress = 0.51639
 
 [node name="BulletsAmo" type="Sprite2D" parent="."]
 position = Vector2(1932, 1129)

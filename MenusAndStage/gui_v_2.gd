@@ -11,3 +11,9 @@ func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("Shoot")):
 		if currentFrame < 16:
 			bulletGUI.frame += 1
+			currentFrame += 1
+	if (Input.is_action_just_pressed("Reload")):
+		
+		bulletGUI.frame = 0
+		currentFrame = 0
+			

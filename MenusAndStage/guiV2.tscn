@@ -203,7 +203,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="health" type="AnimatedSprite2D" parent="VBoxContainer"]
-position = Vector2(376, 1065)
+position = Vector2(391.048, 1104.73)
 scale = Vector2(2.67969, 2.09375)
 sprite_frames = SubResource("SpriteFrames_kxry3")
 animation = &"healthSequences"
@@ -225,6 +225,6 @@ theme_override_font_sizes/font_size = 54
 text = "0"
 
 [node name="BulletsAmmo" type="AnimatedSprite2D" parent="."]
-position = Vector2(1923, 1114)
+position = Vector2(1907, 1114)
 sprite_frames = SubResource("SpriteFrames_c4xu6")
 animation = &"bulletChanges"

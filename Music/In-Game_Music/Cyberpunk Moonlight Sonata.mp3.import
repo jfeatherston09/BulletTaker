@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bthq3ug2ylrpb"
+path="res://.godot/imported/Cyberpunk Moonlight Sonata.mp3-1630df89d6816d1f013889c899922fa1.mp3str"
+
+[deps]
+
+source_file="res://Music/In-Game_Music/Cyberpunk Moonlight Sonata.mp3"
+dest_files=["res://.godot/imported/Cyberpunk Moonlight Sonata.mp3-1630df89d6816d1f013889c899922fa1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

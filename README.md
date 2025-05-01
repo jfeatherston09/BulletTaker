@@ -77,8 +77,22 @@ There will be a random chance every 1 min or 2 min that a power up could spawn. 
 - Abstaction can be found inside of the enemy 1-3 node. Abstaction can also be found in the enemy spawn 1-3 nodes.
 # Godot Features:
 ## Node Types:
-- 
+- Node2D
+- CharacterBody2D
+- Sprite2D
+- Control
+- Label
+- Button
+- CollisionShape2D
+- RayCast2D
+- VisibleOnScreenNotifier
+- Timer
+- Area2D
+- Panel
+- VBoxContainer
+- AnimatedSprite2D
 ## Signals:
-- 
+- _on_timer_timeout()
+- _on_visible_on_screen_notifier_2d_screen_exited()
 ## Scenes:
 - 

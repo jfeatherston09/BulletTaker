@@ -27,11 +27,11 @@ func update_health_display():
 
 var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 
-@onready var score_display = get_node("/root/Main/guiV2/panelContainer/score")
+@onready var score_display = %guiV2.get_node("score")#get_node("/root/Main/guiV2/panelContainer/score")
 
 func _on_hit_enemy():
 	score_display.add_score(10)
-	
+
 	sprite.play("hit_enemy")
 
 func _on_got_hit():

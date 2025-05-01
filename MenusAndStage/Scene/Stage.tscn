@@ -8,8 +8,8 @@
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn_2.gd" id="6_qpynp"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy_spawn.gd" id="7_ay085"]
 [ext_resource type="FontFile" uid="uid://52g8drl8mima" path="res://Game_Sprites/8-bitanco.ttf" id="8_r0nu0"]
-[ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://guiV2.tscn" id="9_o1t6f"]
-[ext_resource type="Script" path="res://gui_v_2.gd" id="10_5si6r"]
+[ext_resource type="PackedScene" uid="uid://blbkfbjnuukpj" path="res://MenusAndStage/Scene/guiV2.tscn" id="9_o1t6f"]
+[ext_resource type="Script" path="res://MenusAndStage/Script/gui_v_2.gd" id="10_5si6r"]
 [ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/Scene/pause_menu.tscn" id="10_dckll"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
@@ -67,6 +67,7 @@ theme = SubResource("Theme_jtj6c")
 text = "YOU'RE AT FULL HEALTH"
 
 [node name="guiV2" parent="." instance=ExtResource("9_o1t6f")]
+unique_name_in_owner = true
 offset_left = -407.0
 offset_top = -216.0
 offset_right = 1379.59

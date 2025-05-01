@@ -9,10 +9,6 @@ height = 50.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_rp0hv")
-speed = null
-playerId = null
-maxHealth = null
-health_textures = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0.347475, 0.495129, 1)

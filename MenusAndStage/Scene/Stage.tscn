@@ -70,7 +70,6 @@ offset_left = -407.0
 offset_top = -216.0
 offset_right = 1379.59
 offset_bottom = 695.016
-script = null
 
 [node name="PauseMenu" parent="." instance=ExtResource("10_dckll")]
 position = Vector2(456, 481)

@@ -228,3 +228,6 @@ text = "0"
 position = Vector2(1907, 1114)
 sprite_frames = SubResource("SpriteFrames_c4xu6")
 animation = &"bulletChanges"
+
+[node name="reloadCooldown" type="Timer" parent="BulletsAmmo"]
+wait_time = 5.0

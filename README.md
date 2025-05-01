@@ -95,4 +95,15 @@ There will be a random chance every 1 min or 2 min that a power up could spawn. 
 - _on_timer_timeout()
 - _on_visible_on_screen_notifier_2d_screen_exited()
 ## Scenes:
-- 
+- e_bullet
+- enemy
+- enemy_2
+- enemy_3
+- p_bullet
+- player
+- control
+- guiV2
+- Main_Menu_Scene
+- node_2d
+- pause_menu
+- Stage

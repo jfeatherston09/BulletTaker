@@ -1,10 +1,8 @@
-[gd_scene load_steps=31 format=3 uid="uid://b1dpxtufxkb21"]
+[gd_scene load_steps=29 format=3 uid="uid://b1dpxtufxkb21"]
 
-[ext_resource type="Script" path="res://MenusAndStage/gui_v_2.gd" id="1_l5p4l"]
 [ext_resource type="Texture2D" uid="uid://tpg3nwubi3yq" path="res://Entities/Player/P_Sprites/healthSequence.png" id="2_gpbop"]
 [ext_resource type="Texture2D" uid="uid://v4kknfm30s8a" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop.png" id="4_3of20"]
 [ext_resource type="Texture2D" uid="uid://c20kca6wb6qgp" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop (1).png" id="4_8f4t3"]
-[ext_resource type="Script" path="res://MenusAndStage/score.gd" id="6_oiny2"]
 [ext_resource type="Texture2D" uid="uid://beuhxm2xiihbg" path="res://Entities/Player/P_Sprites/bullets_ammo.png" id="6_xws0i"]
 [ext_resource type="Script" path="res://MenusAndStage/bullets_ammo.gd" id="7_15tb8"]
 
@@ -197,7 +195,6 @@ offset_bottom = 526.608
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_stretch_ratio = 0.0
-script = ExtResource("1_l5p4l")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -216,7 +213,6 @@ scale = Vector2(0.902862, 1)
 sprite_frames = SubResource("SpriteFrames_4lh2j")
 animation = &"SCORE"
 autoplay = "SCORE"
-script = ExtResource("6_oiny2")
 
 [node name="score" type="Label" parent="AnimatedSprite2D"]
 offset_left = 97.4678

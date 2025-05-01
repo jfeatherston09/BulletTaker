@@ -1494,6 +1494,10 @@ texture = ExtResource("3_4isb7")
 
 [node name="Player" parent="." instance=ExtResource("4_jaaoi")]
 position = Vector2(720, 722)
+speed = null
+playerId = null
+maxHealth = null
+health_textures = null
 
 [node name="EnemySpawn_3" type="Node2D" parent="."]
 position = Vector2(1040, -112)
@@ -1534,6 +1538,7 @@ offset_left = -407.0
 offset_top = -216.0
 offset_right = 1379.59
 offset_bottom = 695.016
+script = null
 
 [node name="PauseMenu" parent="." instance=ExtResource("10_dckll")]
 position = Vector2(456, 481)

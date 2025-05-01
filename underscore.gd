@@ -1,10 +1,9 @@
 extends RichTextLabel
-var is_active = 1
 var JOY_AXIS_TRIGGER_LEFT = 0
 var JOY_AXIS_TRIGGER_RIGHT = 0
 
 func _input(event: InputEvent) -> void:
-		if is_active == 1:
+		if FrontalLobeScript.is_active == 1:
 			if event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 0:
 				JOY_AXIS_TRIGGER_LEFT += 1
 				set_text("A")
@@ -35,7 +34,7 @@ func _input(event: InputEvent) -> void:
 			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 9:
 				JOY_AXIS_TRIGGER_LEFT += 1
 				set_text("J")
-			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 10: 
+			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 10:
 				JOY_AXIS_TRIGGER_LEFT += 1
 				set_text("K")
 			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 11:
@@ -65,10 +64,10 @@ func _input(event: InputEvent) -> void:
 			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 19:
 				JOY_AXIS_TRIGGER_LEFT += 1
 				set_text("T")
-			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 20: 
+			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 20:
 				JOY_AXIS_TRIGGER_LEFT += 1
 				set_text("U")
-			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 21: 
+			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 21:
 				JOY_AXIS_TRIGGER_LEFT += 1
 				set_text("V")
 			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 22:
@@ -86,5 +85,5 @@ func _input(event: InputEvent) -> void:
 			elif event.is_action_pressed("joy_left") and JOY_AXIS_TRIGGER_LEFT == 26:
 				JOY_AXIS_TRIGGER_LEFT -= 26
 				set_text("A")
-			elif event.is_action_pressed("joy_down"):
-				is_active+=1
+		elif event.is_action_pressed("joy_down"):
+			FrontalLobeScript.is_active+=1

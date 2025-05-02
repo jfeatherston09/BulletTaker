@@ -1,12 +1,18 @@
-extends Node2D
+extends Area2D
 
 class_name Enemy
 
+@export var health: int = 3
 @onready var bullet_scene = load("res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.tscn")
-
 @onready var player = get_parent().get_parent().get_node("Player")
 
 var type = "ENEMY"
+
+func take_damage(amount: int):
+	health -= amount
+	if health <= 0:
+		print("Enemy destroyed!")
+		queue_free()  # or play an explosion animation first, then queue_free()
 
 
 # Called when the node enters the scene tree for the first time.

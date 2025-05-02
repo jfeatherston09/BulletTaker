@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dqb2nb1i5cyix"]
+[gd_scene load_steps=18 format=3 uid="uid://dqb2nb1i5cyix"]
 
 [ext_resource type="Script" path="res://MenusAndStage/Script/stage.gd" id="1_x3bmc"]
 [ext_resource type="Shader" path="res://MenusAndStage/Script/Stage.gdshader" id="2_7c8o3"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/Scene/pause_menu.tscn" id="10_dckll"]
 [ext_resource type="AudioStream" uid="uid://mp2iyhkh1gkg" path="res://SFX/Ambience/LavaLoop.wav" id="11_uhblm"]
 [ext_resource type="AudioStream" uid="uid://bthq3ug2ylrpb" path="res://Music/In-Game_Music/Cyberpunk Moonlight Sonata.mp3" id="12_hjp5v"]
+[ext_resource type="AudioStream" uid="uid://30mm7nyrybt1" path="res://Music/Pause_Menu/TremLoadingloopl.wav" id="13_joayw"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("2_7c8o3")
@@ -1553,6 +1554,11 @@ script = null
 
 [node name="PauseMenu" parent="." instance=ExtResource("10_dckll")]
 position = Vector2(456, 481)
+
+[node name="PauseMusic" type="AudioStreamPlayer2D" parent="PauseMenu"]
+process_mode = 3
+stream = ExtResource("13_joayw")
+autoplay = true
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4vi2g")

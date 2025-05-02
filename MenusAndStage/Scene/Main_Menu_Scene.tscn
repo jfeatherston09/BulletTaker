@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=10 format=3 uid="uid://c1a37fna0vit6"]
 
 [ext_resource type="Script" path="res://MenusAndStage/Script/Main_menu_Script.gd" id="1_bmdbv"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_15uxj"]
+[ext_resource type="AudioStream" uid="uid://dulibj2odo2rq" path="res://Music/Main_Menu/space.mp3" id="3_si8lm"]
+[ext_resource type="Texture2D" uid="uid://c3dxmw7l447ki" path="res://Game_Sprites/logoBullet.png" id="4_s7iw3"]
+[ext_resource type="Texture2D" uid="uid://df1xc86pt6hy" path="res://Game_Sprites/quitBullet.png" id="5_ap58s"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]
 texture = ExtResource("2_15uxj")
@@ -109,6 +112,20 @@ offset_top = -68.0
 offset_right = 716.0
 offset_bottom = 253.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_a1qxu")
+
+[node name="Space" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(401, 331)
+stream = ExtResource("3_si8lm")
+autoplay = true
+
+[node name="LogoBullet" type="Sprite2D" parent="."]
+position = Vector2(944, 236)
+scale = Vector2(5.28723, 8.04688)
+texture = ExtResource("4_s7iw3")
+
+[node name="QuitBullet" type="Sprite2D" parent="."]
+position = Vector2(631, 602)
+texture = ExtResource("5_ap58s")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

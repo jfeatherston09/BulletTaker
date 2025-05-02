@@ -1,21 +1,25 @@
-extends Node2D
-
-
-
-var dir = Vector2(0, 1)
+extends Area2D
 
 @export var bullet_speed = 700
-@export var final_speed = 100
-# Called when the node enters the scene tree for the first time.
+var dir = Vector2(0, 1)
+
+# Called when the node enters the scene tree for the first time
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+	# Connect to the "body_entered" signal for collision detection
+	#connect("body_entered", Callable(self, "_on_body_entered"))
+	pass
+# Called every frame. 'delta' is the elapsed time since the previous frame
 func _process(delta):
-	self.position -= dir * delta * bullet_speed
+	position -= dir * delta * bullet_speed
 
+# Handle collision when the bullet enters another object
+func _on_body_entered(body):
+	print("Bullet collided with: ", body)
+	if body is Enemy:
+		print("Enemy hit!")
+		body.take_damge(1)
+		queue_free()
 
 func screen_exited():
-	get_parent().remove_child(self)
+	# Remove the bullet when it leaves the screen
 	queue_free()

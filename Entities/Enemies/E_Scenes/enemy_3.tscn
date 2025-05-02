@@ -6,20 +6,18 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bmvjp"]
 size = Vector2(1242, 1381)
 
-[node name="enemy_3" type="Node2D"]
+[node name="enemy_3" type="Area2D"]
 rotation = 3.14159
 script = ExtResource("1_neylc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -18.5)
+shape = SubResource("RectangleShape2D_bmvjp")
 
 [node name="Ship(16)" type="Sprite2D" parent="."]
 position = Vector2(-6, 1)
 texture = ExtResource("2_npkln")
 
 [node name="Timer" type="Timer" parent="."]
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-3, -18.5)
-shape = SubResource("RectangleShape2D_bmvjp")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

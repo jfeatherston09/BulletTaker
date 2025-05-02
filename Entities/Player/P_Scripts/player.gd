@@ -14,6 +14,7 @@ signal health_changed(new_health)
 @onready var currentHealth: int = maxHealth
 @onready var Health_lost_sprite : Sprite2D = $Healthlost
 @export var health_textures: Array[Texture2D] = []
+var guiDisplay = preload("res://MenusAndStage/Scene/guiV2.tscn").instantiate()
 
 func take_damge(_amount: int):
 	currentHealth -= _amount
@@ -61,7 +62,7 @@ func _physics_process(delta):
 		var b = p_bullet.instantiate()
 		get_parent().add_child(b)
 		b.position = self.position
-
+		print(bulletBarrel.name)
 
 
 func advance_status():

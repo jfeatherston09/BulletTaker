@@ -15,9 +15,7 @@ health_textures = Array[Texture2D]([null, null, null])
 modulate = Color(1, 0.347475, 0.495129, 1)
 texture = ExtResource("1_sxi68")
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_f4o83")
 
 [node name="Player" type="Node2D" parent="."]

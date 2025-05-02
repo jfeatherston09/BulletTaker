@@ -1544,6 +1544,7 @@ offset_left = -401.0
 offset_top = -218.0
 offset_right = 1385.59
 offset_bottom = 693.016
+
 [node name="LavaLoop" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(222, 514)
 stream = ExtResource("11_uhblm")

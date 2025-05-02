@@ -17,13 +17,13 @@ signal health_changed(new_health)
 
 func take_damge(_amount: int):
 	currentHealth -= _amount
-	currentHealth = clamp(currentHealth, 0, health_textures.size() - 1)
+	currentHealth = clamp(currentHealth, 3, health_textures.size() - 1)
 	update_health_display()
 	emit_signal("health_changed", currentHealth)
 
 func update_health_display():
 	if currentHealth >= 0 and currentHealth < health_textures.size():
-		Health_lost_sprite.frame = 0
+		Health_lost_sprite.frame = 3
 
 var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 
@@ -57,7 +57,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-	if (Input.is_action_just_pressed("Shoot")):
+	if (Input.is_action_just_pressed("p1_b")):
 		var b = p_bullet.instantiate()
 		get_parent().add_child(b)
 		b.position = self.position

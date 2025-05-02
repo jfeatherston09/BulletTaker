@@ -14,8 +14,10 @@ signal health_changed(new_health)
 @onready var currentHealth: int = maxHealth
 @onready var Health_lost_sprite : Sprite2D = $Healthlost
 @export var health_textures: Array[Texture2D] = []
-var guiDisplay = preload("res://MenusAndStage/Scene/guiV2.tscn").instantiate()
 
+func _ready() -> void:
+	pass
+var bulletBarrel: Node = null
 func take_damge(_amount: int):
 	currentHealth -= _amount
 	currentHealth = clamp(currentHealth, 0, health_textures.size() - 1)
@@ -37,7 +39,6 @@ func _on_hit_enemy():
 
 func _on_got_hit():
 	score_display.subtract_score(5)
-
 
 func _physics_process(delta):
 	var direction := Vector2.ZERO

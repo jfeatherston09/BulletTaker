@@ -1496,6 +1496,10 @@ texture = ExtResource("3_4isb7")
 
 [node name="Player" parent="." instance=ExtResource("4_jaaoi")]
 position = Vector2(720, 722)
+speed = 200
+playerId = 0
+maxHealth = 3
+health_textures = Array[Texture2D]([])
 
 [node name="EnemySpawn_3" type="Node2D" parent="."]
 position = Vector2(1040, -112)

@@ -15,6 +15,9 @@ func _process(delta: float) -> void:
 			currentFrame += 1
 	if (Input.is_action_just_pressed("Reload")):
 		reloadCooldown.start()
-		bulletGUI.frame = 0
-		currentFrame = 0
+		reloadCooldown.timeout.connect(_on_timer_timeout)
+		
+func _on_timer_timeout():
+	bulletGUI.frame = 0
+	currentFrame = 0
 			

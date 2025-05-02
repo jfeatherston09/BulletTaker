@@ -68,13 +68,13 @@ There will be a random chance every 1 min or 2 min that a power up could spawn. 
 
 # Instructions (Where to find examples of each OOP concept and Godot feature)
 ## Inheritance:
-- You can find inheretence within the enemy spawn nodes 1-3. You will also find in the enemy 1-3 nodes as well.
+- You can find inheritance within the enemy spawn nodes 1-3. You will also find in the enemy  1-3 nodes as well.
 ## Encapsulation:
 - You can find examples of encapsulation also within enemy 1-3 nodes. Encapsulation may also be found in enemy spawn nodes 1-3.
 ## Polymorphism:
 - Polymorphism is found with enemy spawn 1-3 nodes. It is also found in enemy 1-3 nodes.
 ## Abstraction:
-- Abstaction can be found inside of the enemy 1-3 node. Abstaction can also be found in the enemy spawn 1-3 nodes.
+- Abstraction can be found inside of the enemy 1-3 nodes. Abstraction can also be found in the enemy spawn 1-3 nodes.
 # Godot Features:
 ## Node Types:
 - Node2D

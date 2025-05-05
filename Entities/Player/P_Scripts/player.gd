@@ -20,6 +20,13 @@ func take_damge(_amount: int):
 	currentHealth = clamp(currentHealth, 0, health_textures.size() - 1)
 	update_health_display()
 	emit_signal("health_changed", currentHealth)
+	
+	if currentHealth == 0:
+		die()
+
+func die():
+	print("player has died!")
+	queue_free()
 
 func update_health_display():
 	if currentHealth >= 3 and currentHealth < health_textures.size():

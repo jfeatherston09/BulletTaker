@@ -17,13 +17,13 @@ signal health_changed(new_health)
 
 func take_damge(_amount: int):
 	currentHealth -= _amount
-	currentHealth = clamp(currentHealth, 3, health_textures.size() - 1)
+	currentHealth = clamp(currentHealth, 0, health_textures.size() + 1)
 	update_health_display()
 	emit_signal("health_changed", currentHealth)
 
 func update_health_display():
-	if currentHealth >= 0 and currentHealth < health_textures.size():
-		Health_lost_sprite.frame = 3
+	if currentHealth >= 3 and currentHealth < health_textures.size():
+		Health_lost_sprite.frame = 1
 
 var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 

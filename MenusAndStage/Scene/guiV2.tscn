@@ -21,36 +21,36 @@ func _process(delta: float) -> void:
 #
 "
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5vs6d"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2o1jp"]
 atlas = ExtResource("2_gpbop")
-region = Rect2(0, 96, 128, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f31co"]
-atlas = ExtResource("2_gpbop")
-region = Rect2(0, 64, 128, 32)
+region = Rect2(0, 0, 128, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s6cqg"]
 atlas = ExtResource("2_gpbop")
 region = Rect2(0, 32, 128, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2o1jp"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_f31co"]
 atlas = ExtResource("2_gpbop")
-region = Rect2(0, 0, 128, 32)
+region = Rect2(0, 64, 128, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vs6d"]
+atlas = ExtResource("2_gpbop")
+region = Rect2(0, 96, 128, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kxry3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5vs6d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_f31co")
+"texture": SubResource("AtlasTexture_2o1jp")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_s6cqg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2o1jp")
+"texture": SubResource("AtlasTexture_f31co")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vs6d")
 }],
 "loop": true,
 "name": &"Healthlost",
@@ -102,13 +102,15 @@ position = Vector2(376, 1065)
 scale = Vector2(2.67969, 2.09375)
 sprite_frames = SubResource("SpriteFrames_kxry3")
 animation = &"Healthlost"
-frame_progress = 0.347546
+frame = 2
+frame_progress = 0.846149
 
 [node name="BulletsAmo" type="Sprite2D" parent="."]
 position = Vector2(1932, 1129)
 texture = ExtResource("2_juqvl")
 
 [node name="score" type="Label" parent="."]
+layout_mode = 0
 offset_left = 436.0
 offset_top = 125.0
 offset_right = 673.0

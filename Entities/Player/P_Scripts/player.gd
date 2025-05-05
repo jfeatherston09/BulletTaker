@@ -20,7 +20,7 @@ func _ready() -> void:
 
 func take_damge(_amount: int):
 	currentHealth -= _amount
-	currentHealth = clamp(currentHealth, 0, health_textures.size() + 1)
+	currentHealth = clamp(currentHealth, 0, health_textures.size() - 1)
 	update_health_display()
 	emit_signal("health_changed", currentHealth)
 

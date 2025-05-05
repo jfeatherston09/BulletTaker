@@ -10,24 +10,24 @@ const SPEED = 100.0
 
 signal health_changed(new_health)
 
-@export var maxHealth: int = 3
+@export var maxHealth: int = 3 - 1
 @onready var currentHealth: int = maxHealth
-@onready var Health_lost_sprite : Sprite2D = $Healthlost
+@onready var Health_lost_sprite : Sprite2D = $Sprite2D
 @export var health_textures: Array[Texture2D] = []
 
 func take_damge(_amount: int):
 	currentHealth -= _amount
-	currentHealth = clamp(currentHealth, 0, health_textures.size() - 1)
+	currentHealth = clamp(currentHealth, 0, health_textures.size() + 1)
 	update_health_display()
 	emit_signal("health_changed", currentHealth)
 
 func update_health_display():
-	if currentHealth >= 0 and currentHealth < health_textures.size():
-		Health_lost_sprite.texture = health_textures[currentHealth]
+	if currentHealth >= 3 and currentHealth < health_textures.size():
+		Health_lost_sprite.frame = 1
 
 var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 
-@onready var score_display = get_node("/root/Main/guiV2/panelContainer/score")
+@onready var score_display = %guiV2.get_node("score")#get_node("/root/Main/guiV2/panelContainer/score")
 
 func _on_hit_enemy():
 	score_display.add_score(10)
@@ -57,7 +57,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-	if (Input.is_action_just_pressed("Shoot")):
+	if (Input.is_action_just_pressed("p1_b")):
 		var b = p_bullet.instantiate()
 		get_parent().add_child(b)
 		b.position = self.position

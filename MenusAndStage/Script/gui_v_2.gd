@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 
 func update_Healthlost(new_health: int) -> void:
 	print("Health updated:", new_health)
-	if new_health >= 3 and new_health < health_sprite.sprite_frames.get_frame_count("Healthlost"):
+	if new_health < health_sprite.sprite_frames.get_frame_count("Healthlost"):
 		health_sprite.frame = new_health
 
 func _on_player_health_changed(new_health: int) -> void:

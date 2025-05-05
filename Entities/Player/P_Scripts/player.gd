@@ -7,7 +7,6 @@ var type = "PLAYER"
 const SPEED = 100.0
 @onready var sprite : Sprite2D = $Sprite2D
 @export var playerId : int = 0
-var get_node("/guiV2/BulletsAmmo")
 
 signal health_changed(new_health)
 
@@ -64,7 +63,6 @@ func _physics_process(delta):
 		var b = p_bullet.instantiate()
 		get_parent().add_child(b)
 		b.position = self.position
-		print(bulletBarrel.name)
 
 
 func advance_status():

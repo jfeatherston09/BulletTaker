@@ -54,7 +54,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Healthlost",
-"speed": 5.0
+"speed": 1.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4lh2j"]
@@ -102,11 +102,22 @@ position = Vector2(376, 1065)
 scale = Vector2(2.67969, 2.09375)
 sprite_frames = SubResource("SpriteFrames_kxry3")
 animation = &"Healthlost"
-frame_progress = 0.51639
+frame = 2
+frame_progress = 0.846149
 
 [node name="BulletsAmo" type="Sprite2D" parent="."]
 position = Vector2(1932, 1129)
 texture = ExtResource("2_juqvl")
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 125.0
+offset_right = 673.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(1, 0.843137, 0, 0.996078)
+theme_override_font_sizes/font_size = 54
+text = "0"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(348, 167)
@@ -115,15 +126,3 @@ sprite_frames = SubResource("SpriteFrames_4lh2j")
 animation = &"SCORE"
 autoplay = "SCORE"
 script = ExtResource("6_oiny2")
-
-[node name="score" type="Label" parent="AnimatedSprite2D"]
-offset_left = 97.4678
-offset_top = -42.0
-offset_right = 334.468
-offset_bottom = 32.0
-theme_override_colors/font_color = Color(1, 0.843137, 0, 0.996078)
-theme_override_font_sizes/font_size = 54
-text = "0"
-
-[node name="BulletsAmmo" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_c4xu6")

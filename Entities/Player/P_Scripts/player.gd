@@ -7,6 +7,7 @@ var type = "PLAYER"
 const SPEED = 100.0
 @onready var sprite : Sprite2D = $Sprite2D
 @export var playerId : int = 0
+var get_node("/guiV2/BulletsAmmo")
 
 signal health_changed(new_health)
 
@@ -17,7 +18,7 @@ signal health_changed(new_health)
 
 func _ready() -> void:
 	pass
-var bulletBarrel: Node = null
+
 func take_damge(_amount: int):
 	currentHealth -= _amount
 	currentHealth = clamp(currentHealth, 0, health_textures.size() - 1)

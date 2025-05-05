@@ -11,13 +11,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("Shoot")):
 		if currentFrame < 16:
-			bulletGUI.frame += 1
+			bulletGUI.frame += 1 
 			currentFrame += 1
 	if (Input.is_action_just_pressed("Reload")):
 		reloadCooldown.start()
-
-		
-func _on_timer_timeout():
-	bulletGUI.frame = 0
-	currentFrame = 0
+		bulletGUI.frame = 0
+		currentFrame = 0
 			

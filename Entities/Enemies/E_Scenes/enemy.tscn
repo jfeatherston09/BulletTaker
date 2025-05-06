@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cxgvhfetrbbf1"]
+[gd_scene load_steps=7 format=3 uid="uid://cxgvhfetrbbf1"]
 
 [ext_resource type="Texture2D" uid="uid://bq5bjvi4h5tn0" path="res://Entities/Enemies/E_Sprites/Down Sprite.png" id="1_730yc"]
 [ext_resource type="Script" path="res://Entities/Enemies/E_Scripts/enemy.gd" id="1_jwq8b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vbqar"]
+size = Vector2(60, 40.5)
 
 [sub_resource type="Shader" id="Shader_0sctt"]
 code = "shader_type canvas_item;
@@ -27,9 +30,14 @@ shader = SubResource("Shader_0sctt")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vhvoc"]
 size = Vector2(60, 41)
 
-[node name="Enemy" type="Node2D"]
+[node name="Enemy" type="CharacterBody2D"]
 scale = Vector2(2, 2)
 script = ExtResource("1_jwq8b")
+maxHealth = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.25)
+shape = SubResource("RectangleShape2D_vbqar")
 
 [node name="DownSprite" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_3fepa")

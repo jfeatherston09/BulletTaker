@@ -1,13 +1,13 @@
-extends Node2D
+extends CharacterBody2D
 
 class_name Enemy
-
 @onready var bullet_scene = load("res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.tscn")
 
 @onready var player = get_parent().get_parent().get_node("Player")
 
 var type = "ENEMY"
-
+@export var maxHealth: int = 3 - 1
+@onready var currentHealth: int = maxHealth
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -39,6 +39,8 @@ func spawn_bullets():
 	b1.position = self.position
 	b1.dir = Vector2(player.global_position.x - self.global_position.x, player.global_position.y - self.global_position.y).normalized()
 
+func take_damge(_amount: int):
+	currentHealth -= _amount
 
 ###timeout():
 func _on_timer_timeout():

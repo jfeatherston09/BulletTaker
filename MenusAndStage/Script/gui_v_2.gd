@@ -1,24 +1,21 @@
 extends Control
 
+@onready var health_sprite = $VBoxContainer/Healthlost
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	var player = get_tree().root.get_node("Stage/Player")
+	player.health_changed.connect(_on_player_health_changed)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
-func update_Healthlost(new_health):
+func update_Healthlost(new_health: int) -> void:
 	print("Health updated:", new_health)
-#if bullet hit enemey play animatedsprite2D
-#@onready var health bar:
-#	if player get his health bar moves down 
-#onready var specil bar:
-#	if player get specile bar specil bar moves up:
-#		if specil bar full press L2 to use bar
-#@onready var stamna bar:
-#	if player shoots then stamna bar will move down:
-#		if stamna bar is low player movement speed -= 10:
-#	elif stamna bar is empty player movment speed = 0 
+	if new_health < health_sprite.sprite_frames.get_frame_count("Healthlost"):
+		health_sprite.frame = new_health
+
+func _on_player_health_changed(new_health: int) -> void:
+	update_Healthlost(new_health)

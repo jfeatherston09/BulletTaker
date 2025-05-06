@@ -21,12 +21,23 @@ func take_damge(_amount: int):
 	update_health_display()
 	emit_signal("health_changed", currentHealth)
 	
+	is_invincible = true
+	iframe_timer.start()
+	
 	if currentHealth == 0:
 		die()
 
 func die():
 	print("player has died!")
 	queue_free()
+
+@onready var iframe_timer: Timer = $IFramesTimer
+var is_invincible: bool = false
+var _on_iframe_timer_timeout
+var iframe_timer_timer
+
+func _ready():
+	iframe_timer_timer.timeout.connect(_on_iframe_timer_timeout)
 
 func update_health_display():
 	if currentHealth >= 3 and currentHealth < health_textures.size():
@@ -37,12 +48,12 @@ var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 @onready var score_display = %guiV2.get_node("score")#get_node("/root/Main/guiV2/panelContainer/score")
 
 func _on_hit_enemy():
-	score_display.add_score(10)
+	score_display.add_score(50)
 
 	sprite.play("hit_enemy")
 
 func _on_got_hit():
-	score_display.subtract_score(5)
+	score_display.subtract_score(250)
 
 
 func _physics_process(delta):
@@ -73,3 +84,7 @@ func _physics_process(delta):
 
 func advance_status():
 	get_parent().get_node("Label").text = get_parent().health_status[maxHealth]
+
+
+func _on_i_frames_timer_timeout() -> void:
+	is_invincible = false

@@ -12,6 +12,7 @@ rotation = -0.00937772
 texture = ExtResource("2_g6j7q")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
+visible = false
 position = Vector2(-10, -10)
 target_position = Vector2(14, 14)
 collide_with_areas = true

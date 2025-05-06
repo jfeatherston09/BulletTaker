@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cbct2a14ky47r"]
+[gd_scene load_steps=5 format=3 uid="uid://cbct2a14ky47r"]
 
 [ext_resource type="Script" path="res://underscore.gd" id="1_87yw6"]
 [ext_resource type="Script" path="res://death_screen.gd" id="1_ct3w1"]
 [ext_resource type="Script" path="res://underscore_2.gd" id="2_jy4dn"]
 [ext_resource type="Script" path="res://underscore_3.gd" id="3_4p6a6"]
-[ext_resource type="Script" path="res://globalscript.gd" id="5_y04pi"]
 
 [node name="DeathScreen" type="Node2D"]
 position = Vector2(0, 12)
@@ -69,15 +68,16 @@ theme_override_font_sizes/normal_font_size = 100
 text = "_"
 script = ExtResource("3_4p6a6")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 333.0
-offset_top = 742.0
-offset_right = 1696.0
-offset_bottom = 1099.0
+[node name="DownLock" type="RichTextLabel" parent="."]
+offset_left = 265.0
+offset_top = 721.0
+offset_right = 1628.0
+offset_bottom = 1078.0
 theme_override_font_sizes/normal_font_size = 75
-text = "Press Right to Lock in your Initial."
+text = "Press Down Lock to Lock your Letter.
+                      Press Slowly
+                  Joystick moves fast"
 
 [node name="Frontal Lobe" type="Node2D" parent="."]
-script = ExtResource("5_y04pi")
 
 [connection signal="child_entered_tree" from="Panel/Underscore" to="." method="_on_underscore_child_entered_tree"]

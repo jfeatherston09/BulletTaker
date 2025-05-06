@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Node2D
 
 class_name Enemy
 @onready var bullet_scene = load("res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.tscn")
@@ -7,7 +7,7 @@ class_name Enemy
 
 var type = "ENEMY"
 @export var maxEnemyHealth: int = 3 - 1
-@onready var currentEnemyHealth: int = maxHealth
+@onready var currentEnemyHealth: int = maxEnemyHealth
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

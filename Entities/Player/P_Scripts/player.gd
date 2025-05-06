@@ -22,6 +22,7 @@ func take_damge(_amount: int):
 	emit_signal("health_changed", currentHealth)
 	
 	is_invincible = true
+	iframe_timer.wait_time = 10.0
 	iframe_timer.start()
 	
 	if currentHealth == 0:
@@ -37,7 +38,7 @@ var _on_iframe_timer_timeout
 var iframe_timer_timer
 
 func _ready():
-	iframe_timer_timer.timeout.connect(_on_iframe_timer_timeout)
+	iframe_timer.timeout.connect(_on_i_frames_timer_timeout)
 
 func update_health_display():
 	if currentHealth >= 3 and currentHealth < health_textures.size():

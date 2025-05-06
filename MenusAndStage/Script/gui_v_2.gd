@@ -2,6 +2,7 @@ extends Control
 
 @onready var health_sprite = $VBoxContainer/Healthlost
 @onready var bulletBarrel = $BulletAmmo
+var currentFrame = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,7 +13,13 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("p1_b")):
-		bulletBarrel.frame =+ 1
+		if currentFrame < 16:
+			currentFrame =+ 1
+			bulletBarrel = currentFrame
+	if (Input.is_action_just_pressed("p2_l1")):
+		currentFrame = 0
+		bulletBarrel.frame = currentFrame
+
 
 
 func update_Healthlost(new_health: int) -> void:

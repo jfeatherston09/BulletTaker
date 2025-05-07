@@ -11,11 +11,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if (Input.is_action_just_pressed("Shoot")):
+	if (Input.is_action_just_pressed("p1_b")):
 		if currentFrame < 16:
 			bulletGUI.frame += 1 
 			currentFrame += 1
-	if (Input.is_action_just_pressed("Reload")):
+	if (Input.is_action_just_pressed("p2_l1")):
 		bulletGUI.frame = 0
 		currentFrame = 0
 

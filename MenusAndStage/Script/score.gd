@@ -9,7 +9,7 @@ func add_score(amount:int):
 	play("SCORE")
 
 func subtract_score(amount:int):
-	score = max(0, score - amount)
+	score -= amount
 	update_label()
 	
 

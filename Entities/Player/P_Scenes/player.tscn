@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b4asmo3rjhqvf"]
 
-[ext_resource type="Script" path="res://Entities/Player/P_Scripts/player.gd" id="1_rp0hv"]
+[ext_resource type="Script" uid="uid://c4g15yepsp7wv" path="res://Entities/Player/P_Scripts/player.gd" id="1_rp0hv"]
 [ext_resource type="Texture2D" uid="uid://cn3vjbnxqtw6" path="res://Entities/Player/P_Sprites/MainCharacterWalking.png" id="1_sxi68"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nqyk7"]
@@ -29,3 +29,9 @@ position = Vector2(-1.19209e-07, 1.19209e-07)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CapsuleShape2D_f4o83")
+
+[node name="IFramesTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[connection signal="timeout" from="IFramesTimer" to="." method="_on_i_frames_timer_timeout"]

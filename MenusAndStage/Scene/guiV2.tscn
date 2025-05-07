@@ -193,7 +193,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_8i0ti")
 }],
 "loop": true,
-"name": &"default",
+"name": &"bulletState",
 "speed": 5.0
 }]
 
@@ -245,3 +245,4 @@ script = ExtResource("6_oiny2")
 [node name="BulletAmmo" type="AnimatedSprite2D" parent="."]
 position = Vector2(1922.05, 1114.73)
 sprite_frames = SubResource("SpriteFrames_y6s8u")
+animation = &"bulletState"

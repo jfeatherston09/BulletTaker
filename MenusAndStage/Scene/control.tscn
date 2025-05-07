@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dmjjc1gqaw7jh"]
 
-[ext_resource type="Script" path="res://MenusAndStage/Script/control.gd" id="1_orufs"]
+[ext_resource type="Script" uid="uid://dduxnxx715c2w" path="res://MenusAndStage/Script/control.gd" id="1_orufs"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_40g6f"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bagds"]

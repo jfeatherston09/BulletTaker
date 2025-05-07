@@ -7,7 +7,7 @@ class_name Enemy
 
 var type = "ENEMY"
 @export var maxEnemyHealth: int = 3 - 1
-@onready var currentEnemyHealth: int = maxHealth
+@onready var currentEnemyHealth: int = maxEnemyHealth
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

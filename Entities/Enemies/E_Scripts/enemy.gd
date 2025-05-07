@@ -42,7 +42,8 @@ func spawn_bullets():
 
 func take_enemy_damge(_amount: int):
 	currentEnemyHealth -= _amount
-
+func end_enemy():
+	queue_free()
 ###timeout():
 func _on_timer_timeout():
 	spawn_bullets()

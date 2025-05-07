@@ -21,8 +21,8 @@ func _process(delta):
 			position += Vector2(2000, 2000)
 
 			if (collid.maxEnemyHealth > 0):
-				collid.take_enemy_damge(1)
-
+				collid.take_enemy_damge(-1)
+			collid.end_enemy()
 
 
 func screen_exited():

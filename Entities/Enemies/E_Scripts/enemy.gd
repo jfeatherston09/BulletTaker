@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Node2D
 
 class_name Enemy
 @onready var bullet_scene = load("res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.tscn")

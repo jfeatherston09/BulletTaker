@@ -22,7 +22,7 @@ func _process(delta):
 
 			if (collid.maxHealth > 0):
 				collid.take_damge(-1)
-			collid.end_enemy()
+			collid.advance_status()
 
 
 

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://25s7gjb0k50w" path="res://Entities/Player/P_Sprites/bullets_amo.png" id="2_juqvl"]
 [ext_resource type="Texture2D" uid="uid://v4kknfm30s8a" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop.png" id="4_3of20"]
 [ext_resource type="Texture2D" uid="uid://c20kca6wb6qgp" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop (1).png" id="4_8f4t3"]
-[ext_resource type="Script" uid="uid://bxlqjqvyv2ero" path="res://MenusAndStage/Script/score.gd" id="6_oiny2"]
+[ext_resource type="Script" path="res://MenusAndStage/Script/score.gd" id="6_oiny2"]
 
 [sub_resource type="GDScript" id="GDScript_sqifx"]
 script/source = "extends Control

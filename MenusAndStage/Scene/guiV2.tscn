@@ -1,10 +1,12 @@
-[gd_scene load_steps=30 format=3 uid="uid://blbkfbjnuukpj"]
+[gd_scene load_steps=32 format=3 uid="uid://blbkfbjnuukpj"]
 
 [ext_resource type="Texture2D" uid="uid://tpg3nwubi3yq" path="res://Entities/Player/P_Sprites/healthSequence.png" id="2_gpbop"]
 [ext_resource type="Texture2D" uid="uid://v4kknfm30s8a" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop.png" id="4_3of20"]
 [ext_resource type="Texture2D" uid="uid://c20kca6wb6qgp" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop (1).png" id="4_8f4t3"]
 [ext_resource type="Texture2D" uid="uid://b8rwrvaw4ytu" path="res://Entities/Player/P_Sprites/bullets_ammo.png" id="5_oguem"]
+[ext_resource type="Script" path="res://MenusAndStage/Scene/bullet_ammo.gd" id="6_14top"]
 [ext_resource type="Script" path="res://MenusAndStage/Script/score.gd" id="6_oiny2"]
+[ext_resource type="Script" path="res://MenusAndStage/Scene/node.gd" id="7_2o5js"]
 
 [sub_resource type="GDScript" id="GDScript_sqifx"]
 script/source = "extends Control
@@ -37,6 +39,10 @@ func update_Healthlost(new_health: int) -> void:
 
 func _on_player_health_changed(new_health: int) -> void:
 	update_Healthlost(new_health)
+
+
+func _on_node_outta_bullets() -> void:
+	pass # Replace with function body.
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2o1jp"]
@@ -264,3 +270,7 @@ script = ExtResource("6_oiny2")
 position = Vector2(1922.05, 1114.73)
 sprite_frames = SubResource("SpriteFrames_y6s8u")
 animation = &"bulletState"
+script = ExtResource("6_14top")
+
+[node name="Node" type="Node" parent="BulletAmmo"]
+script = ExtResource("7_2o5js")

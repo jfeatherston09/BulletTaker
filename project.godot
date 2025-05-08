@@ -12,8 +12,12 @@ config_version=5
 
 config/name="BulletTaker"
 run/main_scene="res://MenusAndStage/Scene/Main_Menu_Scene.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Score="*res://MenusAndStage/Script/score.gd"
 
 [display]
 

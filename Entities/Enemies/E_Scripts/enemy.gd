@@ -47,6 +47,8 @@ func take_enemy_damge(_amount: int):
 
 func enemy_die():
 	print("enemy has died!")
+	if Player:
+		player._on_enemy_died()
 	queue_free()
 
 func end_enemy():

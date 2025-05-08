@@ -53,6 +53,9 @@ func _on_hit_enemy():
 
 	sprite.play("hit_enemy")
 
+func  _on_enemy_died():
+	score_display.add_score(int(50 * 1.5))
+
 func _on_got_hit():
 	score_display.subtract_score(250)
 

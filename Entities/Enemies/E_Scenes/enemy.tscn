@@ -30,7 +30,7 @@ size = Vector2(60, 41)
 [node name="Enemy" type="Node2D"]
 scale = Vector2(2, 2)
 script = ExtResource("1_jwq8b")
-maxEnemyHealth = 3
+maxEnemyHealth = 5
 
 [node name="DownSprite" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_3fepa")

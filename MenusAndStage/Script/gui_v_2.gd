@@ -6,21 +6,20 @@ extends Control
 func _ready() -> void:
 	var player = get_tree().root.get_node("Stage/Player")
 	player.health_changed.connect(_on_player_health_changed)
-
 @onready var bulletGUI = $BulletAmmo
-signal outtaBullets
+var currentFrame = 0
+signal bulletFired(currentFrame)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("p1_b")):
-		if Global.currentFrame < 16:
+		emit_signal("bulletFired") 
+		if currentFrame < 16:
 			bulletGUI.frame += 1 
-			Global.currentFrame += 1
-		else:
-			emit_signal("outtaBullets") 
+			currentFrame += 1
 	if (Input.is_action_just_pressed("p2_l1")):
 		bulletGUI.frame = 0
-		Global.currentFrame = 0
+		currentFrame = 0
 
 
 

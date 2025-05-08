@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=9 format=3 uid="uid://c1a37fna0vit6"]
 
 [ext_resource type="Script" uid="uid://b6bew7kqjjjuv" path="res://MenusAndStage/Script/Main_menu_Script.gd" id="1_bmdbv"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_15uxj"]
+[ext_resource type="Texture2D" uid="uid://c3dxmw7l447ki" path="res://Game_Sprites/logoBullet.png" id="2_xq5at"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_54gxr"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d73hg"]
 texture = ExtResource("2_15uxj")
@@ -33,6 +36,16 @@ offset_bottom = 17.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bmdbv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+top_level = true
+material = SubResource("CanvasItemMaterial_54gxr")
+layout_mode = 0
+offset_left = 533.0
+offset_top = 136.0
+offset_right = 1411.0
+offset_bottom = 447.0
+texture = ExtResource("2_xq5at")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1

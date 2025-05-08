@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://blr7wovwoqsas"]
 
-[ext_resource type="Script" uid="uid://dq74uhddbq1xk" path="res://Entities/Enemies/E_Bullets/E_B_Scripts/e_bullet.gd" id="1_tluk3"]
+[ext_resource type="Script" path="res://Entities/Enemies/E_Bullets/E_B_Scripts/e_bullet.gd" id="1_tluk3"]
 [ext_resource type="Texture2D" uid="uid://dlbv7hif8gg7o" path="res://Entities/Enemies/E_Bullets/E_B_Sprites/Enemy_Bullet_Sprite.png" id="2_draup"]
-[ext_resource type="Shader" uid="uid://bekktktyktra3" path="res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.gdshader" id="2_g4sfm"]
+[ext_resource type="Shader" path="res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.gdshader" id="2_g4sfm"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vtjae"]
 shader = ExtResource("2_g4sfm")

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://tpg3nwubi3yq" path="res://Entities/Player/P_Sprites/healthSequence.png" id="2_gpbop"]
 [ext_resource type="Texture2D" uid="uid://v4kknfm30s8a" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop.png" id="4_3of20"]
 [ext_resource type="Texture2D" uid="uid://c20kca6wb6qgp" path="res://Entities/Player/P_Sprites/text-fast-flip1-ezgif.com-crop (1).png" id="4_8f4t3"]
-[ext_resource type="Texture2D" path="res://Entities/Player/P_Sprites/bullets_ammo.png" id="6_xws0i"]
+[ext_resource type="Texture2D" uid="uid://b8rwrvaw4ytu" path="res://Entities/Player/P_Sprites/bullets_ammo.png" id="6_xws0i"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2o1jp"]
 atlas = ExtResource("2_gpbop")

@@ -1,7 +1,7 @@
 extends Control
 
 @onready var health_sprite = $VBoxContainer/Healthlost
-var currentFrame = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var player = get_tree().root.get_node("Stage/Player")
@@ -12,12 +12,12 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("p1_b")):
-		if currentFrame < 16:
+		if Global.currentFrame < 16:
 			bulletGUI.frame += 1 
-			currentFrame += 1
+			Global.currentFrame += 1
 	if (Input.is_action_just_pressed("p2_l1")):
 		bulletGUI.frame = 0
-		currentFrame = 0
+		Global.currentFrame = 0
 
 
 

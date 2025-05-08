@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-GuiV2="*res://MenusAndStage/guiV2.tscn"
+Global="*res://MenusAndStage/Script/global.gd"
 
 [display]
 

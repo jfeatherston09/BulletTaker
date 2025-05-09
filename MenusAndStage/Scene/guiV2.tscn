@@ -270,6 +270,8 @@ script = ExtResource("6_oiny2")
 position = Vector2(1922.05, 1114.73)
 sprite_frames = SubResource("SpriteFrames_y6s8u")
 animation = &"bulletState"
+frame = 8
+frame_progress = 0.635948
 script = ExtResource("6_14top")
 
 [node name="Node" type="Node" parent="BulletAmmo"]

@@ -17,12 +17,13 @@ func _process(delta):
 
 	if ($RayCast2D.is_colliding()):
 		var collid = $RayCast2D.get_collider().get_parent()
-		if (collid.type == "ENEMY"):
+		if (collid is Enemy):
 			position += Vector2(2000, 2000)
 
 			if (collid.maxEnemyHealth > 0):
-				collid.take_damge(1)
-			#collid.advance_status()
+				collid.take_enemy_damge(1)
+			else:
+				collid.enemy_die()
 
 
 func screen_exited():

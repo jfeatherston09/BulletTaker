@@ -27,3 +27,6 @@ func spawn_bullets():
 	b1.bullet_speed = 1000
 	b1.position = self.position
 	b1.dir = Vector2(player.global_position.x - self.global_position.x, player.global_position.y - self.global_position.y).normalized()
+func enemy_die():
+	print("enemy has died!")
+	queue_free()

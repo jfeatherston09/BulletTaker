@@ -30,7 +30,7 @@ size = Vector2(60, 41)
 [node name="Enemy" type="Node2D"]
 scale = Vector2(2, 2)
 script = ExtResource("1_jwq8b")
-maxEnemyHealth = 5
+maxEnemyHealth = 3
 
 [node name="DownSprite" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_3fepa")
@@ -41,7 +41,6 @@ texture = ExtResource("1_730yc")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-visible = false
 shape = SubResource("RectangleShape2D_vhvoc")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

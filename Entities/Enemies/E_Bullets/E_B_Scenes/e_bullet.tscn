@@ -8,6 +8,8 @@
 shader = ExtResource("2_g4sfm")
 
 [node name="E_Bullet" type="Node2D"]
+light_mask = 2
+visibility_layer = 2
 scale = Vector2(2, 2)
 script = ExtResource("1_tluk3")
 bullet_speed = 300

@@ -1542,6 +1542,7 @@ script = ExtResource("10_5si6r")
 position = Vector2(456, 481)
 
 [node name="TileMap" type="TileMap" parent="."]
+visible = false
 position = Vector2(-5, 0)
 tile_set = SubResource("TileSet_v37iy")
 format = 2

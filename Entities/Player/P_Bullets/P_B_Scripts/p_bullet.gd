@@ -9,20 +9,19 @@ var dir = Vector2(0, 1)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
-@onready var player: Player = $Player
 
+@onready var player = get_tree().get_current_scene().get_node("Player")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	self.position -= dir * delta * bullet_speed
 
 	if ($RayCast2D.is_colliding()):
-		var collid = $RayCast2D.get_collider().get_parent(player)
+		var collid = $RayCast2D.get_collider().get_parent()
 		if (collid is Enemy):
 			position += Vector2(2000, 2000)
 
 			if (collid.maxEnemyHealth > 0):
 				collid.take_enemy_damge(1)
-				var player = get_tree().get_root(player)
 				player._on_hit_enemy()
 			else:
 				collid.enemy_die()

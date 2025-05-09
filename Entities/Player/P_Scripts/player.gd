@@ -46,7 +46,7 @@ func update_health_display():
 
 var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 
-@onready var score_display = %guiV2.get_node("score")#get_node("/root/Main/guiV2/panelContainer/score")
+@onready var score_display: Score = get_tree().get_current_scene().get_node("guiV2/score") as Score #get_node("/root/Main/guiV2/panelContainer/score")
 
 func _on_hit_enemy():
 	score_display.add_score(50)

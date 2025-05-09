@@ -1,3 +1,4 @@
+class_name Score
 extends AnimatedSprite2D
 
 var score: int = 0

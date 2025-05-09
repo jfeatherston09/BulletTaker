@@ -24,7 +24,8 @@ func _ready():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
+	if currentEnemyHealth <= 0:
+		Game.Score += 5
 	#rotate(1 * delta)
 	position.y += 50 * delta
 	
@@ -47,8 +48,6 @@ func take_enemy_damge(_amount: int):
 
 func enemy_die():
 	print("enemy has died!")
-	if Player:
-		player._on_enemy_died()
 	queue_free()
 
 func end_enemy():

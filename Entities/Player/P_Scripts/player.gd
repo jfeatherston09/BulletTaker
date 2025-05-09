@@ -25,6 +25,8 @@ func take_damge(_amount: int):
 	iframe_timer.wait_time = 10.0
 	iframe_timer.start()
 	
+	ScoreManager.reduce_score_on_hit()
+	
 	if currentHealth == 0:
 		die()
 
@@ -46,18 +48,7 @@ func update_health_display():
 
 var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 
-@onready var score_display: Score = get_tree().get_current_scene().get_node("guiV2/score") as Score #get_node("/root/Main/guiV2/panelContainer/score")
 
-func _on_hit_enemy():
-	score_display.add_score(50)
-
-	sprite.play("hit_enemy")
-
-func  _on_enemy_died():
-	score_display.add_score(int(50 * 1.5))
-
-func _on_got_hit():
-	score_display.subtract_score(250)
 
 
 func _physics_process(delta):

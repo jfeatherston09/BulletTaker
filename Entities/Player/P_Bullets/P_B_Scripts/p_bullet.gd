@@ -22,9 +22,10 @@ func _process(delta):
 
 			if (collid.maxEnemyHealth > 0):
 				collid.take_enemy_damge(1)
-				player._on_hit_enemy()
+				ScoreManager.add_hit_score()
 			else:
 				collid.enemy_die()
+				ScoreManager.multiply_score()
 
 
 func screen_exited():

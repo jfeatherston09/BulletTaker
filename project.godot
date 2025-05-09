@@ -15,6 +15,11 @@ run/main_scene="res://MenusAndStage/Scene/Main_Menu_Scene.tscn"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Game="*res://Game.gd"
+ScoreManager="*res://MenusAndStage/Scene/ScoreManager.gd"
+
 [display]
 
 window/size/viewport_width=1920

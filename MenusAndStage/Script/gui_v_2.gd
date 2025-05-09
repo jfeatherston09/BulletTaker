@@ -13,7 +13,6 @@ signal bulletFired(currentFrame)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("p1_b")):
-		emit_signal("bulletFired") 
 		if currentFrame < 16:
 			bulletGUI.frame += 1 
 			currentFrame += 1

@@ -27,5 +27,5 @@ func _on_player_health_changed(new_health: int) -> void:
 
 func _on_score_changed(new_score: int) -> void:
 	score_label.text = str(new_score)
-	if score_anim_sprite.has_animation("SCORE"):
+	if score_anim_sprite.sprite_frames.has_animation("SCORE"):
 		score_anim_sprite.play("SCORE")

@@ -32,7 +32,9 @@ func take_damge(_amount: int):
 
 func die():
 	print("player has died!")
-	queue_free()
+	
+	GlobalState.final_score = ScoreManager.get_score()
+	get_tree().change_scene_to_file("res://MenusAndStage/Scene/game_over.tscn")
 
 @onready var iframe_timer: Timer = $IFramesTimer
 var is_invincible: bool = false

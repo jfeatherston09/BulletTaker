@@ -20,3 +20,6 @@ func reduce_score_on_hit():
 func _update_total_score():
 	score = base_score
 	emit_signal("score_changed", score)
+
+func get_score() -> int:
+	return score

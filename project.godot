@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Game="*res://Game.gd"
 ScoreManager="*res://MenusAndStage/Scene/ScoreManager.gd"
+GlobalState="*res://MenusAndStage/Script/global_state.gd"
 
 [display]
 

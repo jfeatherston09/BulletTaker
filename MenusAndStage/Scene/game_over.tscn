@@ -47,7 +47,7 @@ theme_override_font_sizes/font_size = 64
 text = "Oh no! You died. Now all of Hell has taken over Earth!"
 metadata/_edit_use_anchors_ = true
 
-[node name="score label" type="Label" parent="."]
+[node name="scoreLabel" type="Label" parent="."]
 offset_left = 834.0
 offset_top = 426.0
 offset_right = 1075.0

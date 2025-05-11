@@ -23,3 +23,4 @@ func _update_total_score():
 
 func get_score() -> int:
 	return score
+	print("Final score is: ", score)

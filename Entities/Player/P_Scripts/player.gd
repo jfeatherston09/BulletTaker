@@ -34,6 +34,7 @@ func die():
 	print("player has died!")
 	
 	GlobalState.final_score = ScoreManager.get_score()
+	print("Stored score in GlobalState:", GlobalState.final_score)
 	get_tree().change_scene_to_file("res://MenusAndStage/Scene/game_over.tscn")
 
 @onready var iframe_timer: Timer = $IFramesTimer

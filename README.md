@@ -23,6 +23,8 @@
 - Game hud
 - Main Menu
 - Starting of enemy
+- Health
+- Scoring
 
 # Description:
 - You’re a guy trapped in the underworld. You must try your hardest to go back and meet again with your pet bunny, named fluffy. However, if you fail and get taken by the enemies you will go back to the start. This is the cycle that the game runs through endlessly with you defeating enemies and getting power up to get higher scores to eventually die and do it again to get an even higher score. Player one can move the main character up and down with the joystick's respective directions while player two can move the main character left an right also with the joystick's respective directions. You can also dash in any direction by pressing "L2"

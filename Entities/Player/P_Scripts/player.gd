@@ -73,7 +73,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-	if (Input.is_action_just_pressed("p1_b")):
+	if (Input.is_action_just_pressed("p1_b") or Input.is_action_just_pressed("p2_b")):
 		var b = p_bullet.instantiate()
 		get_parent().add_child(b)
 		b.position = self.position

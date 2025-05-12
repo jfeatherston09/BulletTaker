@@ -1540,7 +1540,7 @@ offset_bottom = 695.016
 script = ExtResource("10_5si6r")
 
 [node name="PauseMenu" parent="." instance=ExtResource("10_dckll")]
-position = Vector2(456, 481)
+position = Vector2(461, 307)
 
 [node name="TileMap" type="TileMap" parent="."]
 visible = false

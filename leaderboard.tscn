@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://bueqp2nbqujb6"]
+[gd_scene load_steps=2 format=3 uid="uid://bueqp2nbqujb6"]
+
+[ext_resource type="Script" path="res://score_1.gd" id="1_b34kr"]
 
 [node name="Leaderboard" type="Node2D"]
 
@@ -134,6 +136,120 @@ offset_bottom = 1040.0
 theme_override_font_sizes/normal_font_size = 45
 text = "10th"
 
+[node name="score1" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1103.0
+offset_top = 239.0
+offset_right = -696.0
+offset_bottom = -752.0
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+script = ExtResource("1_b34kr")
+
+[node name="score2" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 1103.0
+offset_top = 320.0
+offset_right = 1253.0
+offset_bottom = 415.0
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+
+[node name="score3" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 1107.0
+offset_top = 402.0
+offset_right = 1257.0
+offset_bottom = 497.0
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+
+[node name="score4" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 1103.0
+offset_top = 502.0
+offset_right = 1232.0
+offset_bottom = 565.0
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+
+[node name="score5" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.175
+offset_left = 1100.0
+offset_top = 577.0
+offset_right = -691.0
+offset_bottom = -625.0
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+
+[node name="score6" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1101.0
+offset_top = 662.0
+offset_right = -701.0
+offset_bottom = -345.0
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+
+[node name="score8" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.175
+offset_left = 1096.0
+offset_top = 823.0
+offset_right = -695.0
+offset_bottom = -379.0
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+
+[node name="score11" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.175
+offset_left = 1092.0
+offset_top = 752.0
+offset_right = -699.0
+offset_bottom = -450.0
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+
+[node name="score9" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1097.0
+offset_top = 892.0
+offset_right = -705.0
+offset_bottom = -115.0
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+
+[node name="score10" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1095.0
+offset_top = 978.0
+offset_right = -728.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 45
+text = "__"
+
 [node name="Name" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
@@ -148,7 +264,7 @@ grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 65
 text = "Name"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+[node name="Score" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

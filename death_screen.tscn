@@ -69,14 +69,16 @@ text = "_"
 script = ExtResource("3_4p6a6")
 
 [node name="DownLock" type="RichTextLabel" parent="."]
-offset_left = 265.0
-offset_top = 721.0
-offset_right = 1628.0
-offset_bottom = 1078.0
+offset_left = 240.0
+offset_top = 511.0
+offset_right = 1617.0
+offset_bottom = 1086.0
 theme_override_font_sizes/normal_font_size = 75
 text = "Press Down Lock to Lock your Letter.
                       Press Slowly
-                  Joystick moves fast"
+                  Joystick moves fast
+ 		Press the Down Lock ONLY
+                  ONCCCCCCEEEEEEEE"
 
 [node name="Frontal Lobe" type="Node2D" parent="."]
 

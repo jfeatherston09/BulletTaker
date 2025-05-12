@@ -1,7 +1,6 @@
 extends RichTextLabel
 var JOY_AXIS_TRIGGER_LEFT = 0
 var JOY_AXIS_TRIGGER_RIGHT = 0
-
 func _input(event: InputEvent) -> void:
 		if FrontalLobeScript.is_active == 1:
 			if event.is_action_pressed("p1_left") and JOY_AXIS_TRIGGER_LEFT == 0:

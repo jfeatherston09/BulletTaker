@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dicgddcvc7y6a"]
 
-[ext_resource type="Script" uid="uid://bkjtatrj6agct" path="res://game_over.gd" id="1_nqfx8"]
+[ext_resource type="Script" path="res://game_over.gd" id="1_nqfx8"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_1jdj1"]
-[ext_resource type="Script" uid="uid://dra04g5a1c4b4" path="res://MenusAndStage/Script/global_state.gd" id="2_t7cc7"]
+[ext_resource type="Script" path="res://MenusAndStage/Script/global_state.gd" id="2_t7cc7"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t7cc7"]
 texture = ExtResource("2_1jdj1")

@@ -10,7 +10,7 @@ var dir = Vector2(0, 1)
 func _ready() -> void:
 	pass # Replace with function body.
 
-
+@onready var player = get_tree().get_current_scene().get_node("Player")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	self.position -= dir * delta * bullet_speed
@@ -22,8 +22,10 @@ func _process(delta):
 
 			if (collid.maxEnemyHealth > 0):
 				collid.take_enemy_damge(1)
+				ScoreManager.add_hit_score()
 			else:
 				collid.enemy_die()
+				ScoreManager.multiply_score()
 
 
 func screen_exited():

@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://dicgddcvc7y6a"]
+
+[ext_resource type="Script" uid="uid://bkjtatrj6agct" path="res://game_over.gd" id="1_nqfx8"]
+[ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_1jdj1"]
+[ext_resource type="Script" uid="uid://dra04g5a1c4b4" path="res://MenusAndStage/Script/global_state.gd" id="2_t7cc7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t7cc7"]
+texture = ExtResource("2_1jdj1")
+modulate_color = Color(0.392157, 0.894118, 0.933333, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8orph"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_nqfx8")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -959.0
+offset_top = -530.0
+offset_right = 959.0
+offset_bottom = 537.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_t7cc7")
+metadata/_edit_use_anchors_ = true
+
+[node name="title label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.285937
+anchor_top = 0.480556
+anchor_right = 0.714063
+anchor_bottom = 0.52037
+offset_left = -409.0
+offset_top = -248.0
+offset_right = 414.0
+offset_bottom = -203.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.98275, 6.28106e-06, 5.77569e-07, 1)
+theme_override_font_sizes/font_size = 64
+text = "Oh no! You died. Now all of Hell has taken over Earth!"
+metadata/_edit_use_anchors_ = true
+
+[node name="scoreLabel" type="Label" parent="."]
+offset_left = 834.0
+offset_top = 426.0
+offset_right = 1075.0
+offset_bottom = 514.0
+theme_override_colors/font_color = Color(0.984314, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Score: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="MainMenuButton" type="Button" parent="."]
+offset_left = 757.0
+offset_top = 726.0
+offset_right = 1154.0
+offset_bottom = 834.0
+theme_override_colors/font_color = Color(0.984314, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_8orph")
+text = "Return to Main Menu"
+
+[node name="GlobalState" type="Node" parent="."]
+script = ExtResource("2_t7cc7")

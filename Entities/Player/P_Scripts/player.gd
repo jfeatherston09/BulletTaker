@@ -25,12 +25,17 @@ func take_damge(_amount: int):
 	iframe_timer.wait_time = 10.0
 	iframe_timer.start()
 	
+	ScoreManager.reduce_score_on_hit()
+	
 	if currentHealth == 0:
 		die()
 
 func die():
 	print("player has died!")
-	queue_free()
+	
+	GlobalState.final_score = ScoreManager.get_score()
+	print("Stored score in GlobalState:", GlobalState.final_score)
+	get_tree().change_scene_to_file("res://MenusAndStage/Scene/game_over.tscn")
 
 @onready var iframe_timer: Timer = $IFramesTimer
 var is_invincible: bool = false
@@ -46,15 +51,7 @@ func update_health_display():
 
 var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 
-@onready var score_display = %guiV2.get_node("score")#get_node("/root/Main/guiV2/panelContainer/score")
 
-func _on_hit_enemy():
-	score_display.add_score(50)
-
-	sprite.play("hit_enemy")
-
-func _on_got_hit():
-	score_display.subtract_score(250)
 
 
 func _physics_process(delta):

@@ -17,7 +17,7 @@ func _process(delta):
 
 	if ($RayCast2D.is_colliding()):
 		var collid = $RayCast2D.get_collider().get_parent()
-		if (collid.type == "PLAYER"):
+		if (collid.type is Player):
 			position += Vector2(2000, 2000)
 
 			if (collid.maxHealth > 0):

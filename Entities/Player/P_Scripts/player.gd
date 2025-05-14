@@ -57,9 +57,9 @@ var p_bullet = load("res://Entities/Player/P_Bullets/P_B_Scenes/p_bullet.tscn")
 func _physics_process(delta):
 	var direction := Vector2.ZERO
 
-	if Input.is_action_pressed("p2_right"):
+	if Input.is_action_pressed("p1_right"):
 		direction.x += 1
-	if Input.is_action_pressed("p2_left"):
+	if Input.is_action_pressed("p1_left"):
 		direction.x -= 1
 	if Input.is_action_pressed("p1_down"):
 		direction.y += 1
@@ -73,7 +73,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-	if (Input.is_action_just_pressed("p1_b") or Input.is_action_just_pressed("p2_b")):
+	if (Input.is_action_just_pressed("p1_b")):
 		var b = p_bullet.instantiate()
 		get_parent().add_child(b)
 		b.position = self.position

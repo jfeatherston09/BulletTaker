@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://msxf80kr8i07"]
-
-[ext_resource type="Script" uid="uid://xlb8v2pvar63" path="res://GlobalHealth.gd" id="1_3uxd3"]
-
-[node name="GlobalHealth" type="Node"]
-script = ExtResource("1_3uxd3")

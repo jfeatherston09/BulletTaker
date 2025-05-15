@@ -24,7 +24,7 @@ func take_damge(_amount: int):
 	is_invincible = true
 	iframe_timer.wait_time = 10.0
 	iframe_timer.start()
-	GlobalHealth.take_damge(_amount)
+	
 	ScoreManager.reduce_score_on_hit()
 	
 	if currentHealth == 0:

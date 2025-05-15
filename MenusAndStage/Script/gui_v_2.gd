@@ -9,7 +9,7 @@ extends Control
 func _ready() -> void:
 	var player = get_tree().root.get_node("Stage/Player")
 	player.health_changed.connect(_on_player_health_changed)
-	GlobalHealth.health_changed.connect(_on_health_changed)
+	
 	ScoreManager.score_changed.connect(_on_score_changed)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

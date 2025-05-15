@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dp3rwrmuenhcm"]
 
 [ext_resource type="PackedScene" uid="uid://blr7wovwoqsas" path="res://Entities/Enemies/E_Bullets/E_B_Scenes/e_bullet.tscn" id="1_rkqwt"]
-[ext_resource type="Script" uid="uid://dyp4qn18bejdk" path="res://Entities/Enemies/E_Bullets/E_B_Scripts/e_bullet_2.gd" id="2_2c8we"]
+[ext_resource type="Script" path="res://Entities/Enemies/E_Bullets/E_B_Scripts/e_bullet_2.gd" id="2_2c8we"]
 
 [node name="E_Bullet2" instance=ExtResource("1_rkqwt")]
 script = ExtResource("2_2c8we")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://46ekvc3fnbni"]
 
-[ext_resource type="Script" uid="uid://yikycnf24tka" path="res://MenusAndStage/Script/pause_menu.gd" id="1_62ecx"]
+[ext_resource type="Script" path="res://MenusAndStage/Script/pause_menu.gd" id="1_62ecx"]
 [ext_resource type="FontFile" uid="uid://unjush45jn26" path="res://Background/doomed-regular.ttf" id="2_qcqs4"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p783q"]

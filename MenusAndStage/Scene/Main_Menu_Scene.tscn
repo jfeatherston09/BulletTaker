@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://c1a37fna0vit6"]
+[gd_scene load_steps=10 format=3 uid="uid://c1a37fna0vit6"]
 
 [ext_resource type="Script" uid="uid://b6bew7kqjjjuv" path="res://MenusAndStage/Script/Main_menu_Script.gd" id="1_bmdbv"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_15uxj"]
 [ext_resource type="Texture2D" uid="uid://c3dxmw7l447ki" path="res://Game_Sprites/logoBullet.png" id="2_xq5at"]
+[ext_resource type="AudioStream" uid="uid://bhdrsclh6qpy0" path="res://Music/Game_Over/space.mp3" id="4_8sbf5"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_54gxr"]
 
@@ -122,6 +123,10 @@ offset_top = -68.0
 offset_right = 716.0
 offset_bottom = 253.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_a1qxu")
+
+[node name="Space" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_8sbf5")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

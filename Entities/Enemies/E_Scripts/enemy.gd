@@ -12,7 +12,7 @@ var type = "ENEMY"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Timer.set_wait_time(0.6)
+	$Timer.set_wait_time(2)
 	$Timer.start()
 
 	var target = Vector2(self.position.x, 100)

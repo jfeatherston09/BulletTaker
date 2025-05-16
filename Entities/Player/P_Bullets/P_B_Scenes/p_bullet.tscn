@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d1fytawfecayb"]
 
-[ext_resource type="Script" path="res://Entities/Player/P_Bullets/P_B_Scripts/p_bullet.gd" id="1_vvip2"]
+[ext_resource type="Script" uid="uid://b8o2d6eo6xcc7" path="res://Entities/Player/P_Bullets/P_B_Scripts/p_bullet.gd" id="1_vvip2"]
 [ext_resource type="Texture2D" uid="uid://7dlm8d13q624" path="res://Entities/Player/P_Bullets/P_B_Sprites/playerbullet.png" id="2_g6j7q"]
 
 [node name="P_Bullet" type="Node2D"]

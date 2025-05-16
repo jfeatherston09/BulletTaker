@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c1a37fna0vit6"]
 
-[ext_resource type="Script" path="res://MenusAndStage/Script/Main_menu_Script.gd" id="1_bmdbv"]
+[ext_resource type="Script" uid="uid://b6bew7kqjjjuv" path="res://MenusAndStage/Script/Main_menu_Script.gd" id="1_bmdbv"]
 [ext_resource type="Texture2D" uid="uid://chrk4dyt28xas" path="res://Background/background_Jerom.png" id="2_15uxj"]
 [ext_resource type="Texture2D" uid="uid://c3dxmw7l447ki" path="res://Game_Sprites/logoBullet.png" id="2_xq5at"]
 

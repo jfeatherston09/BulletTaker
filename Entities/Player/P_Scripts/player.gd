@@ -30,6 +30,9 @@ func take_damge(_amount: int):
 	if currentHealth == 0:
 		die()
 
+func take_damage_from_other(_amount: int):
+	take_damge(_amount)
+
 func die():
 	print("player has died!")
 	

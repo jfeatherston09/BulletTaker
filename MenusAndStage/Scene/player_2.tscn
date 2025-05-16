@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bjfaqa56iemxo"]
 
-[ext_resource type="Script" uid="uid://ca7iolkeqb2uy" path="res://MenusAndStage/Scene/player_2.gd" id="1_x3rs8"]
+[ext_resource type="Script" uid="uid://dvffw6j4ry7tp" path="res://MenusAndStage/Scene/player_2.gd" id="1_x3rs8"]
 [ext_resource type="Texture2D" uid="uid://cn3vjbnxqtw6" path="res://Entities/Player/P_Sprites/MainCharacterWalking.png" id="2_ctxjs"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x3rs8"]

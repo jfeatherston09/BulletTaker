@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dqb2nb1i5cyix"]
+[gd_scene load_steps=18 format=3 uid="uid://dqb2nb1i5cyix"]
 
 [ext_resource type="Script" uid="uid://tx5whg4ct175" path="res://MenusAndStage/Script/stage.gd" id="1_x3bmc"]
 [ext_resource type="Shader" uid="uid://xgu3tfmtceij" path="res://MenusAndStage/Script/Stage.gdshader" id="2_7c8o3"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://1nmudi7a2r5x" path="res://MenusAndStage/Script/gui_v_2.gd" id="10_5si6r"]
 [ext_resource type="PackedScene" uid="uid://46ekvc3fnbni" path="res://MenusAndStage/Scene/pause_menu.tscn" id="10_dckll"]
 [ext_resource type="PackedScene" uid="uid://bjfaqa56iemxo" path="res://MenusAndStage/Scene/player_2.tscn" id="12_p8onb"]
+[ext_resource type="AudioStream" uid="uid://bthq3ug2ylrpb" path="res://Music/In-Game_Music/Cyberpunk Moonlight Sonata.mp3" id="13_pdbp4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jluj3"]
 shader = ExtResource("2_7c8o3")
@@ -1553,6 +1554,10 @@ layer_0/tile_data = PackedInt32Array(3997682, 0, 0, 3932146, 0, 0, 3866610, 0, 0
 [node name="Player_2" parent="." instance=ExtResource("12_p8onb")]
 position = Vector2(814, 720)
 player1_path = NodePath("../Player")
+
+[node name="CyberpunkMoonlightSonata" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_pdbp4")
+autoplay = true
 
 [connection signal="health_changed" from="Player" to="guiV2" method="_on_player_health_changed"]
 [connection signal="timeout" from="EnemySpawn_3/Timer" to="EnemySpawn_3" method="_on_timer_timeout"]
